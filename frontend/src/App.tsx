@@ -1,23 +1,20 @@
 import React from 'react';
 import logo from './logo.svg';
 import { BrowserRouter, Route, Link, Switch, Router } from 'react-router-dom';
-import HomePage from './components/HomePage';
+import HomePage from './pages/HomePage';
 import './App.css';
+import HealthPage from './pages/HealthPage';
+import NotFoundPage from './pages/NotFoundPage';
 
 function App() {
   return (
-
-    <div>
     <BrowserRouter>
-    <div className="App">
-      <header className="App-header">
-        <div className="container">
-              <Route path="/" component={HomePage} />
-            </div>
-      </header>
-    </div>
+      <Switch>
+        <Route exact path="/" component={HomePage} />
+        <Route path="/health" component={HealthPage} />
+        <Route component={NotFoundPage} />
+      </Switch>
     </BrowserRouter>
-    </div>
   );
 }
 
