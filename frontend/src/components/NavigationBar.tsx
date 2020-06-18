@@ -15,6 +15,8 @@ const menus: Array<MenuItem> = [
     list: [
       { name: 'about', list: null, link: '/about' },
       { name: 'announcements', list: null, link: '/announcements' },
+      { name: 'faq', list: null, link: '/faq'},
+      { name: 'leadership', list: null, link: '/leadership'},
     ],
     link: '/about',
   },
@@ -32,20 +34,35 @@ const menus: Array<MenuItem> = [
     name: 'competitive',
     list: [
       { name: 'info', list: null, link: '/competitive' },
+      { name: 'race schedule', list: null, link: '/race-schedule'},
       { name: 'records', list: null, link: '/records' },
     ],
     link: '/competitive',
   },
   {
-    name: 'outreach',
+    name: 'recreation',
     list: [
+      { name: 'events', list: null, link: '/events' },
+      { name: 'photos', list: null, link: '/photos' },
     ],
-    link: '/outreach',
+    link: '/recreation',
   },
   {
-    name: 'brown bear invitational',
-    list: [],
-    link: '/brown-bear-invitational',
+    name: 'outreach',
+    list: [
+      { name: 'newsletter', list: null, link: '/newsletter' },
+      { name: 'donations', list: null, link: '/donations'},
+      { name: 'feedback', list: null, link: '/feedback' },
+    ],
+    link: '/newsletter',
+  },
+  {
+    name: 'invitationals',
+    list: [
+      { name: 'brown bear invitational', list: null, link: '/brown-bear-invitational'},
+      { name: 'billy brockmueller invitational', list: null, link: '/billy-brockmueller-invitational'},
+    ],
+    link: '/invitationals',
   }
 ]
 
@@ -159,7 +176,6 @@ const styles = {
   navigationMenu: {
     position: 'relative' as 'relative',
     marginRight: theme.spacing.unit * 3,
-    cursor: 'pointer',
     paddingTop: theme.spacing.unit,
     paddingBottom: theme.spacing.unit,
   },

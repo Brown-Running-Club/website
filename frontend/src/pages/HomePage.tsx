@@ -6,6 +6,9 @@ import IvyBrownLogo from '../assets/images/ivybrownlogo.png';
 import theme from '../config/theme';
 import Card from '../components/Card';
 import Button from '../components/Button';
+import PageBody from '../components/PageBody';
+import WideContainer from '../components/WideContainer';
+import NarrowContainer from '../components/NarrowContainer';
 
 type Event = {
   time: string,
@@ -45,17 +48,17 @@ export default class HomePage extends Component {
           <img src={IvyBrownLogo} style={styles.titleImage} alt="brown"/>
           <p style={styles.titleText}>RUNNING CLUB</p>
         </TitleImage>
-        <div style={styles.container}>
-          <div style={styles.mainContainer}>
+        <PageBody>
+          <WideContainer>
             <Card>
               <p style={styles.welcomeText}>Welcome to the home of recreational and competitive running at Brown University! Whether you’re an undergrad, grad student, faculty, or staff member, we encourage you to join us for a run. We welcome runners of all levels! For those interested in running competitively, we compete in cross country races, indoor and outdoor track meets, and road races. We practice at <p style={theme.typography.semiboldInline}>4:15PM Mon-Fri and 10:00AM Sat-Sun</p> and meet at <p style={theme.typography.semiboldInline}>the bear statue outside the Nelson Fitness Center</p>.</p>
-              <Button text="Learn more about Running Club ➞" />
+              <Button text="Learn more about Running Club ➞" link="about" />
             </Card>
             <Card title="Announcements">
-              <Button text="More announcements ➞" />
+              <Button text="More announcements ➞" link="/announcements" />
             </Card>
-          </div>
-          <div style={styles.sideContainer}>
+          </WideContainer>
+          <NarrowContainer>
             <Card title="This Week" centeredTitle>
               {Object.keys(week).map((day) => (
                 <>
@@ -79,8 +82,8 @@ export default class HomePage extends Component {
                 </>
               ))}
             </Card>
-          </div>
-        </div>
+          </NarrowContainer>
+        </PageBody>
       </div>
     );
   }
@@ -98,28 +101,6 @@ const styles = {
   titleImage: {
     height: theme.spacing.unit * 20,
     paddingRight: theme.spacing.unit * 2,
-  },
-  container: {
-    backgroundColor: theme.palette.lightGray,
-    display: 'flex',
-    flexDirection: 'row' as 'row',
-    justifyContent: 'center' as 'center',
-    height: 10000,
-    paddingLeft: theme.spacing.unit * 2,
-    paddingRight: theme.spacing.unit * 2,
-  },
-  mainContainer: {
-    display: 'flex' as 'flex',
-    flexDirection: 'column' as 'column',
-    width: 700,
-    marginTop: theme.spacing.unit * 2,
-    marginRight: theme.spacing.unit * 2,
-  },
-  sideContainer: {
-    display: 'flex' as 'flex',
-    flexDirection: 'column' as 'column',
-    width: 300,
-    marginTop: theme.spacing.unit * 2,
   },
   welcomeText: {
     ...theme.typography.h4 as any,

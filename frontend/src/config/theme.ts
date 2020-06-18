@@ -41,6 +41,10 @@ const theme = {
     h4: {
       fontFamily: 'Open Sans',
       fontSize: 20,
+    },
+    body: {
+      fontFamily: 'Open Sans',
+      fontSize: 16,
     }
   }
 }
