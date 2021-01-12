@@ -7,6 +7,7 @@ import HealthPage from './pages/HealthPage';
 import CompetitivePage from './pages/CompetitivePage';
 import NotFoundPage from './pages/NotFoundPage';
 import AboutPage from './pages/AboutPage';
+import FAQSPage from './pages/FAQSPage';
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
         <Route path="/health" component={HealthPage} />
         <Route path="/competitive" component={CompetitivePage} />
         <Route path="/about" component={AboutPage} />
+        <Route path="/faq" component={FAQSPage} />
         <Route component={NotFoundPage} />
       </Switch>
     </BrowserRouter>
