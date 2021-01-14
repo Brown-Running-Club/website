@@ -8,6 +8,7 @@ import CompetitivePage from './pages/CompetitivePage';
 import NotFoundPage from './pages/NotFoundPage';
 import AboutPage from './pages/AboutPage';
 import FAQSPage from './pages/FAQSPage';
+import LeadershipPage from './pages/LeadershipPage';
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
         <Route path="/competitive" component={CompetitivePage} />
         <Route path="/about" component={AboutPage} />
         <Route path="/faq" component={FAQSPage} />
+        <Route path="/leadership" component={LeadershipPage} />
         <Route component={NotFoundPage} />
       </Switch>
     </BrowserRouter>
