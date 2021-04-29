@@ -1,21 +1,14 @@
 import React from 'react';
 import NavigationBar from '../components/NavigationBar';
-import TitleImage from '../components/TitleImage';
-import HealthImage from '../assets/images/health.jpg';
 import theme from '../config/theme';
 import PageBody from '../components/PageBody';
-import WiderContainer from '../components/WiderContainer';
-import Card from '../components/Card';
 
-export default class HealthPage extends React.Component {
+export default class SchedulePage extends React.Component {
 
   render() {
     return (
       <>
         <NavigationBar />
-        {/* <TitleImage image={HealthImage}>
-          <p style={styles.titleText}>Schedule</p>
-        </TitleImage> */}
         <PageBody>
             <div>
         <iframe src="https://calendar.google.com/calendar/embed?mode=WEEK&amp;src=run%40brown.edu&amp;ctz=America%2FNew_York" width="1200" height="800" frameBorder="0" scrolling="no"></iframe>
