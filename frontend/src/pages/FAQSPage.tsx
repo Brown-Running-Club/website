@@ -22,7 +22,7 @@ export default class FAQSPage extends React.Component {
           <WideContainer>
           <Card title="How do I join?">
           <p style={styles.infoText}>Come to a practice and introduce yourself! Find us on <a href = "https://www.facebook.com/groups/260972757349158/">Facebook</a> and be sure to 
-          join our email list by emailing mailto:run@brown.edu or submitting a form on the <a href = "http://brownrunningclub.com/contact-2/">contact</a> page.
+          join our email list by emailing run@brown.edu.
 
           </p>
           </Card>
