@@ -1,6 +1,6 @@
 import React from 'react';
 import logo from './logo.svg';
-import { BrowserRouter, Route, Link, Switch, Router } from 'react-router-dom';
+import { BrowserRouter, Route, Link, Switch, Router, Redirect } from 'react-router-dom';
 import HomePage from './pages/HomePage';
 import './App.css';
 import HealthPage from './pages/HealthPage';
@@ -22,6 +22,9 @@ function App() {
         <Route path="/faq" component={FAQSPage} />
         <Route path="/leadership" component={LeadershipPage} />
         <Route path="/schedule" component={SchedulePage} />
+        <Route path="/roster-registration">
+            <Redirect to="https://brownrec.com/sports/2018/8/14/club-sports-registrations-offerings.aspx" />
+        </Route>
         <Route component={NotFoundPage} />
       </Switch>
     </BrowserRouter>

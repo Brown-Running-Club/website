@@ -27,7 +27,7 @@ export default class FAQSPage extends React.Component {
           </p>
           </Card>
           <Card title="When/where is practice?">
-          <p style={styles.infoText}>We meet at the Bear Statue outside of the Nelson Fitness Center at 4:15 pm on weekdays and 
+          <p style={styles.infoText}>We normally meet at the Bear Statue outside of the Nelson Fitness Center at 4:15 pm on weekdays and 
           10 am on weekends during the Fall and Spring semesters (we occasionally have practice at other times due to special events 
           or races; see our calendar for accurate information). Arrive early to get some extra stretching in. There is no set end time 
           for practices, as it depends on how long you plan to run. Generally, this will be somewhere between a half hour to an hour and a half.
@@ -83,7 +83,7 @@ export default class FAQSPage extends React.Component {
             to see this semester’s races. We’ll send out sign up forms for these meets in our weekly emails.
             <br></br><br></br>
             To compete on the competitive team, you must register through the club sports website. If you plan to complete in at least 
-            one race this semester, you must also pay our membership dues ($60/year). Dues can be paid through Venmo (@BrownRunningClub)
+            one race this semester, you must also pay our membership dues ($50/year). Dues can be paid through Venmo (@BrownRunningClub)
           </p>  
           </Card>
           <Card title="How do you keep track of your training?">
