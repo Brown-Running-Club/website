@@ -1,5 +1,5 @@
 import React from "react";
-import { Route, Switch, Redirect, HashRouter } from "react-router-dom";
+import { Route, Switch, Redirect, BrowserRouter } from "react-router-dom";
 import HomePage from "./pages/HomePage";
 import "./App.css";
 import HealthPage from "./pages/HealthPage";
@@ -14,7 +14,7 @@ import BrownBearInvitational from "./pages/BrownBearInvitational";
 
 function App() {
   return (
-    <HashRouter>
+    <BrowserRouter>
       <Switch>
         <Route exact path="/" component={HomePage} />
         <Route exact path="/health" component={HealthPage} />
@@ -34,7 +34,7 @@ function App() {
         </Route>
         <Route component={NotFoundPage} />
       </Switch>
-    </HashRouter>
+    </BrowserRouter>
   );
 }
 
