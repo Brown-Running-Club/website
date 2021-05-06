@@ -9,6 +9,7 @@ import AboutPage from './pages/AboutPage';
 import FAQSPage from './pages/FAQSPage';
 import LeadershipPage from './pages/LeadershipPage';
 import SchedulePage from './pages/SchedulePage';
+import ContactPage from './pages/ContactPage';
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
         <Route path="/faq" component={FAQSPage} />
         <Route path="/leadership" component={LeadershipPage} />
         <Route path="/schedule" component={SchedulePage} />
+        <Route path="/contact" component={ContactPage} />
         <Route path="/roster-registration">
             <Redirect to="https://brownrec.com/sports/2018/8/14/club-sports-registrations-offerings.aspx" />
         </Route>

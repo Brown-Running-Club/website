@@ -52,7 +52,7 @@ const menus: Array<MenuItem> = [
     list: [
       { name: 'newsletter', list: null, link: '/newsletter' },
       { name: 'donations', list: null, link: '/donations'},
-      { name: 'feedback', list: null, link: '/feedback' },
+      { name: 'contact', list: null, link: '/contact' },
     ],
     link: '/newsletter',
   },
@@ -78,7 +78,7 @@ export default class NavigationBar extends React.Component<any, State> {
     this.state = {
       openMenu: null,
     }
-    
+
     this.renderMenu = this.renderMenu.bind(this);
   }
 
