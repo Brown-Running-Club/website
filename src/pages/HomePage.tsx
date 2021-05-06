@@ -24,17 +24,21 @@ const week: Week = {
   ],
   tuesday: [
     { time: '4:15p', name: 'Practice', description: 'Workout' },
-    { time: '8:00p', name: 'Aquajogging'},
   ],
   wednesday: [
     { time: '4:15p', name: 'Practice', description: 'Regular run' },
   ],
   thursday: [
     { time: '4:15p', name: 'Practice', description: 'Workout' },
-    { time: '8:00p', name: 'Aquajogging'},
   ],
   friday: [
     { time: '4:15p', name: 'Practice', description: 'Fun sock Friday!' },
+  ],
+  saturday: [
+    { time: '10:00a', name: 'Practice', description: 'Regular run' },
+  ],
+  sunday: [
+    { time: '10:00a', name: 'Practice', description: 'Long run' },
   ]
 }
 
@@ -51,7 +55,7 @@ export default class HomePage extends Component {
         <PageBody>
           <WideContainer>
             <Card>
-              <p style={styles.welcomeText}>Welcome to the home of recreational and competitive running at Brown University! Whether you’re an undergrad, grad student, faculty, or staff member, we encourage you to join us for a run. We welcome runners of all levels! For those interested in running competitively, we compete in cross country races, indoor and outdoor track meets, and road races. We practice at <p style={theme.typography.semiboldInline}>4:15PM Mon-Fri and 10:00AM Sat-Sun</p> and meet at <p style={theme.typography.semiboldInline}>the bear statue outside the Nelson Fitness Center</p>.</p>
+              <p style={styles.welcomeText}>Welcome to the home of recreational and competitive running at Brown University! Whether you’re an undergrad, grad student, faculty, or staff member, we encourage you to join us for a run. We welcome runners of all levels! For those interested in running competitively, we compete in cross country races, indoor and outdoor track meets, and road races. We normally practice at <p style={theme.typography.semiboldInline}>4:15PM Mon-Fri and 10:00AM Sat-Sun</p> and meet at <p style={theme.typography.semiboldInline}>the bear statue outside the Nelson Fitness Center</p>.</p>
               <Button text="Learn more about Running Club ➞" link="about" />
             </Card>
             <Card title="Announcements">
