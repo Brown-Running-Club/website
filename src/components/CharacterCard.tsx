@@ -9,7 +9,6 @@ type Props = {
 }
 
 export default class CharacterCard extends React.PureComponent<Props> {
-
   render() {
     return (
       <div style={styles.card}>
@@ -20,7 +19,7 @@ export default class CharacterCard extends React.PureComponent<Props> {
           </p>
         }
         <div style = {styles.floated}>
-        <img src={this.props.image} style = {styles.image}></img>
+        <img src={this.props.image} style={styles.image} alt={this.props.title}></img>
         </div>
         <div style={styles.container}>
         
@@ -30,7 +29,6 @@ export default class CharacterCard extends React.PureComponent<Props> {
       </div>
     )
   }
-
 }
 
 const styles = {
@@ -60,7 +58,6 @@ const styles = {
     paddingLeft: theme.spacing.unit * 2,
     paddingRight: theme.spacing.unit * 2,
   },
-
   image:{
     height: theme.spacing.unit * 60,
     width: theme.spacing.unit * 60,
@@ -69,5 +66,4 @@ const styles = {
   floated:{
       float:"left" as 'left',
   }
-  
 }
