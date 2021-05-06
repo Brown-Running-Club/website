@@ -1,0 +1,36 @@
+{
+  "files": {
+    "main.css": "/static/css/main.36c7c8c3.chunk.css",
+    "main.js": "/static/js/main.c7c383f5.chunk.js",
+    "main.js.map": "/static/js/main.c7c383f5.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.cc85cbe0.js",
+    "runtime-main.js.map": "/static/js/runtime-main.cc85cbe0.js.map",
+    "static/js/2.3ecd8590.chunk.js": "/static/js/2.3ecd8590.chunk.js",
+    "static/js/2.3ecd8590.chunk.js.map": "/static/js/2.3ecd8590.chunk.js.map",
+    "index.html": "/index.html",
+    "static/css/main.36c7c8c3.chunk.css.map": "/static/css/main.36c7c8c3.chunk.css.map",
+    "static/js/2.3ecd8590.chunk.js.LICENSE.txt": "/static/js/2.3ecd8590.chunk.js.LICENSE.txt",
+    "static/media/competitive.8697eea0.jpg": "/static/media/competitive.8697eea0.jpg",
+    "static/media/course-photo-1.b734e1db.jpg": "/static/media/course-photo-1.b734e1db.jpg",
+    "static/media/course-photo-2.3cbd96aa.jpg": "/static/media/course-photo-2.3cbd96aa.jpg",
+    "static/media/course-photo-3.f484fc92.jpg": "/static/media/course-photo-3.f484fc92.jpg",
+    "static/media/eliot.014f7cae.jpg": "/static/media/eliot.014f7cae.jpg",
+    "static/media/faqsimage.a16e296d.jpg": "/static/media/faqsimage.a16e296d.jpg",
+    "static/media/grace.1cd4e664.jpg": "/static/media/grace.1cd4e664.jpg",
+    "static/media/health.a8d14a16.jpg": "/static/media/health.a8d14a16.jpg",
+    "static/media/ivyblogo.db3b21f8.png": "/static/media/ivyblogo.db3b21f8.png",
+    "static/media/ivybrownlogo.3afe3ab4.png": "/static/media/ivybrownlogo.3afe3ab4.png",
+    "static/media/julia.eefd750f.jpg": "/static/media/julia.eefd750f.jpg",
+    "static/media/kickoff.ba4c6116.png": "/static/media/kickoff.ba4c6116.png",
+    "static/media/leadership.1e958642.jpg": "/static/media/leadership.1e958642.jpg",
+    "static/media/maura.061e8415.jpg": "/static/media/maura.061e8415.jpg",
+    "static/media/max.a1cede0c.jpg": "/static/media/max.a1cede0c.jpg",
+    "static/media/trevor-leadership.c6ba64e6.jpg": "/static/media/trevor-leadership.c6ba64e6.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.cc85cbe0.js",
+    "static/js/2.3ecd8590.chunk.js",
+    "static/css/main.36c7c8c3.chunk.css",
+    "static/js/main.c7c383f5.chunk.js"
+  ]
+}
