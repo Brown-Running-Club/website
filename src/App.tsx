@@ -1,6 +1,5 @@
 import React from 'react';
-import logo from './logo.svg';
-import { BrowserRouter, Route, Link, Switch, Router, Redirect } from 'react-router-dom';
+import { BrowserRouter, Route, Switch, Redirect } from 'react-router-dom';
 import HomePage from './pages/HomePage';
 import './App.css';
 import HealthPage from './pages/HealthPage';

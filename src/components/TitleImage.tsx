@@ -1,6 +1,5 @@
 import React from 'react';
 import theme from '../config/theme';
-import { isAbsolute } from 'path';
 
 type Props = {
   children: React.ReactNode,

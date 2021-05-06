@@ -4,7 +4,6 @@ import TitleImage from '../components/TitleImage';
 import FAQsImage from '../assets/images/faqsimage.jpg';
 import theme from '../config/theme';
 import PageBody from '../components/PageBody';
-import WiderContainer from '../components/WiderContainer';
 import WideContainer from '../components/WideContainer';
 import Card from '../components/Card';
 
