@@ -1,15 +1,16 @@
-import React from 'react';
-import { BrowserRouter, Route, Switch, Redirect } from 'react-router-dom';
-import HomePage from './pages/HomePage';
-import './App.css';
-import HealthPage from './pages/HealthPage';
-import CompetitivePage from './pages/CompetitivePage';
-import NotFoundPage from './pages/NotFoundPage';
-import AboutPage from './pages/AboutPage';
-import FAQSPage from './pages/FAQSPage';
-import LeadershipPage from './pages/LeadershipPage';
-import SchedulePage from './pages/SchedulePage';
-import ContactPage from './pages/ContactPage';
+import React from "react";
+import { BrowserRouter, Route, Switch, Redirect } from "react-router-dom";
+import HomePage from "./pages/HomePage";
+import "./App.css";
+import HealthPage from "./pages/HealthPage";
+import CompetitivePage from "./pages/CompetitivePage";
+import NotFoundPage from "./pages/NotFoundPage";
+import AboutPage from "./pages/AboutPage";
+import ContactPage from "./pages/ContactPage";
+import FAQSPage from "./pages/FAQSPage";
+import LeadershipPage from "./pages/LeadershipPage";
+import SchedulePage from "./pages/SchedulePage";
+import BrownBearInvitational from "./pages/BrownBearInvitational";
 
 function App() {
   return (
@@ -23,8 +24,12 @@ function App() {
         <Route path="/leadership" component={LeadershipPage} />
         <Route path="/schedule" component={SchedulePage} />
         <Route path="/contact" component={ContactPage} />
+        <Route
+          path="/brown-bear-invitational"
+          component={BrownBearInvitational}
+        />
         <Route path="/roster-registration">
-            <Redirect to="https://brownrec.com/sports/2018/8/14/club-sports-registrations-offerings.aspx" />
+          <Redirect to="https://brownrec.com/sports/2018/8/14/club-sports-registrations-offerings.aspx" />
         </Route>
         <Route component={NotFoundPage} />
       </Switch>
