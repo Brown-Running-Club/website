@@ -14,21 +14,22 @@ import BrownBearInvitational from "./pages/BrownBearInvitational";
 
 function App() {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename={process.env.PUBLIC_URL}>
       <Switch>
         <Route exact path="/" component={HomePage} />
-        <Route path="/health" component={HealthPage} />
-        <Route path="/competitive" component={CompetitivePage} />
-        <Route path="/about" component={AboutPage} />
-        <Route path="/faq" component={FAQSPage} />
-        <Route path="/leadership" component={LeadershipPage} />
-        <Route path="/schedule" component={SchedulePage} />
-        <Route path="/contact" component={ContactPage} />
+        <Route exact path="/health" component={HealthPage} />
+        <Route exact path="/competitive" component={CompetitivePage} />
+        <Route exact path="/about" component={AboutPage} />
+        <Route exact path="/faq" component={FAQSPage} />
+        <Route exact path="/leadership" component={LeadershipPage} />
+        <Route exact path="/schedule" component={SchedulePage} />
+        <Route exact path="/contact" component={ContactPage} />
         <Route
+          exact
           path="/brown-bear-invitational"
           component={BrownBearInvitational}
         />
-        <Route path="/roster-registration">
+        <Route exact path="/roster-registration">
           <Redirect to="https://brownrec.com/sports/2018/8/14/club-sports-registrations-offerings.aspx" />
         </Route>
         <Route component={NotFoundPage} />
