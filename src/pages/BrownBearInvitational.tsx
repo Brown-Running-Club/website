@@ -84,8 +84,8 @@ export default class BrownBearInvitational extends Component {
                   </li>
                   <li>
                     <b>Check:</b> Make payable to {'"'}Brown Club Sports –
-                    Running Club{'"'}, mail to {'"'}Brown Club Sports, 235 Hope
-                    St. Box 1932, Providence, RI 02912{'"'}
+                    Running Club{'"'}, mail to {'"'}Brown Club Sports, 225 Hope
+                    St. Box 1933, Providence, RI 02912{'"'}
                   </li>
                 </ul>
                 <b>Contact:</b> Max Heller, Meet Director:{" "}
