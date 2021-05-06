@@ -1,83 +1,88 @@
-import React from 'react';
-import theme from '../config/theme';
-import BrownIvyB from '../assets/images/ivyblogo.png';
-import { Link } from 'react-router-dom';
+import React from "react";
+import theme from "../config/theme";
+import BrownIvyB from "../assets/images/ivyblogo.png";
+import { Link } from "react-router-dom";
 
 type MenuItem = {
-  name: string,
-  list: Array<MenuItem> | null,
-  link: string,
-}
+  name: string;
+  list?: Array<MenuItem>;
+  link: string;
+};
 
 const menus: Array<MenuItem> = [
   {
-    name: 'info',
+    name: "info",
     list: [
-      { name: 'about', list: null, link: '/about' },
-      { name: 'announcements', list: null, link: '/announcements' },
-      { name: 'faq', list: null, link: '/faq'},
-      { name: 'leadership', list: null, link: '/leadership'},
+      { name: "about", link: "about" },
+      { name: "announcements", link: "announcements" },
+      { name: "faq", link: "faq" },
+      { name: "leadership", link: "leadership" },
     ],
-    link: '/about',
+    link: "about",
   },
   {
-    name: 'training',
+    name: "training",
     list: [
-      { name: 'schedule', list: null, link: '/schedule' },
-      { name: 'routes', list: null, link: '/routes' },
-      { name: 'summer training', list: null, link: '/summer' },
-      { name: 'health', list: null, link: '/health' },
+      { name: "schedule", link: "schedule" },
+      { name: "routes", link: "routes" },
+      { name: "summer training", link: "summer" },
+      { name: "health", link: "health" },
     ],
-    link: '/schedule',
+    link: "schedule",
   },
   {
-    name: 'competitive',
+    name: "competitive",
     list: [
-      { name: 'info', list: null, link: '/competitive' },
-      { name: 'race schedule', list: null, link: '/race-schedule'},
-      { name: 'records', list: null, link: '/records' },
+      { name: "info", link: "competitive" },
+      { name: "race schedule", link: "race-schedule" },
+      { name: "records", link: "records" },
     ],
-    link: '/competitive',
+    link: "competitive",
   },
   {
-    name: 'recreation',
+    name: "recreation",
     list: [
-      { name: 'events', list: null, link: '/events' },
-      { name: 'photos', list: null, link: '/photos' },
+      { name: "events", link: "events" },
+      { name: "photos", link: "photos" },
     ],
-    link: '/recreation',
+    link: "recreation",
   },
   {
-    name: 'outreach',
+    name: "outreach",
     list: [
-      { name: 'newsletter', list: null, link: '/newsletter' },
-      { name: 'donations', list: null, link: '/donations'},
-      { name: 'contact', list: null, link: '/contact' },
+      { name: "newsletter", link: "newsletter" },
+      { name: "donations", link: "donations" },
+      { name: "contact", link: "contact" },
     ],
-    link: '/newsletter',
+    link: "newsletter",
   },
   {
-    name: 'invitationals',
+    name: "invitationals",
     list: [
-      { name: 'brown bear invitational', list: null, link: '/brown-bear-invitational'},
-      { name: 'billy brockmueller invitational', list: null, link: '/billy-brockmueller-invitational'},
+      {
+        name: "brown bear invitational",
+        link: "brown-bear-invitational",
+      },
+      {
+        name: "billy brockmueller invitational",
+        link: "billy-brockmueller-invitational",
+      },
     ],
-    link: '/invitationals',
-  }
-]
+    link: "invitationals",
+  },
+];
 
 type State = {
   openMenu: string | null;
-}
+};
 
 export default class NavigationBar extends React.Component<any, State> {
-
   constructor(props: any) {
-    super(props)
+    super(props);
 
     this.state = {
       openMenu: null,
-    }
+    };
 
     this.renderMenu = this.renderMenu.bind(this);
   }
@@ -87,37 +92,39 @@ export default class NavigationBar extends React.Component<any, State> {
       <div
         style={styles.navigationMenu}
         onMouseEnter={() => {
-          this.setState({ openMenu: menuItem.name })
+          this.setState({ openMenu: menuItem.name });
         }}
         onMouseLeave={() => {
-          this.setState({ openMenu: null })
+          this.setState({ openMenu: null });
         }}
       >
         <Link to={menuItem.link} {...theme.linkProps}>
-          <p style={
-            this.state.openMenu === menuItem.name
-              ? styles.navigationHeaderHighlighted
-              : styles.navigationHeader
+          <p
+            style={
+              this.state.openMenu === menuItem.name
+                ? styles.navigationHeaderHighlighted
+                : styles.navigationHeader
             }
           >
-            {menuItem.name.toUpperCase() + ' ▾'}
+            {menuItem.name.toUpperCase() + " ▾"}
           </p>
         </Link>
-        {this.state.openMenu === menuItem.name &&
+        {this.state.openMenu === menuItem.name && (
           <div style={styles.navigationSubmenu}>
-            {menuItem.list && menuItem.list.map((submenuItem) => (
-              <Link to={submenuItem.link} {...theme.linkProps}>
-                <div style={styles.navigationSubmenuItem}>
-                  <p style={styles.navigationSubmenuItemText}>
-                    {submenuItem.name.toUpperCase()}
-                  </p>
-                </div>
-              </Link>
-            ))}
+            {menuItem.list &&
+              menuItem.list.map((submenuItem) => (
+                <Link to={submenuItem.link} {...theme.linkProps}>
+                  <div style={styles.navigationSubmenuItem}>
+                    <p style={styles.navigationSubmenuItemText}>
+                      {submenuItem.name.toUpperCase()}
+                    </p>
+                  </div>
+                </Link>
+              ))}
           </div>
-        }
+        )}
       </div>
-    )
+    );
   }
 
   render() {
@@ -132,22 +139,22 @@ export default class NavigationBar extends React.Component<any, State> {
           </Link>
           {menus.map(this.renderMenu)}
         </div>
-        <div style={styles.spacer}/>
+        <div style={styles.spacer} />
       </>
-    )
+    );
   }
 }
 
 const styles = {
   bar: {
-    display: 'flex',
-    position: 'fixed' as 'fixed',
-    flexDirection: 'row' as 'row',
-    alignItems: 'center' as 'center',
+    display: "flex",
+    position: "fixed" as "fixed",
+    flexDirection: "row" as "row",
+    alignItems: "center" as "center",
     top: 0,
     left: 0,
     height: theme.spacing.unit * 8,
-    width: '100%',
+    width: "100%",
     backgroundColor: theme.palette.brown,
     flex: 1,
     zIndex: 100,
@@ -166,27 +173,27 @@ const styles = {
     marginRight: theme.spacing.unit * 6,
   },
   navigationHeader: {
-    ...theme.typography.h2 as any,
+    ...(theme.typography.h2 as any),
     color: theme.palette.gray,
   },
   navigationHeaderHighlighted: {
-    ...theme.typography.h2 as any,
+    ...(theme.typography.h2 as any),
     color: theme.palette.white,
   },
   navigationMenu: {
-    position: 'relative' as 'relative',
+    position: "relative" as "relative",
     marginRight: theme.spacing.unit * 3,
     paddingTop: theme.spacing.unit,
     paddingBottom: theme.spacing.unit,
   },
   navigationSubmenu: {
-    position: 'absolute' as 'absolute',
+    position: "absolute" as "absolute",
     top: theme.spacing.unit * 7,
     left: -theme.spacing.unit,
     right: -theme.spacing.unit,
     backgroundColor: theme.palette.lightGray,
-    border: '1px solid black',
-    borderBottom: 'none',
+    border: "1px solid black",
+    borderBottom: "none",
     minWidth: theme.spacing.unit * 20,
   },
   navigationSubmenuItem: {
@@ -194,11 +201,11 @@ const styles = {
     paddingRight: theme.spacing.unit * 2,
     paddingBottom: theme.spacing.unit * 1.5,
     paddingTop: theme.spacing.unit * 1.5,
-    ...theme.typography.h3 as any,
+    ...(theme.typography.h3 as any),
     color: theme.palette.brown,
-    borderBottom: '1px solid black',
+    borderBottom: "1px solid black",
   },
   navigationSubmenuItemText: {
     margin: 0,
-  }
-}
+  },
+};
