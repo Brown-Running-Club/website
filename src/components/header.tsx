@@ -3,13 +3,17 @@ import { Link } from "gatsby"
 import theme from "../config/theme"
 import BrownIvyB from "../images/ivyblogo.png"
 
-type MenuItem = {
+type Menu = {
   name: string
   list?: Array<MenuItem>
+  link?: string
+}
+type MenuItem = {
+  name: string
   link: string
 }
 
-const menus: Array<MenuItem> = [
+const menus: Array<Menu> = [
   {
     name: "info",
     list: [
@@ -28,7 +32,6 @@ const menus: Array<MenuItem> = [
       { name: "summer training", link: "/summer" },
       { name: "health", link: "/health" },
     ],
-    link: "/schedule",
   },
   {
     name: "competitive",
@@ -54,7 +57,6 @@ const menus: Array<MenuItem> = [
       { name: "donations", link: "/donations" },
       { name: "contact", link: "/contact" },
     ],
-    link: "/newsletter",
   },
   {
     name: "invitationals",
@@ -68,7 +70,6 @@ const menus: Array<MenuItem> = [
         link: "/billy-brockmueller-invitational",
       },
     ],
-    link: "/invitationals",
   },
 ]
 
@@ -85,32 +86,39 @@ export default class NavigationBar extends React.Component<{}, State> {
     this.renderMenu = this.renderMenu.bind(this)
   }
 
-  renderMenu(menuItem: MenuItem) {
+  renderMenu(menu: Menu) {
+    const elt = (
+      <p
+        style={
+          this.state.openMenu === menu.name
+            ? styles.navigationHeaderHighlighted
+            : styles.navigationHeader
+        }
+      >
+        {menu.name.toUpperCase() + " ▾"}
+      </p>
+    )
     return (
       <div
         style={styles.navigationMenu}
         onMouseEnter={() => {
-          this.setState({ openMenu: menuItem.name })
+          this.setState({ openMenu: menu.name })
         }}
         onMouseLeave={() => {
           this.setState({ openMenu: null })
         }}
       >
-        <Link to={menuItem.link} {...theme.linkProps}>
-          <p
-            style={
-              this.state.openMenu === menuItem.name
-                ? styles.navigationHeaderHighlighted
-                : styles.navigationHeader
-            }
-          >
-            {menuItem.name.toUpperCase() + " ▾"}
-          </p>
-        </Link>
-        {this.state.openMenu === menuItem.name && (
+        {menu.link ? (
+          <Link to={menu.link} {...theme.linkProps}>
+            {elt}
+          </Link>
+        ) : (
+          <div style={{ cursor: "default" }}>{elt}</div>
+        )}
+        {this.state.openMenu === menu.name && (
           <div style={styles.navigationSubmenu}>
-            {menuItem.list &&
-              menuItem.list.map(submenuItem => (
+            {menu.list &&
+              menu.list.map(submenuItem => (
                 <Link to={submenuItem.link} {...theme.linkProps}>
                   <div style={styles.navigationSubmenuItem}>
                     <p style={styles.navigationSubmenuItemText}>
