@@ -13,7 +13,7 @@ type Props = {
   description: string
   lang: string
   meta: any[]
-  title: string
+  title: string | null
 }
 
 function Seo({ description, lang, meta, title }: Props) {
@@ -38,8 +38,8 @@ function Seo({ description, lang, meta, title }: Props) {
       htmlAttributes={{
         lang,
       }}
-      title={title}
-      titleTemplate={defaultTitle ? `%s | ${defaultTitle}` : undefined}
+      title={title ? title : defaultTitle}
+      titleTemplate={title ? `%s | ${defaultTitle}` : defaultTitle}
       meta={[
         {
           name: `description`,

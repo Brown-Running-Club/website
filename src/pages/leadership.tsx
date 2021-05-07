@@ -14,7 +14,7 @@ import Maura from "../images/maura.jpg"
 import Layout from "../components/layout"
 
 export default () => (
-  <Layout>
+  <Layout title="Leadership">
     <TitleImage image={leadership}>
       <p style={styles.titleText}>LEADERSHIP</p>
     </TitleImage>

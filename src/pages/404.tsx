@@ -1,14 +1,12 @@
 import * as React from "react"
 
 import Layout from "../components/layout"
-import Seo from "../components/seo"
 import TitleImage from "../components/title-image"
 import KickoffImage from "../images/kickoff.png"
 import theme from "../config/theme"
 
 const NotFoundPage = () => (
-  <Layout>
-    <Seo title="404: Not found" />
+  <Layout title="404: Not found">
     <div>
       <TitleImage image={KickoffImage}>
         <p style={styles.titleText}>PAGE NOT FOUND</p>

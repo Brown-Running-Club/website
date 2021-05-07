@@ -9,7 +9,7 @@ import Button from "../components/button"
 import Layout from "../components/layout"
 
 export default () => (
-  <Layout>
+  <Layout title="Competitive Team">
     <TitleImage image={CompetitiveImage}>
       <p style={styles.titleText}>COMPETITIVE</p>
     </TitleImage>

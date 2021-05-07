@@ -8,7 +8,7 @@ import Card from "../components/card"
 import Layout from "../components/layout"
 
 export default () => (
-  <Layout>
+  <Layout title="Health">
     <TitleImage image={HealthImage}>
       <p style={styles.titleText}>HEALTH</p>
     </TitleImage>

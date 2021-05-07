@@ -3,7 +3,7 @@ import PageBody from "../components/page-body"
 import Layout from "../components/layout"
 
 export default () => (
-  <Layout>
+  <Layout title="Schedule">
     <PageBody>
       <div>
         <iframe

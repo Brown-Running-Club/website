@@ -8,11 +8,9 @@ import Card from "../components/card"
 import NarrowContainer from "../components/narrow-container"
 import Button from "../components/button"
 import Layout from "../components/layout"
-import Seo from "../components/seo"
 
 export default () => (
-  <Layout>
-    <Seo title="Home" />
+  <Layout title="About">
     <TitleImage image={CompetitiveImage}>
       <p style={styles.titleText}>ABOUT</p>
     </TitleImage>

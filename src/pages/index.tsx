@@ -9,7 +9,6 @@ import PageBody from "../components/page-body"
 import WideContainer from "../components/wide-container"
 import NarrowContainer from "../components/narrow-container"
 import Layout from "../components/layout"
-import Seo from "../components/seo"
 
 type Event = {
   time: string
@@ -32,8 +31,7 @@ const week: Week = {
 }
 
 export default () => (
-  <Layout>
-    <Seo title="Home" />
+  <Layout title={null}>
     <TitleImage image={Kickoff}>
       <img src={IvyBrownLogo} style={styles.titleImage} alt="brown" />
       <p style={styles.titleText}>RUNNING CLUB</p>
