@@ -11,7 +11,7 @@ import Photo3 from "../images/brown-bear-invitational/course-photo-3.jpg"
 import Layout from "../components/layout"
 
 export default () => (
-  <Layout>
+  <Layout title="Brown Bear Invitational">
     <TitleImage image={Kickoff}>
       <p style={styles.titleText}>Brown Bear Invitational</p>
     </TitleImage>
