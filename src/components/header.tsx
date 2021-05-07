@@ -1,90 +1,88 @@
-import React from "react";
-import theme from "../config/theme";
-import BrownIvyB from "../assets/images/ivyblogo.png";
-import { Link } from "react-router-dom";
+import * as React from "react"
+import { Link } from "gatsby"
+import theme from "../config/theme"
+import BrownIvyB from "../images/ivyblogo.png"
 
 type MenuItem = {
-  name: string;
-  list?: Array<MenuItem>;
-  link: string;
-};
+  name: string
+  list?: Array<MenuItem>
+  link: string
+}
 
 const menus: Array<MenuItem> = [
   {
     name: "info",
     list: [
-      { name: "about", link: "about" },
-      { name: "announcements", link: "announcements" },
-      { name: "faq", link: "faq" },
-      { name: "leadership", link: "leadership" },
+      { name: "about", link: "/about" },
+      { name: "announcements", link: "/announcements" },
+      { name: "faq", link: "/faq" },
+      { name: "leadership", link: "/leadership" },
     ],
-    link: "about",
+    link: "/about",
   },
   {
     name: "training",
     list: [
-      { name: "schedule", link: "schedule" },
-      { name: "routes", link: "routes" },
-      { name: "summer training", link: "summer" },
-      { name: "health", link: "health" },
+      { name: "schedule", link: "/schedule" },
+      { name: "routes", link: "/routes" },
+      { name: "summer training", link: "/summer" },
+      { name: "health", link: "/health" },
     ],
-    link: "schedule",
+    link: "/schedule",
   },
   {
     name: "competitive",
     list: [
-      { name: "info", link: "competitive" },
-      { name: "race schedule", link: "race-schedule" },
-      { name: "records", link: "records" },
+      { name: "info", link: "/competitive" },
+      { name: "race schedule", link: "/race-schedule" },
+      { name: "records", link: "/records" },
     ],
-    link: "competitive",
+    link: "/competitive",
   },
   {
     name: "recreation",
     list: [
-      { name: "events", link: "events" },
-      { name: "photos", link: "photos" },
+      { name: "events", link: "/events" },
+      { name: "photos", link: "/photos" },
     ],
-    link: "recreation",
+    link: "/recreation",
   },
   {
     name: "outreach",
     list: [
-      { name: "newsletter", link: "newsletter" },
-      { name: "donations", link: "donations" },
-      { name: "contact", link: "contact" },
+      { name: "newsletter", link: "/newsletter" },
+      { name: "donations", link: "/donations" },
+      { name: "contact", link: "/contact" },
     ],
-    link: "newsletter",
+    link: "/newsletter",
   },
   {
     name: "invitationals",
     list: [
       {
         name: "brown bear invitational",
-        link: "brown-bear-invitational",
+        link: "/brown-bear-invitational",
       },
       {
         name: "billy brockmueller invitational",
-        link: "billy-brockmueller-invitational",
+        link: "/billy-brockmueller-invitational",
       },
     ],
-    link: "invitationals",
+    link: "/invitationals",
   },
-];
+]
 
 type State = {
-  openMenu: string | null;
-};
+  openMenu: string | null
+}
 
-export default class NavigationBar extends React.Component<any, State> {
-  constructor(props: any) {
-    super(props);
-
+export default class NavigationBar extends React.Component<{}, State> {
+  constructor(props: {}) {
+    super(props)
     this.state = {
       openMenu: null,
-    };
-
-    this.renderMenu = this.renderMenu.bind(this);
+    }
+    this.renderMenu = this.renderMenu.bind(this)
   }
 
   renderMenu(menuItem: MenuItem) {
@@ -92,10 +90,10 @@ export default class NavigationBar extends React.Component<any, State> {
       <div
         style={styles.navigationMenu}
         onMouseEnter={() => {
-          this.setState({ openMenu: menuItem.name });
+          this.setState({ openMenu: menuItem.name })
         }}
         onMouseLeave={() => {
-          this.setState({ openMenu: null });
+          this.setState({ openMenu: null })
         }}
       >
         <Link to={menuItem.link} {...theme.linkProps}>
@@ -112,7 +110,7 @@ export default class NavigationBar extends React.Component<any, State> {
         {this.state.openMenu === menuItem.name && (
           <div style={styles.navigationSubmenu}>
             {menuItem.list &&
-              menuItem.list.map((submenuItem) => (
+              menuItem.list.map(submenuItem => (
                 <Link to={submenuItem.link} {...theme.linkProps}>
                   <div style={styles.navigationSubmenuItem}>
                     <p style={styles.navigationSubmenuItemText}>
@@ -124,24 +122,26 @@ export default class NavigationBar extends React.Component<any, State> {
           </div>
         )}
       </div>
-    );
+    )
   }
 
   render() {
     return (
       <>
-        <div style={styles.bar}>
-          <Link to="/" {...theme.linkProps}>
-            <img src={BrownIvyB} alt="Brown Ivy B" style={styles.ivyB} />
-          </Link>
-          <Link to="/" {...theme.linkProps}>
-            <p style={styles.title}>RUNNING CLUB</p>
-          </Link>
-          {menus.map(this.renderMenu)}
-        </div>
-        <div style={styles.spacer} />
+        <header>
+          <div style={styles.bar}>
+            <Link to="/" {...theme.linkProps}>
+              <img src={BrownIvyB} alt="Brown Ivy B" style={styles.ivyB} />
+            </Link>
+            <Link to="/" {...theme.linkProps}>
+              <p style={styles.title}>RUNNING CLUB</p>
+            </Link>
+            {menus.map(this.renderMenu)}
+          </div>
+          <div style={styles.spacer} />
+        </header>
       </>
-    );
+    )
   }
 }
 
@@ -208,4 +208,4 @@ const styles = {
   navigationSubmenuItemText: {
     margin: 0,
   },
-};
+}
