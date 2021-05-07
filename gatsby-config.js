@@ -28,5 +28,13 @@ module.exports = {
       },
     },
     `gatsby-plugin-gatsby-cloud`,
+    {
+      resolve: "gatsby-plugin-web-font-loader",
+      options: {
+        google: {
+          families: ["Graduate", "Open Sans"],
+        },
+      },
+    },
   ],
 }
