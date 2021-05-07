@@ -8,7 +8,7 @@ type Props = {
   image: string
 }
 
-export default (props: Props) => (
+const CharacterCard = (props: Props) => (
   <div style={styles.card}>
     {props.title && (
       <p style={props.centeredTitle ? styles.centeredTitle : styles.title}>
@@ -21,6 +21,7 @@ export default (props: Props) => (
     <div style={styles.container}>{props.children}</div>
   </div>
 )
+export default CharacterCard
 
 const styles = {
   card: {

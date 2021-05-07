@@ -9,41 +9,26 @@ type Props = {
   link?: string
 }
 
-export default (props: Props) => {
+const Button = (props: Props) => {
+  let text = (
+    <p style={props.box ? styles.text : styles.textNoBox}>{props.text}</p>
+  )
+  const inside = props.link ? (
+    <Link to={props.link} {...theme.linkProps}>
+      {text}
+    </Link>
+  ) : (
+    text
+  )
+  let style
   if (props.box) {
-    let inside = <p style={styles.text}>{props.text}</p>
-    if (props.link) {
-      inside = (
-        <Link to={props.link} {...theme.linkProps}>
-          {inside}
-        </Link>
-      )
-    }
-    return (
-      <div style={props.leftAlign ? styles.buttonLeft : styles.button}>
-        {inside}
-      </div>
-    )
+    style = props.leftAlign ? styles.buttonLeft : styles.button
   } else {
-    let inside = <p style={styles.textNoBox}>{props.text}</p>
-    if (props.link) {
-      inside = (
-        <Link to={props.link} {...theme.linkProps}>
-          {inside}
-        </Link>
-      )
-    }
-    return (
-      <div
-        style={
-          props.leftAlign ? styles.noBoxContainerLeft : styles.noBoxContainer
-        }
-      >
-        {inside}
-      </div>
-    )
+    style = props.leftAlign ? styles.noBoxContainerLeft : styles.noBoxContainer
   }
+  return <div style={style}>{inside}</div>
 }
+export default Button
 
 const styles = {
   button: {

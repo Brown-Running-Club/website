@@ -6,12 +6,13 @@ type Props = {
   image: string
 }
 
-export default (props: Props) => (
+const TitleImage = (props: Props) => (
   <div style={styles.container}>
     <div style={styles.overlayContainer}>{props.children}</div>
     <img src={props.image} style={styles.image} alt="cover" />
   </div>
 )
+export default TitleImage
 
 const styles = {
   container: {

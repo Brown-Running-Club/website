@@ -6,18 +6,15 @@ import Seo from "./seo"
 
 type Props = { children: any; title: string | null }
 
-const Layout = ({ children, title }: Props) => {
-  return (
-    <>
-      <Header />
-      <div>
-        <main>
-          <Seo title={title} />
-          {children}
-        </main>
-      </div>
-    </>
-  )
-}
-
+const Layout = ({ children, title }: Props) => (
+  <>
+    <Header />
+    <div>
+      <main>
+        <Seo title={title} />
+        {children}
+      </main>
+    </div>
+  </>
+)
 export default Layout

@@ -7,7 +7,7 @@ type Props = {
   centeredTitle?: boolean
 }
 
-export default (props: Props) => (
+const Card = (props: Props) => (
   <div style={styles.card}>
     {props.title && (
       <p style={props.centeredTitle ? styles.centeredTitle : styles.title}>
@@ -17,6 +17,7 @@ export default (props: Props) => (
     <div style={styles.container}>{props.children}</div>
   </div>
 )
+export default Card
 
 const styles = {
   card: {

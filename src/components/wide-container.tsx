@@ -5,9 +5,10 @@ type Props = {
   children: React.ReactNode
 }
 
-export default (props: Props) => (
+const WideContainer = (props: Props) => (
   <div style={styles.container}>{props.children}</div>
 )
+export default WideContainer
 
 const styles = {
   container: {

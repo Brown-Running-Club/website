@@ -5,9 +5,10 @@ type Props = {
   children: React.ReactNode
 }
 
-export default (props: Props) => (
+const PageBody = (props: Props) => (
   <div style={styles.container}>{props.children}</div>
 )
+export default PageBody
 
 const styles = {
   container: {
