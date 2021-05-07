@@ -1,5 +1,5 @@
 import React from "react"
-import { styles } from "../pages/index"
+import theme from "../config/theme"
 
 type Event = {
   start: Date
@@ -135,4 +135,31 @@ export default class Schedule extends React.Component<{}, { week?: Week }> {
   componentDidMount() {
     getWeek().then(week => this.setState({ week: week }))
   }
+}
+
+const styles = {
+  dayText: {
+    ...(theme.typography.h2 as any),
+    color: theme.palette.red,
+    margin: 0,
+    marginBottom: theme.spacing.unit,
+    paddingTop: theme.spacing.unit,
+    borderTop: "1px solid " + theme.palette.lightGray,
+  },
+  eventContainer: {
+    display: "flex",
+    marginBottom: theme.spacing.unit,
+  },
+  eventTimeContainer: {
+    width: theme.spacing.unit * 10,
+  },
+  eventTime: {
+    ...(theme.typography.h2 as any),
+    margin: 0,
+  },
+  eventDescription: {
+    ...(theme.typography.h2 as any),
+    fontWeight: "normal" as "normal",
+    margin: 0,
+  },
 }

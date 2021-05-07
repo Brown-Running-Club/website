@@ -61,7 +61,7 @@ export default () => (
   </Layout>
 )
 
-export const styles = {
+const styles = {
   titleText: {
     ...theme.typography.title,
     color: theme.palette.white,
@@ -74,30 +74,6 @@ export const styles = {
   },
   welcomeText: {
     ...(theme.typography.h4 as any),
-    margin: 0,
-  },
-  dayText: {
-    ...(theme.typography.h2 as any),
-    color: theme.palette.red,
-    margin: 0,
-    marginBottom: theme.spacing.unit,
-    paddingTop: theme.spacing.unit,
-    borderTop: "1px solid " + theme.palette.lightGray,
-  },
-  eventContainer: {
-    display: "flex",
-    marginBottom: theme.spacing.unit,
-  },
-  eventTimeContainer: {
-    width: theme.spacing.unit * 10,
-  },
-  eventTime: {
-    ...(theme.typography.h2 as any),
-    margin: 0,
-  },
-  eventDescription: {
-    ...(theme.typography.h2 as any),
-    fontWeight: "normal" as "normal",
     margin: 0,
   },
 }
