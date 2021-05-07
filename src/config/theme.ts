@@ -1,52 +1,49 @@
-
-const theme = {
+export default {
   linkProps: {
     style: {
-      textDecoration: 'none' as 'none',
-    }
+      textDecoration: "none" as const,
+    },
   },
   palette: {
-    brown: '#4E3629',
-    red: '#ED1C24',
-    white: '#FBFBFB',
-    lightGray: '#EDEDED',
-    gray: '#DDDDDD',
+    brown: "#4E3629",
+    red: "#ED1C24",
+    white: "#FBFBFB",
+    lightGray: "#EDEDED",
+    gray: "#DDDDDD",
   },
   spacing: {
     unit: 8,
   },
   typography: {
     semiboldInline: {
-      display: 'inline',
-      fontWeight: 'bold' as 'bold',
+      display: "inline",
+      fontWeight: "bold" as const,
     },
     title: {
-      fontFamily: 'Graduate',
+      fontFamily: "Graduate",
       fontSize: 45,
     },
     h1: {
-      fontFamily: 'Graduate',
+      fontFamily: "Graduate",
       fontSize: 25,
     },
     h2: {
-      fontFamily: 'Open Sans',
+      fontFamily: "Open Sans",
       fontSize: 16,
-      fontWeight: 'bold' as 'bold',
+      fontWeight: "bold" as const,
     },
     h3: {
-      fontFamily: 'Open Sans',
+      fontFamily: "Open Sans",
       fontSize: 13,
-      fontWeight: 'bold' as 'bold',
+      fontWeight: "bold" as const,
     },
     h4: {
-      fontFamily: 'Open Sans',
+      fontFamily: "Open Sans",
       fontSize: 20,
     },
     body: {
-      fontFamily: 'Open Sans',
+      fontFamily: "Open Sans",
       fontSize: 16,
-    }
-  }
+    },
+  },
 }
-
-export default theme;
