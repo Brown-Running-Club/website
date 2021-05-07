@@ -39,15 +39,15 @@ module.exports = {
     {
       resolve: `gatsby-source-google-calendar`,
       options: {
-        calendarIds: [
-          'run@brown.edu',
-        ],
+        calendarIds: ["run@brown.edu"],
         // options to retrieve the next 10 upcoming events
-        timeMin: (new Date()).toISOString(),
+        timeMin: new Date().toISOString(),
         maxResults: 10,
         singleEvents: true,
-        orderBy: 'startTime',
-      }
+        orderBy: "startTime",
+      },
     },
   ],
 }
+
+require("dotenv").config({ path: ".env" })
