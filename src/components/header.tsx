@@ -48,7 +48,6 @@ const menus: Array<Menu> = [
       { name: "events", link: "/events" },
       { name: "photos", link: "/photos" },
     ],
-    link: "/recreation",
   },
   {
     name: "outreach",
