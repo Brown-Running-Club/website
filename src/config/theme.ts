@@ -1,7 +1,7 @@
-const theme = {
+export default {
   linkProps: {
     style: {
-      textDecoration: "none" as "none",
+      textDecoration: "none" as const,
     },
   },
   palette: {
@@ -17,7 +17,7 @@ const theme = {
   typography: {
     semiboldInline: {
       display: "inline",
-      fontWeight: "bold" as "bold",
+      fontWeight: "bold" as const,
     },
     title: {
       fontFamily: "Graduate",
@@ -30,12 +30,12 @@ const theme = {
     h2: {
       fontFamily: "Open Sans",
       fontSize: 16,
-      fontWeight: "bold" as "bold",
+      fontWeight: "bold" as const,
     },
     h3: {
       fontFamily: "Open Sans",
       fontSize: 13,
-      fontWeight: "bold" as "bold",
+      fontWeight: "bold" as const,
     },
     h4: {
       fontFamily: "Open Sans",
@@ -47,5 +47,3 @@ const theme = {
     },
   },
 }
-
-export default theme
