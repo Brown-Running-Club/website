@@ -10,6 +10,62 @@ import WideContainer from "../components/wide-container"
 import NarrowContainer from "../components/narrow-container"
 import Layout from "../components/layout"
 
+type Event = {
+  time: string
+  name: string
+  description?: string
+}
+
+type Week = { [string]: Array<Event> }
+
+const API_KEY = "AIzaSyAujzo9odb_cWUY0YY7eNRd1UQmo7a_Q1E";
+const CAL_ID = "run@brown.edu";
+const DAYS_MAP = ['monday', 'tuesday', 'wednesday', 'thursday', 'friday', 'saturday', 'sunday'];
+
+async function getEvents(start) {
+  // get events for a week
+  start.setHours(0);
+  start.setSeconds(0);
+  start.setMinutes(0);
+  start.setMilliseconds(0);
+  const end = new Date(start);
+  end.setDate(start.getDate() + 7);
+
+  const url = 'https://www.googleapis.com/calendar/v3/calendars/'
+    + encodeURIComponent(CAL_ID) + '/events?orderBy=startTime&singleEvents=true'
+    + '&timeMax=' + end.toISOString() + '&timeMin=' + start.toISOString()
+    + "&key=" + API_KEY;
+
+  return await fetch(url)
+    .then(res => res.json())
+    .then(res => res.items);
+}
+
+async function getWeek() {
+  const now = new Date();
+  const currDay = now.getDay();
+  const events = await getEvents(now);
+  const grouped = groupEvents(events);
+  const week = {};
+  // order days based on the current day
+  for (let i = 0; i < 7; i++) {
+    const day = (currDay + i - 1) % 7;
+    week[DAYS_MAP[day]] = grouped[day];
+  }
+  return week;
+}
+
+function groupEvents(events) {
+  const week = [[], [], [], [], [], [], []];
+  for (let event of events) {
+    const start = new Date(event.start.dateTime);
+    const time = start.toLocaleTimeString([], {hour: '2-digit', minute: '2-digit'});
+    event = {time: time, name: event.summary, description: event.description};
+    week[start.getDay()].push(event);
+  }
+  return week;
+}
+
 export default () => (
   <Layout title={null}>
     <TitleImage image={Kickoff}>
@@ -31,15 +87,25 @@ export default () => (
           </p>
           <Button text="Learn more about Running Club ➞" link="/about" />
         </Card>
-        <Card title="Schedule">
-          <iframe
-            title="calendar"
-            src="https://calendar.google.com/calendar/embed?mode=WEEK&amp;src=run%40brown.edu&amp;ctz=America%2FNew_York"
-            width="100%"
-            height="500"
-            frameBorder="0"
-            scrolling="no"
-          ></iframe>
+        <Card title="This Week" centeredTitle>
+          {Object.entries(await getWeek()).map((day, events) => (
+            <>
+              <p style={styles.dayText}>{day.toUpperCase()}</p>
+              {events.map(event => (
+                <div style={styles.eventContainer}>
+                  <div style={styles.eventTimeContainer}>
+                    <p style={styles.eventTime}>{event.time}</p>
+                  </div>
+                  <div>
+                    <p style={styles.eventTime}>{event.name}</p>
+                    {event.description && (
+                      <p style={styles.eventDescription}>{event.description}</p>
+                    )}
+                  </div>
+                </div>
+              ))}
+            </>
+          ))}
         </Card>
         <Card title="Announcements">
           <Button text="More announcements ➞" link="/announcements" />
