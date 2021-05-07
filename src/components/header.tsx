@@ -27,7 +27,6 @@ const menus: Array<Menu> = [
   {
     name: "training",
     list: [
-      { name: "schedule", link: "/schedule" },
       { name: "routes", link: "/routes" },
       { name: "summer training", link: "/summer" },
       { name: "health", link: "/health" },

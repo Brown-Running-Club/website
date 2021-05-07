@@ -10,26 +10,6 @@ import WideContainer from "../components/wide-container"
 import NarrowContainer from "../components/narrow-container"
 import Layout from "../components/layout"
 
-type Event = {
-  time: string
-  name: string
-  description?: string
-}
-
-type Week = { [key: string]: Array<Event> }
-
-const week: Week = {
-  monday: [{ time: "4:15p", name: "Practice", description: "Regular run" }],
-  tuesday: [{ time: "4:15p", name: "Practice", description: "Workout" }],
-  wednesday: [{ time: "4:15p", name: "Practice", description: "Regular run" }],
-  thursday: [{ time: "4:15p", name: "Practice", description: "Workout" }],
-  friday: [
-    { time: "4:15p", name: "Practice", description: "Fun sock Friday!" },
-  ],
-  saturday: [{ time: "10:00a", name: "Practice", description: "Regular run" }],
-  sunday: [{ time: "10:00a", name: "Practice", description: "Long run" }],
-}
-
 export default () => (
   <Layout title={null}>
     <TitleImage image={Kickoff}>
@@ -51,31 +31,37 @@ export default () => (
           </p>
           <Button text="Learn more about Running Club ➞" link="/about" />
         </Card>
+        <Card title="Schedule">
+          <iframe
+            title="calendar"
+            src="https://calendar.google.com/calendar/embed?mode=WEEK&amp;src=run%40brown.edu&amp;ctz=America%2FNew_York"
+            width="100%"
+            height="500"
+            frameBorder="0"
+            scrolling="no"
+          ></iframe>
+        </Card>
         <Card title="Announcements">
           <Button text="More announcements ➞" link="/announcements" />
         </Card>
       </WideContainer>
       <NarrowContainer>
-        <Card title="This Week" centeredTitle>
-          {Object.keys(week).map(day => (
-            <>
-              <p style={styles.dayText}>{day.toUpperCase()}</p>
-              {week[day].map(event => (
-                <div style={styles.eventContainer}>
-                  <div style={styles.eventTimeContainer}>
-                    <p style={styles.eventTime}>{event.time}</p>
-                  </div>
-                  <div>
-                    <p style={styles.eventTime}>{event.name}</p>
-                    {event.description && (
-                      <p style={styles.eventDescription}>{event.description}</p>
-                    )}
-                  </div>
-                </div>
-              ))}
-            </>
-          ))}
-        </Card>
+        <iframe
+          allowTransparency
+          frameBorder="0"
+          height="160"
+          scrolling="no"
+          src="https://www.strava.com/clubs/584452/latest-rides/c5fadd1824dcf9240b1fb8217b0eb8b4927ea891?show_rides=false"
+          width="100%"
+        ></iframe>
+        <iframe
+          allowTransparency
+          frameBorder="0"
+          height="454"
+          scrolling="no"
+          src="https://www.strava.com/clubs/584452/latest-rides/c5fadd1824dcf9240b1fb8217b0eb8b4927ea891?show_rides=true"
+          width="100%"
+        ></iframe>
       </NarrowContainer>
     </PageBody>
   </Layout>

@@ -13,8 +13,8 @@ const styles = {
   container: {
     backgroundColor: theme.palette.lightGray,
     display: "flex",
-    flexDirection: "row" as "row",
-    justifyContent: "center" as "center",
+    flexDirection: "row" as const,
+    justifyContent: "center" as const,
     paddingLeft: theme.spacing.unit * 2,
     paddingRight: theme.spacing.unit * 2,
   },
