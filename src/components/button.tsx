@@ -9,43 +9,39 @@ type Props = {
   link?: string
 }
 
-export default class Button extends React.PureComponent<Props> {
-  render() {
-    if (this.props.box) {
-      let inside = <p style={styles.text}>{this.props.text}</p>
-      if (this.props.link) {
-        inside = (
-          <Link to={this.props.link} {...theme.linkProps}>
-            {inside}
-          </Link>
-        )
-      }
-      return (
-        <div style={this.props.leftAlign ? styles.buttonLeft : styles.button}>
+export default (props: Props) => {
+  if (props.box) {
+    let inside = <p style={styles.text}>{props.text}</p>
+    if (props.link) {
+      inside = (
+        <Link to={props.link} {...theme.linkProps}>
           {inside}
-        </div>
-      )
-    } else {
-      let inside = <p style={styles.textNoBox}>{this.props.text}</p>
-      if (this.props.link) {
-        inside = (
-          <Link to={this.props.link} {...theme.linkProps}>
-            {inside}
-          </Link>
-        )
-      }
-      return (
-        <div
-          style={
-            this.props.leftAlign
-              ? styles.noBoxContainerLeft
-              : styles.noBoxContainer
-          }
-        >
-          {inside}
-        </div>
+        </Link>
       )
     }
+    return (
+      <div style={props.leftAlign ? styles.buttonLeft : styles.button}>
+        {inside}
+      </div>
+    )
+  } else {
+    let inside = <p style={styles.textNoBox}>{props.text}</p>
+    if (props.link) {
+      inside = (
+        <Link to={props.link} {...theme.linkProps}>
+          {inside}
+        </Link>
+      )
+    }
+    return (
+      <div
+        style={
+          props.leftAlign ? styles.noBoxContainerLeft : styles.noBoxContainer
+        }
+      >
+        {inside}
+      </div>
+    )
   }
 }
 
