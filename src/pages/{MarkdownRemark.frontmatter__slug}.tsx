@@ -5,6 +5,7 @@ import TitleImage from "../components/title-image"
 import Kickoff from "../images/kickoff.png"
 import theme from "../config/theme"
 import PageBody from "../components/page-body"
+import WideContainer from "../components/wide-container"
 
 export type MarkdownFrontmatter = {
   slug: string
@@ -28,7 +29,9 @@ export default function Template({ data }: { data: MarkdownData }) {
         <p style={styles.titleText}>{frontmatter.title}</p>
       </TitleImage>
       <PageBody>
-        <div dangerouslySetInnerHTML={{ __html: html }} />
+        <WideContainer>
+          <div dangerouslySetInnerHTML={{ __html: html }} />
+        </WideContainer>
       </PageBody>
     </Layout>
   )
