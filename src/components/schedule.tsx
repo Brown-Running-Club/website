@@ -85,7 +85,7 @@ function groupEvents(events: GCalEvent[]) {
         name: event.summary,
         description: event.description,
       })
-    }  
+    }
   }
   return week
 }
