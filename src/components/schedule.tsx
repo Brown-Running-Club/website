@@ -69,7 +69,7 @@ async function getWeek() {
   // order days based on the current day
   for (let i = 0; i < 7; i++) {
     const day = (currDay + i - 1) % 7
-    week[DAYS[day]] = grouped[day]
+    week[DAYS[day]] = grouped[(day + 1) % 7]
   }
   return week as Week
 }
