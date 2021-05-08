@@ -8,7 +8,7 @@ type Event = {
 }
 
 interface GCalEvent {
-  start: { dateTime: string }
+  start: { dateTime?: string }
   summary: string
   description: string
 }
@@ -77,12 +77,15 @@ async function getWeek() {
 function groupEvents(events: GCalEvent[]) {
   const week: Event[][] = [[], [], [], [], [], [], []]
   for (const event of events) {
-    const start = new Date(event.start.dateTime)
-    week[start.getDay()].push({
-      start: start,
-      name: event.summary,
-      description: event.description,
-    })
+    // if datetime isn't defined, this is an all day event
+    if (event.start.dateTime != undefined) {
+      const start = new Date(event.start.dateTime)
+      week[start.getDay()].push({
+        start: start,
+        name: event.summary,
+        description: event.description,
+      })
+    }  
   }
   return week
 }
