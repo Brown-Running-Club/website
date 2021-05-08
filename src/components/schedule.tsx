@@ -23,13 +23,13 @@ type Week = {
   sunday: Event[]
 }
 const DAYS = [
+  "sunday",
   "monday",
   "tuesday",
   "wednesday",
   "thursday",
   "friday",
   "saturday",
-  "sunday",
 ] as const
 
 const API_KEY = "AIzaSyAujzo9odb_cWUY0YY7eNRd1UQmo7a_Q1E"
@@ -68,8 +68,8 @@ async function getWeek() {
   const week: Partial<Week> = {}
   // order days based on the current day
   for (let i = 0; i < 7; i++) {
-    const day = (currDay + i - 1) % 7
-    week[DAYS[day]] = grouped[(day + 1) % 7]
+    const day = (currDay + i) % 7
+    week[DAYS[day]] = grouped[day]
   }
   return week as Week
 }
