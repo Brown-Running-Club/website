@@ -9,6 +9,7 @@ import PageBody from "../components/page-body"
 import WideContainer from "../components/wide-container"
 import NarrowContainer from "../components/narrow-container"
 import Layout from "../components/layout"
+import Announcements from "../components/announcements"
 
 export default () => (
   <Layout title={null}>
@@ -42,6 +43,7 @@ export default () => (
           ></iframe>
         </Card>
         <Card title="Announcements">
+          <Announcements />
           <Button text="More announcements ➞" link="/announcements" />
         </Card>
       </WideContainer>
