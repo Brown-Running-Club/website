@@ -23,8 +23,7 @@ export default () => (
         <Card title="Fall 2020">
           <p>We were unable to compete in Fall 2020 due to COVID-19.</p>
         </Card>
-        <Season season="Spring 2020" />
-        <p>The rest of our Spring 2020 season was cancelled due to COVID-19.</p>
+        <Season season="Spring 2020" info="The rest of our Spring 2020 season was cancelled due to COVID-19."/>
         <Season season="Fall 2019" />
         <Season season="Spring 2019" />
         <Season season="Fall 2018" />

@@ -36,7 +36,7 @@ async function getSeason(season) {
     })))
 }
 
-export default class Season extends React.Component<{ season: string }, { schedule?: Schedule }> {
+export default class Season extends React.Component<{ season: string, info?: string }, { schedule?: Schedule }> {
   renderMeet(meet: Meet) {
     return (
       <tr>
@@ -67,6 +67,7 @@ export default class Season extends React.Component<{ season: string }, { schedu
           </tr>
           {meets}
         </table>
+        {this.props.info ? <p>{this.props.info}</p> : <></>}
       </Card>
     )
   }

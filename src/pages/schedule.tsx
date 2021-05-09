@@ -18,7 +18,7 @@ export default () => (
     <PageBody>
       <WideContainer>
         <Card>
-          <Season season="Fall 2021" />
+          <Season season="Fall 2021" info="This schedule will be updated as more meets are planned."/>
         </Card>
       </WideContainer>
       <NarrowContainer>
