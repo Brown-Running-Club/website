@@ -1,5 +1,6 @@
 import React from "react"
 import theme from "../config/theme"
+import Card from "./card"
 
 type Meet = {
   race: string
@@ -57,14 +58,16 @@ export default class Season extends React.Component<{ season: string }, { schedu
       schedule.forEach(meet => meets.push(this.renderMeet(meet)))
     }
     return (
-      <table>
-        <tr>
-          <th>Date</th>
-          <th>Meet</th>
-          <th>Location</th>
-        </tr>
-        {meets}
-      </table>
+      <Card title={this.props.season}>
+        <table>
+          <tr>
+            <th>Date</th>
+            <th>Meet</th>
+            <th>Location</th>
+          </tr>
+          {meets}
+        </table>
+      </Card>
     )
   }
 
