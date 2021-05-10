@@ -9,6 +9,7 @@ import PageBody from "../components/page-body"
 import WideContainer from "../components/wide-container"
 import NarrowContainer from "../components/narrow-container"
 import Layout from "../components/layout"
+import Schedule from "../components/schedule"
 
 export default () => (
   <Layout title={null}>
@@ -31,21 +32,14 @@ export default () => (
           </p>
           <Button text="Learn more about Running Club ➞" link="/about" />
         </Card>
-        <Card title="Schedule">
-          <iframe
-            title="calendar"
-            src="https://calendar.google.com/calendar/embed?mode=WEEK&amp;src=run%40brown.edu&amp;ctz=America%2FNew_York"
-            width="100%"
-            height="500"
-            frameBorder="0"
-            scrolling="no"
-          ></iframe>
-        </Card>
         <Card title="Announcements">
           <Button text="More announcements ➞" link="/announcements" />
         </Card>
       </WideContainer>
       <NarrowContainer>
+        <Card title="This Week" centeredTitle>
+          <Schedule />
+        </Card>
         <iframe
           allowTransparency
           frameBorder="0"
@@ -80,30 +74,6 @@ const styles = {
   },
   welcomeText: {
     ...(theme.typography.h4 as any),
-    margin: 0,
-  },
-  dayText: {
-    ...(theme.typography.h2 as any),
-    color: theme.palette.red,
-    margin: 0,
-    marginBottom: theme.spacing.unit,
-    paddingTop: theme.spacing.unit,
-    borderTop: "1px solid " + theme.palette.lightGray,
-  },
-  eventContainer: {
-    display: "flex",
-    marginBottom: theme.spacing.unit,
-  },
-  eventTimeContainer: {
-    width: theme.spacing.unit * 7,
-  },
-  eventTime: {
-    ...(theme.typography.h2 as any),
-    margin: 0,
-  },
-  eventDescription: {
-    ...(theme.typography.h2 as any),
-    fontWeight: "normal" as "normal",
     margin: 0,
   },
 }
