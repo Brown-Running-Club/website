@@ -9,6 +9,7 @@ import PageBody from "../components/page-body"
 import WideContainer from "../components/wide-container"
 import NarrowContainer from "../components/narrow-container"
 import Layout from "../components/layout"
+import Announcements from "../components/announcements"
 import Schedule from "../components/schedule"
 
 export default () => (
@@ -33,6 +34,7 @@ export default () => (
           <Button text="Learn more about Running Club ➞" link="/about" />
         </Card>
         <Card title="Announcements">
+          <Announcements />
           <Button text="More announcements ➞" link="/announcements" />
         </Card>
       </WideContainer>
