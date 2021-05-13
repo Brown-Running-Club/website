@@ -1,12 +1,12 @@
 import React from 'react';
-import NavigationBar from '../components/NavigationBar';
-import TitleImage from '../components/TitleImage';
-import HealthImage from '../assets/images/health.jpg';
+import NavigationBar from '../components/header';
+import TitleImage from '../components/title-image';
+import RecordsImage from '../images/records.jpg';
 import theme from '../config/theme';
-import PageBody from '../components/PageBody';
-import Table from '../components/Table';
-import Card from '../components/Card';
-import WiderContainer from '../components/WiderContainer';
+import PageBody from '../components/page-body';
+import Table from '../components/table';
+import Card from '../components/card';
+import WiderContainer from '../components/wider-container';
 
 
 export default class RecordsPage extends React.Component {
@@ -15,7 +15,7 @@ export default class RecordsPage extends React.Component {
     return (
       <>
         <NavigationBar />
-        <TitleImage image={HealthImage}>
+        <TitleImage image={RecordsImage}>
           <p style={styles.titleText}>RECORDS</p>
         </TitleImage>
         <PageBody>
@@ -23,7 +23,15 @@ export default class RecordsPage extends React.Component {
         <Card>
         <p style={styles.summaryText}>Have a faster time? Submit a form <a href="https://docs.google.com/forms/d/e/1FAIpQLSdS0wNnun2CGI22-G20EvecTGuoWLsR9uvxZeA51b1zGxireQ/viewform">here</a>.
         <br/>
-        Records in <b>bold</b> were set this year.
+        
+        Records may be set at any event or course as long as the athlete is in a Brown Running Club uniform. The athlete must be a full-time student at Brown University or Rhode Island School of Design. All records were set after the club’s affiliation with NIRCA. 
+        Only new records will be accepted. New records must be submitted within one month of the performance date.
+        <br/>
+        <p style = {styles.disclaimerText}>
+        <b>h</b> indicates a handtime for events 800m and shorter
+        <br/>
+        <b>c</b> indicates a conversion was used for this record
+        </p>
         </p>
         </Card>
 
@@ -101,7 +109,11 @@ const styles = {
     margin: 2,
     textAlign: 'center' as 'center',
   },
-
+  disclaimerText: {
+    ...theme.typography.h2 as any,
+    margin: 2,
+    textAlign: 'center' as 'center',
+  },
   headerText: {
     ...theme.typography.h1,
     color: theme.palette.brown,
