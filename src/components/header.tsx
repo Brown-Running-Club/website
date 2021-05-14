@@ -49,14 +49,6 @@ const menus: Array<Menu> = [
     ],
   },
   {
-    name: "outreach",
-    list: [
-      { name: "newsletter", link: "/newsletter" },
-      { name: "donations", link: "/donations" },
-      { name: "contact", link: "/contact" },
-    ],
-  },
-  {
     name: "invitationals",
     list: [
       {

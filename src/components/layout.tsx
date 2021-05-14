@@ -1,6 +1,7 @@
 import React from "react"
 
 import Header from "./header"
+import Footer from "./footer"
 import "./layout.css"
 import Seo from "./seo"
 
@@ -15,6 +16,7 @@ const Layout = ({ children, title }: Props) => (
         {children}
       </main>
     </div>
+    <Footer />
   </>
 )
 export default Layout
