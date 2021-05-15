@@ -41,8 +41,8 @@ export default class Season extends React.Component<{ season: string, info?: str
   renderMeet(meet: Meet) {
     return (
       <tr>
-        <td style={styles.cell}>{meet.date}</td>
-        <td style={styles.cell}>{
+        <td>{meet.date}</td>
+        <td>{
           meet.link === undefined
             ? meet.race
             : (<a href={meet.link}>{meet.race}</a>)
@@ -51,7 +51,7 @@ export default class Season extends React.Component<{ season: string, info?: str
             ? <></>
             : <><br />{meet.description}</>
         }</td>
-        <td style={styles.cell}>{meet.location}</td>
+        <td>{meet.location}</td>
       </tr>
     )
   }
@@ -64,11 +64,11 @@ export default class Season extends React.Component<{ season: string, info?: str
     }
     return (
       <Card title={this.props.season}>
-        <table style={styles.table}>
+        <table>
           <tr>
-            <th style={styles.header}>Date</th>
-            <th style={styles.header}>Meet</th>
-            <th style={styles.header}>Location</th>
+            <th>Date</th>
+            <th>Meet</th>
+            <th>Location</th>
           </tr>
           {meets}
         </table>
@@ -79,22 +79,5 @@ export default class Season extends React.Component<{ season: string, info?: str
 
   componentDidMount() {
     getSeason(this.props.season).then(schedule => this.setState({ schedule: schedule }))
-  }
-}
-
-const styles = {
-  cell: {
-    whiteSpace: "pre-line",
-    verticalAlign: "top",
-    padding: "5px",
-  },
-  header: {
-    textAlign: "left",
-    backgroundColor: theme.palette.brown,
-    color: theme.palette.white,
-    padding: "5px",
-  },
-  table: {
-    borderSpacing: 0
   }
 }
