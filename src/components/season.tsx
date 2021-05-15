@@ -63,7 +63,7 @@ export default class Season extends React.Component<{ season: string, info?: str
       schedule.forEach(meet => meets.push(this.renderMeet(meet)))
     }
     return (
-      <Card title={this.props.season}>
+      <Card title={this.props.season} centeredTitle>
         <table>
           <tr>
             <th>Date</th>

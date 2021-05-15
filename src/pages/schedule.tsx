@@ -1,6 +1,6 @@
 import React from "react"
 import TitleImage from "../components/title-image"
-import CompetitiveImage from "../images/competitive.jpg"
+import ScheduleImage from "../images/schedule.jpg"
 import theme from "../config/theme"
 import PageBody from "../components/page-body"
 import WideContainer from "../components/wide-container"
@@ -13,7 +13,7 @@ import Schedule from "../components/schedule"
 
 export default () => (
   <Layout title="Schedule">
-    <TitleImage image={CompetitiveImage}>
+    <TitleImage image={ScheduleImage}>
       <p style={styles.titleText}>SCHEDULE</p>
     </TitleImage>
     <PageBody>

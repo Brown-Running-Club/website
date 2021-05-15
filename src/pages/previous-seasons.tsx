@@ -1,6 +1,6 @@
 import React from "react"
 import TitleImage from "../components/title-image"
-import CompetitiveImage from "../images/competitive.jpg"
+import HeaderImage from "../images/previous-seasons.jpg"
 import theme from "../config/theme"
 import PageBody from "../components/page-body"
 import WideContainer from "../components/wide-container"
@@ -12,15 +12,15 @@ import Season from "../components/season"
 
 export default () => (
   <Layout title="Previous Schedules and Results">
-    <TitleImage image={CompetitiveImage}>
+    <TitleImage image={HeaderImage}>
       <p style={styles.titleText}>PREVIOUS SCHEDULES AND RESULTS</p>
     </TitleImage>
     <PageBody>
       <WideContainer>
-        <Card title="Spring 2021">
+        <Card title="Spring 2021" centeredTitle>
           <p>We were unable to compete in Spring 2021 due to COVID-19.</p>
         </Card>
-        <Card title="Fall 2020">
+        <Card title="Fall 2020" centeredTitle>
           <p>We were unable to compete in Fall 2020 due to COVID-19.</p>
         </Card>
         <Season season="Spring 2020" info="The rest of our Spring 2020 season was cancelled due to COVID-19."/>
