@@ -1,5 +1,4 @@
 import React from "react"
-import TitleImage from "../components/title-image"
 import theme from "../config/theme"
 import PageBody from "../components/page-body"
 import WiderContainer from "../components/wider-container"
@@ -14,10 +13,7 @@ import Maura from "../images/maura.jpg"
 import Layout from "../components/layout"
 
 export default () => (
-  <Layout title="Leadership">
-    <TitleImage image={leadership}>
-      <p style={styles.titleText}>LEADERSHIP</p>
-    </TitleImage>
+  <Layout title="Leadership" image={leadership}>
     <PageBody>
       <WiderContainer>
         <CharacterCard title="Julia McClellan" image={Julia}>
@@ -122,12 +118,6 @@ export default () => (
 )
 
 const styles = {
-  titleText: {
-    ...theme.typography.title,
-    color: theme.palette.white,
-    marginTop: theme.spacing.unit * 2,
-    textShadow: "0 0 15px #000000, 0 0 10px #000000",
-  },
   infoText: {
     ...(theme.typography.h4 as any),
     margin: 0,

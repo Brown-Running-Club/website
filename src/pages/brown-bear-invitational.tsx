@@ -1,5 +1,4 @@
 import React from "react"
-import TitleImage from "../components/title-image"
 import Kickoff from "../images/kickoff.png"
 import theme from "../config/theme"
 import Card from "../components/card"
@@ -11,10 +10,7 @@ import Photo3 from "../images/brown-bear-invitational/course-photo-3.jpg"
 import Layout from "../components/layout"
 
 export default () => (
-  <Layout title="Brown Bear Invitational">
-    <TitleImage image={Kickoff}>
-      <p style={styles.titleText}>Brown Bear Invitational</p>
-    </TitleImage>
+  <Layout title="Brown Bear Invitational" image={Kickoff}>
     <PageBody>
       <WideContainer>
         <Card>
@@ -113,16 +109,6 @@ export default () => (
 )
 
 const styles = {
-  titleText: {
-    ...theme.typography.title,
-    color: theme.palette.white,
-    marginTop: theme.spacing.unit * 2,
-    textShadow: "0 0 15px #000000, 0 0 10px #000000",
-  },
-  titleImage: {
-    height: theme.spacing.unit * 20,
-    paddingRight: theme.spacing.unit * 2,
-  },
   welcomeText: {
     ...(theme.typography.h4 as any),
     margin: 0,
