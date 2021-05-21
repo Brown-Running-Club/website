@@ -1,5 +1,4 @@
 import React from "react"
-import TitleImage from "../components/title-image"
 import RecordsImage from "../images/records.jpg"
 import theme from "../config/theme"
 import PageBody from "../components/page-body"
@@ -9,10 +8,7 @@ import WiderContainer from "../components/wider-container"
 import Layout from "../components/layout"
 
 export default () => (
-  <Layout title="Records">
-    <TitleImage image={RecordsImage}>
-      <p style={styles.titleText}>RECORDS</p>
-    </TitleImage>
+  <Layout title="Records" image={RecordsImage}>
     <PageBody>
       <WiderContainer>
         <Card>
@@ -97,12 +93,6 @@ export default () => (
 )
 
 const styles = {
-  titleText: {
-    ...theme.typography.title,
-    color: theme.palette.white,
-    marginTop: theme.spacing.unit * 2,
-    textShadow: "0 0 15px #000000, 0 0 10px #000000",
-  },
   infoText: {
     ...(theme.typography.h4 as any),
     margin: 0,

@@ -1,5 +1,4 @@
 import React from "react"
-import TitleImage from "../components/title-image"
 import CompetitiveImage from "../images/competitive.jpg"
 import theme from "../config/theme"
 import PageBody from "../components/page-body"
@@ -10,10 +9,7 @@ import Button from "../components/button"
 import Layout from "../components/layout"
 
 export default () => (
-  <Layout title="About">
-    <TitleImage image={CompetitiveImage}>
-      <p style={styles.titleText}>ABOUT</p>
-    </TitleImage>
+  <Layout title="About" image={CompetitiveImage}>
     <PageBody>
       <WideContainer>
         <Card>
@@ -63,12 +59,6 @@ export default () => (
 )
 
 const styles = {
-  titleText: {
-    ...theme.typography.title,
-    color: theme.palette.white,
-    marginTop: theme.spacing.unit * 2,
-    textShadow: "0 0 15px #000000, 0 0 10px #000000",
-  },
   infoText: {
     ...(theme.typography.h4 as any),
     margin: 0,

@@ -1,5 +1,4 @@
 import React from "react"
-import TitleImage from "../components/title-image"
 import FAQsImage from "../images/faqsimage.jpg"
 import theme from "../config/theme"
 import PageBody from "../components/page-body"
@@ -8,10 +7,7 @@ import Card from "../components/card"
 import Layout from "../components/layout"
 
 export default () => (
-  <Layout title="FAQ">
-    <TitleImage image={FAQsImage}>
-      <p style={styles.titleText}>FAQs</p>
-    </TitleImage>
+  <Layout title="FAQ" image={FAQsImage}>
     <PageBody>
       <WideContainer>
         <Card title="How do I join?">
@@ -138,12 +134,6 @@ export default () => (
 )
 
 const styles = {
-  titleText: {
-    ...theme.typography.title,
-    color: theme.palette.white,
-    marginTop: theme.spacing.unit * 2,
-    textShadow: "0 0 15px #000000, 0 0 10px #000000",
-  },
   infoText: {
     ...(theme.typography.h4 as any),
     margin: 0,
