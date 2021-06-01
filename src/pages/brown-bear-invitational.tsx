@@ -29,7 +29,7 @@ export default () => (
             <b>Registration:</b>
             <ul style={{ listStyleType: "none" }}>
               <li>NIRCA: clubrunning.org (coming soon)</li>
-              <li>All other entries: DirectAthletics (coming soon)</li>
+              <li>All other entries: <a href="https://www.directathletics.com/meets/xc/17785.html">DirectAthletics</a></li>
             </ul>
             <b>Entry Fee:</b> $15/athlete for NIRCA clubs, max $250/gender for
             teams. $20/open athletes. $30/day of.
