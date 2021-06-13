@@ -38,7 +38,7 @@ const CAL_ID = "run@brown.edu"
 async function getWeek() {
   const now = new Date()
   const currDay = now.getDay()
-  const events = await getWeekEvents(now, calId)
+  const events = await getWeekEvents(now, CAL_ID)
   const grouped = groupEvents(events)
   const week: Partial<Week> = {}
   // order days based on the current day

@@ -2,7 +2,8 @@ import React from "react"
 import theme from "../config/theme"
 import Card from "./card"
 import "./season.css"
-import getSheetData from "../api-calls.tsx"
+import {getSheetData} from "../api-calls.tsx"
+
 type Meet = {
   race: string
   description?: string
