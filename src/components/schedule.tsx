@@ -1,5 +1,6 @@
 import React from "react"
 import theme from "../config/theme"
+import {getWeekEvents} from "../api-calls.tsx"
 
 type Event = {
   start: Date
@@ -32,38 +33,12 @@ const DAYS = [
   "saturday",
 ] as const
 
-const API_KEY = "AIzaSyAujzo9odb_cWUY0YY7eNRd1UQmo7a_Q1E"
 const CAL_ID = "run@brown.edu"
-
-async function getEvents(start: Date) {
-  // get events for a week
-  start.setHours(0)
-  start.setSeconds(0)
-  start.setMinutes(0)
-  start.setMilliseconds(0)
-  const end = new Date(start)
-  end.setDate(start.getDate() + 7)
-
-  const url =
-    "https://www.googleapis.com/calendar/v3/calendars/" +
-    encodeURIComponent(CAL_ID) +
-    "/events?orderBy=startTime&singleEvents=true" +
-    "&timeMin=" +
-    start.toISOString() +
-    "&timeMax=" +
-    end.toISOString() +
-    "&key=" +
-    API_KEY
-
-  return await fetch(url)
-    .then(res => res.json())
-    .then(res => res.items)
-}
 
 async function getWeek() {
   const now = new Date()
   const currDay = now.getDay()
-  const events = await getEvents(now)
+  const events = await getWeekEvents(now, calId)
   const grouped = groupEvents(events)
   const week: Partial<Week> = {}
   // order days based on the current day

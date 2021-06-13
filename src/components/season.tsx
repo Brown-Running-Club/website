@@ -2,7 +2,7 @@ import React from "react"
 import theme from "../config/theme"
 import Card from "./card"
 import "./season.css"
-
+import getSheetData from "../api-calls.tsx"
 type Meet = {
   race: string
   description?: string
@@ -15,19 +15,9 @@ type Schedule = Meet[]
 
 const SHEET_ID = "1hvbRCCS-jP2bxBD9HoRZ3bKetfV-LiKb-ZT8a7Y5-NU"
 const RANGE = "A2:E100"
-const API_KEY = "AIzaSyB_4qRtTbmqHERuJLpTJAWOjkFwx4c2zMo"
 
 async function getSeason(season) {
-  const url =
-    "https://sheets.googleapis.com/v4/spreadsheets/" +
-    SHEET_ID +
-    "/values/" +
-    encodeURIComponent(season + "!" + RANGE) +
-    "?key=" +
-    API_KEY
-  return await fetch(url)
-    .then(res => res.json())
-    .then(res => res.values)
+  return await getSheetData(SHEET_ID, encodeURIComponent(season + "!" + RANGE))
     .then(meets => meets.map(meet => ({
       date: meet[0],
       race: meet[1],
