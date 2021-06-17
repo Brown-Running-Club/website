@@ -28,7 +28,7 @@ export default () => (
             <br />
             <b>Registration:</b>
             <ul style={{ listStyleType: "none" }}>
-              <li>NIRCA: clubrunning.org (coming soon)</li>
+              <li>NIRCA: <a href="https://clubrunning.org/races/race_info.php?race=926">clubrunning.org</a></li>
               <li>All other entries: <a href="https://www.directathletics.com/meets/xc/17785.html">DirectAthletics</a></li>
             </ul>
             <b>Entry Fee:</b> $15/athlete for NIRCA clubs, max $250/gender for
