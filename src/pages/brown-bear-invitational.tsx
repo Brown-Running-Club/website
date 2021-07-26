@@ -7,6 +7,8 @@ import WideContainer from "../components/wide-container"
 import Photo1 from "../images/brown-bear-invitational/course-photo-1.jpg"
 import Photo2 from "../images/brown-bear-invitational/course-photo-2.jpg"
 import Photo3 from "../images/brown-bear-invitational/course-photo-3.jpg"
+import Map6k from "../images/brown-bear-invitational/6k.png"
+import Map8k from "../images/brown-bear-invitational/8k.png"
 import Layout from "../components/layout"
 
 export default () => (
@@ -92,6 +94,10 @@ export default () => (
           <img src={Photo2} alt="Highland Park XC Course"></img>
           <br />
           <img src={Photo3} alt="Highland Park XC Course"></img>
+          <br />
+          <img src={Map6k} alt="Highland Park 6k XC Course"></img>
+          <br />
+          <img src={Map8k} alt="Highland Park 8k XC Course"></img>
           <br />
           <iframe
             width="672"
