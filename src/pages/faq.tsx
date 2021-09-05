@@ -22,7 +22,7 @@ export default () => (
         <Card title="When/where is practice?">
           <p style={styles.infoText}>
             We normally meet at the Bear Statue outside of the Nelson Fitness
-            Center at 4:15 pm on weekdays and 10 am on weekends during the Fall
+            Center at 4:30 pm on weekdays and 10 am on weekends during the Fall
             and Spring semesters (we occasionally have practice at other times
             due to special events or races; see our calendar for accurate
             information). Arrive early to get some extra stretching in. There is
