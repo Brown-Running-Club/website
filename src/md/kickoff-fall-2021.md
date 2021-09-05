@@ -1,6 +1,6 @@
 ---
 slug: "/announcements/kickoff-fall-2021"
-description: "Sunday, Sept 12 at 12pm"
+description: "Join us for our first run of the semester on Sunday, Sept 12 at 12pm!"
 date: "2021-09-05"
 title: "BRC Fall 2021 Kickoff"
 ---
