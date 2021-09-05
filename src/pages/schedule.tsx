@@ -19,10 +19,6 @@ export default () => (
     <PageBody>
       <WideContainer>
         <Card title="Practice" centeredTitle>
-          <i>
-            Currently, we are unable to practice due to Brown’s COVID-19 policies.
-            We will update our club members when in person practices can resume.
-          </i>
           <p>
             Our typical weekly schedule is below. See this week's schedule on the right.
           </p>
@@ -33,7 +29,7 @@ export default () => (
             </tr>
             <tr>
               <td>Mon-Fri</td>
-              <td>4:15pm</td>
+              <td>4:30pm</td>
             </tr>
             <tr>
               <td>Sat-Sun</td>
@@ -49,7 +45,7 @@ export default () => (
             on days we have races, so see our meet schedule below.
           </p>
         </Card>
-        <Season season="Fall 2021" info="This schedule will be updated as more meets are planned."/>
+        <Season season="Fall 2021" info="This schedule will be updated as more meets are planned." />
       </WideContainer>
       <NarrowContainer>
         <Card title="This Week" centeredTitle>
