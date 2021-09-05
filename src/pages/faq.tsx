@@ -1,5 +1,4 @@
 import React from "react"
-import TitleImage from "../components/title-image"
 import FAQsImage from "../images/faqsimage.jpg"
 import theme from "../config/theme"
 import PageBody from "../components/page-body"
@@ -8,10 +7,7 @@ import Card from "../components/card"
 import Layout from "../components/layout"
 
 export default () => (
-  <Layout title="FAQ">
-    <TitleImage image={FAQsImage}>
-      <p style={styles.titleText}>FAQs</p>
-    </TitleImage>
+  <Layout title="FAQ" image={FAQsImage}>
     <PageBody>
       <WideContainer>
         <Card title="How do I join?">
@@ -26,7 +22,7 @@ export default () => (
         <Card title="When/where is practice?">
           <p style={styles.infoText}>
             We normally meet at the Bear Statue outside of the Nelson Fitness
-            Center at 4:15 pm on weekdays and 10 am on weekends during the Fall
+            Center at 4:30 pm on weekdays and 10 am on weekends during the Fall
             and Spring semesters (we occasionally have practice at other times
             due to special events or races; see our calendar for accurate
             information). Arrive early to get some extra stretching in. There is
@@ -138,12 +134,6 @@ export default () => (
 )
 
 const styles = {
-  titleText: {
-    ...theme.typography.title,
-    color: theme.palette.white,
-    marginTop: theme.spacing.unit * 2,
-    textShadow: "0 0 15px #000000, 0 0 10px #000000",
-  },
   infoText: {
     ...(theme.typography.h4 as any),
     margin: 0,

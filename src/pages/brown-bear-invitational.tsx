@@ -1,5 +1,4 @@
 import React from "react"
-import TitleImage from "../components/title-image"
 import Kickoff from "../images/kickoff.png"
 import theme from "../config/theme"
 import Card from "../components/card"
@@ -8,13 +7,12 @@ import WideContainer from "../components/wide-container"
 import Photo1 from "../images/brown-bear-invitational/course-photo-1.jpg"
 import Photo2 from "../images/brown-bear-invitational/course-photo-2.jpg"
 import Photo3 from "../images/brown-bear-invitational/course-photo-3.jpg"
+import Map6k from "../images/brown-bear-invitational/6k.png"
+import Map8k from "../images/brown-bear-invitational/8k.png"
 import Layout from "../components/layout"
 
 export default () => (
-  <Layout title="Brown Bear Invitational">
-    <TitleImage image={Kickoff}>
-      <p style={styles.titleText}>Brown Bear Invitational</p>
-    </TitleImage>
+  <Layout title="Brown Bear Invitational" image={Kickoff}>
     <PageBody>
       <WideContainer>
         <Card>
@@ -32,8 +30,8 @@ export default () => (
             <br />
             <b>Registration:</b>
             <ul style={{ listStyleType: "none" }}>
-              <li>NIRCA: clubrunning.org (coming soon)</li>
-              <li>All other entries: DirectAthletics (coming soon)</li>
+              <li>NIRCA: <a href="https://clubrunning.org/races/race_info.php?race=926">clubrunning.org</a></li>
+              <li>All other entries: <a href="https://www.directathletics.com/meets/xc/17785.html">DirectAthletics</a></li>
             </ul>
             <b>Entry Fee:</b> $15/athlete for NIRCA clubs, max $250/gender for
             teams. $20/open athletes. $30/day of.
@@ -97,6 +95,10 @@ export default () => (
           <br />
           <img src={Photo3} alt="Highland Park XC Course"></img>
           <br />
+          <img src={Map6k} alt="Highland Park 6k XC Course"></img>
+          <br />
+          <img src={Map8k} alt="Highland Park 8k XC Course"></img>
+          <br />
           <iframe
             width="672"
             height="378"
@@ -113,16 +115,6 @@ export default () => (
 )
 
 const styles = {
-  titleText: {
-    ...theme.typography.title,
-    color: theme.palette.white,
-    marginTop: theme.spacing.unit * 2,
-    textShadow: "0 0 15px #000000, 0 0 10px #000000",
-  },
-  titleImage: {
-    height: theme.spacing.unit * 20,
-    paddingRight: theme.spacing.unit * 2,
-  },
   welcomeText: {
     ...(theme.typography.h4 as any),
     margin: 0,

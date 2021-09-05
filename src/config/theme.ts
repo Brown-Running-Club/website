@@ -10,6 +10,7 @@ export default {
     white: "#FBFBFB",
     lightGray: "#EDEDED",
     gray: "#DDDDDD",
+    black:"#000000"
   },
   spacing: {
     unit: 8,

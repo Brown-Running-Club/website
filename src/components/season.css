@@ -1,0 +1,20 @@
+tr:nth-child(even) {
+    background-color: #EDEDED;
+}
+
+td {
+  white-space: pre-line;
+  vertical-align: top;
+  padding: 5px;
+}
+
+th {
+  text-align: left;
+  background-color: #4E3629;
+  color: #FBFBFB;
+  padding: 5px;
+}
+
+table {
+  border-spacing: 0;
+}
