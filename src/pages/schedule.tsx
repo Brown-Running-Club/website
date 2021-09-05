@@ -45,7 +45,6 @@ export default () => (
             on days we have races, so see our meet schedule below.
           </p>
         </Card>
-        <Season season="Fall 2021" info="This schedule will be updated as more meets are planned." />
       </WideContainer>
       <NarrowContainer>
         <Card title="This Week" centeredTitle>
