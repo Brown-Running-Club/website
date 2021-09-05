@@ -34,14 +34,8 @@ export default () => (
           ></Button>
           <p style={styles.bodyText}>
             Next, in order to race with us, you’ll need to be on our roster with
-            the club sports department. Follow{" "}
-            <a
-              href="https://brownrec.com/sports/2018/8/14/club-sports-registrations-offerings.aspx"
-              style={styles.link}
-            >
-              this link
-            </a>
-            , find Running, click Registration, and follow the instructions.
+            the club sports department. Follow the link below, find Running,
+            click Registration, and follow the instructions.
           </p>
           <Button
             text="Fill out the club sports waiver ➞"
@@ -57,15 +51,8 @@ export default () => (
             to a leader.
           </p>
           <p style={styles.bodyText}>
-            Finally, to be fair to all involved, anyone who wishes to compete
-            must agree to our team policies by signing our{" "}
-            <a
-              href="https://docs.google.com/forms/d/e/1FAIpQLSexBqftrnGd4JfZo9Rm25B5aUCMFN-g2HMQrMyrnfcVBQ05Fg/viewform?usp=sf_link"
-              style={styles.link}
-            >
-              competitive team contract
-            </a>
-            .
+            Finally, anyone who wishes to compete must agree to our team
+            policies by signing our competitive team contract.
           </p>
           <Button
             text="Sign the contract ➞"
