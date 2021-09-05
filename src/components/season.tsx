@@ -28,6 +28,8 @@ async function getSeason(season) {
     })))
 }
 
+function createMeetTable()
+
 export default class Season extends React.Component<{ season: string, info?: string }, { schedule?: Schedule }> {
   renderMeet(meet: Meet) {
     return (
