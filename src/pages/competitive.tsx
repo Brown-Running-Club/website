@@ -18,27 +18,24 @@ export default () => (
             affiliated with the National Intercollegiate Running Club
             Association (NIRCA), through which we compete against other schools
             in cross country and track. We also have participated in local
-            non-NIRCA events ranging from 5K's to a 95 mile relay through RI,
-            Massachusetts, and Connecticut. Most races are open to runners of
-            all ability levels, so come out and rep BRC at our next meet!
+            non-NIRCA events ranging from 5Ks to a 95 mile relay through Rhode
+            Island, Massachusetts, and Connecticut. Most races are open to all
+            runners, so come out and rep BRC at our next meet!
           </p>
         </Card>
         <Card title="Joining the team">
           <p style={styles.bodyText}>
             The first step to competing with BRC is filling out our competitive
-            team interest form (coming soon).
+            team interest form.
           </p>
-          <Button text="Fill out the interest form ➞"></Button>
+          <Button
+            text="Fill out the interest form ➞"
+            link="https://docs.google.com/forms/d/e/1FAIpQLScGnFIokalaJHDQlNwLP5UzDjBDt26pXbv5pKeCs--GZ16OOw/viewform?usp=sf_link"
+          ></Button>
           <p style={styles.bodyText}>
             Next, in order to race with us, you’ll need to be on our roster with
-            the club sports department. Follow{" "}
-            <a
-              href="https://brownrec.com/sports/2018/8/14/club-sports-registrations-offerings.aspx"
-              style={styles.link}
-            >
-              this link
-            </a>
-            , find Running, click Registration, and follow the instructions.
+            the club sports department. Follow the link below, find Running,
+            click Registration, and follow the instructions.
           </p>
           <Button
             text="Fill out the club sports waiver ➞"
@@ -54,17 +51,13 @@ export default () => (
             to a leader.
           </p>
           <p style={styles.bodyText}>
-            Finally, to be fair to all involved, anyone who wishes to compete
-            must agree to our team policies by signing our{" "}
-            <a
-              href="https://docs.google.com/forms/d/e/1FAIpQLSfYqwGNu57k3ANSWYkWYjALMUGi6kyvSV2HZA_s1x8mMIvDKA/viewform?usp=sf_link"
-              style={styles.link}
-            >
-              competitive team contract
-            </a>
-            .
+            Finally, anyone who wishes to compete must agree to our team
+            policies by signing our competitive team contract.
           </p>
-          <Button text="Sign the contract ➞"></Button>
+          <Button
+            text="Sign the contract ➞"
+            link="https://docs.google.com/forms/d/e/1FAIpQLSexBqftrnGd4JfZo9Rm25B5aUCMFN-g2HMQrMyrnfcVBQ05Fg/viewform?usp=sf_link"
+          ></Button>
         </Card>
       </WideContainer>
     </PageBody>
