@@ -35,5 +35,6 @@ const styles = {
     color: theme.palette.white,
     marginTop: theme.spacing.unit * 2,
     textShadow: "0 0 15px #000000, 0 0 10px #000000",
+    textAlign: 'center' as const,
   }
 }

@@ -1,4 +1,5 @@
 import React from "react"
+import MediaQuery from "react-responsive"
 import theme from "../config/theme"
 
 type Props = {
@@ -8,14 +9,28 @@ type Props = {
 }
 
 const Card = (props: Props) => (
-  <div style={styles.card}>
-    {props.title && (
-      <p style={props.centeredTitle ? styles.centeredTitle : styles.title}>
-        {props.title}
-      </p>
-    )}
-    <div style={styles.container}>{props.children}</div>
-  </div>
+  <>
+  <MediaQuery query="(min-width: 600px)">
+    <div style={styles.card}>
+      {props.title && (
+        <p style={props.centeredTitle ? styles.centeredTitle : styles.title}>
+          {props.title}
+        </p>
+      )}
+      <div style={styles.container}>{props.children}</div>
+    </div>
+  </MediaQuery>
+  <MediaQuery query="(max-width: 599px)">
+    <div style={styles.card}>
+      {props.title && (
+        <p style={props.centeredTitle ? styles.centeredTitle : styles.title}>
+          {props.title}
+        </p>
+      )}
+      <div style={{...styles.container, ...styles.mobileContainer}}>{props.children}</div>
+    </div>
+  </MediaQuery>
+</>
 )
 export default Card
 
@@ -43,7 +58,11 @@ const styles = {
   container: {
     display: "flex",
     flexDirection: "column" as "column",
-    paddingLeft: theme.spacing.unit * 2,
-    paddingRight: theme.spacing.unit * 2,
+    paddingLeft: theme.spacing.unit * 1,
+    paddingRight: theme.spacing.unit * 1,
   },
+  mobileContainer: {
+    paddingLeft: -theme.spacing.unit,
+    paddingRight: -theme.spacing.unit,
+  }
 }

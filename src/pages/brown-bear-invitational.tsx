@@ -89,25 +89,26 @@ export default () => (
           </p>
         </Card>
         <Card title="Course Photos">
-          <img src={Photo1} alt="Highland Park XC Course"></img>
+          <img style={styles.image} src={Photo1} alt="Highland Park XC Course"></img>
           <br />
-          <img src={Photo2} alt="Highland Park XC Course"></img>
+          <img style={styles.image} src={Photo2} alt="Highland Park XC Course"></img>
           <br />
-          <img src={Photo3} alt="Highland Park XC Course"></img>
+          <img style={styles.image} src={Photo3} alt="Highland Park XC Course"></img>
           <br />
-          <img src={Map6k} alt="Highland Park 6k XC Course"></img>
+          <img style={styles.image} src={Map6k} alt="Highland Park 6k XC Course"></img>
           <br />
-          <img src={Map8k} alt="Highland Park 8k XC Course"></img>
+          <img style={styles.image} src={Map8k} alt="Highland Park 8k XC Course"></img>
           <br />
+          <div style={styles.videoContainer}>
           <iframe
-            width="672"
-            height="378"
+            style={styles.video}
             src="https://www.youtube.com/embed/yRjvYiw_eNs"
             title="Highland Park 5k XC course recording"
             frameBorder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
             allowFullScreen
           ></iframe>
+          </div>
         </Card>
       </WideContainer>
     </PageBody>
@@ -143,4 +144,21 @@ const styles = {
     fontWeight: "normal" as "normal",
     margin: 0,
   },
+  videoContainer: {
+    position: 'relative' as const,
+    width: '100%',
+    height: 0,
+    paddingBottom: '56.25%',
+  },
+  video: {
+    position: 'absolute' as const,
+    top: 0,
+    left: 0,
+    width: '100%',
+    height: '100%',
+  },
+  image: {
+    width: '100%',
+    height: 'auto'
+  }
 }

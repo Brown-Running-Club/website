@@ -10,57 +10,72 @@ import Button from "../components/button"
 import Layout from "../components/layout"
 import Season from "../components/season"
 import Schedule from "../components/schedule"
+import MediaQuery from "react-responsive"
 
-export default () => (
-  <Layout title="Schedule">
-    <TitleImage image={ScheduleImage}>
-      <p style={styles.titleText}>SCHEDULE</p>
-    </TitleImage>
-    <PageBody>
-      <WideContainer>
-        <Card title="Practice" centeredTitle>
-          <p>
-            Our typical weekly schedule is below. See this week's schedule on the right.
-          </p>
-          <table>
-            <tr>
-              <th>Day</th>
-              <th>Time</th>
-            </tr>
-            <tr>
-              <td>Mon-Fri</td>
-              <td>4:30pm</td>
-            </tr>
-            <tr>
-              <td>Sat-Sun</td>
-              <td>10am</td>
-            </tr>
-          </table>
-          <p>
-            All runs start and end at the Bear State outside the Nelson Fitness Center.
-            Come anywhere from once to seven times a week; it’s up to you!
-            For the competitive team, Tuesday and Saturday are generally organized workouts
-            (Intervals, Speed Work, Hills, Tempo Runs, etc.), while Sunday is generally a Long Run.
-            Other days are easy to moderate steady runs. We usually do not have practice
-            on days we have races, so see our meet schedule below.
-          </p>
-        </Card>
-      </WideContainer>
-      <NarrowContainer>
-        <Card title="This Week" centeredTitle>
-          <Schedule />
-        </Card>
-        <Card title="Previous" centeredTitle>
-          <Button
-            leftAlign
-            text="Past Meet Schedules and Results ➞"
-            link="/previous-seasons"
-          />
-        </Card>
-      </NarrowContainer>
-    </PageBody>
-  </Layout>
-)
+export default () => {
+  const narrowContent = (
+    <>
+      <Card title="This Week" centeredTitle>
+        <Schedule />
+      </Card>
+      <Card title="Previous" centeredTitle>
+        <Button
+          leftAlign
+          text="Past Meet Schedules and Results ➞"
+          link="/previous-seasons"
+        />
+      </Card>
+    </>
+  );
+  
+  return (
+    <Layout title="Schedule">
+      <TitleImage image={ScheduleImage}>
+        <p style={styles.titleText}>SCHEDULE</p>
+      </TitleImage>
+      <PageBody>
+        <WideContainer>
+          <Card title="Practice" centeredTitle>
+            <p>
+              Our typical weekly schedule is below. See this week's schedule on the right.
+            </p>
+            <table>
+              <tr>
+                <th>Day</th>
+                <th>Time</th>
+              </tr>
+              <tr>
+                <td>Mon-Fri</td>
+                <td>4:30pm</td>
+              </tr>
+              <tr>
+                <td>Sat-Sun</td>
+                <td>10am</td>
+              </tr>
+            </table>
+            <p>
+              All runs start and end at the Bear Statue outside the Nelson Fitness Center.
+              Come anywhere from once to seven times a week; it’s up to you!
+              For the competitive team, Tuesday and Saturday are generally organized workouts
+              (Intervals, Speed Work, Hills, Tempo Runs, etc.), while Sunday is generally a Long Run.
+              Other days are easy to moderate steady runs. We usually do not have practice
+              on days we have races, so see our meet schedule below.
+            </p>
+          </Card>
+          <Season season="Fall 2021" info="This schedule will be updated as more meets are planned."/>
+          <MediaQuery query="(max-width: 1150px)">
+            {narrowContent}
+          </MediaQuery>
+        </WideContainer>
+        <MediaQuery query="(min-width: 1150px)">
+          <NarrowContainer>
+            {narrowContent}
+          </NarrowContainer>
+        </MediaQuery>
+      </PageBody>
+    </Layout>
+  );
+}
 
 const styles = {
   titleText: {
