@@ -22,8 +22,10 @@ export default () => {
         runners of all levels! For those interested in running
         competitively, we compete in cross country races, indoor and outdoor
         track meets, and road races. We normally practice at{" "}
-        <b>4:30PM Mon-Fri and 10:00AM Sat-Sun</b> and meet at{" "}
+        <b>4:15PM Mon-Fri and 10:00AM Sat-Sun</b> and meet at{" "}
         <b>the bear statue outside the Nelson Fitness Center</b>.
+        On Mondays and Wednesdays, we'll wait until 4:30PM to start running
+        to accommodate 3-4:20PM classes.
       </p>
       <Button text="Learn more about Running Club ➞" link="/about" />
     </Card>
