@@ -27,7 +27,7 @@ export default () => {
       </Card>
     </>
   );
-  
+
   return (
     <Layout title="Schedule">
       <TitleImage image={ScheduleImage}>
@@ -46,7 +46,7 @@ export default () => {
               </tr>
               <tr>
                 <td>Mon-Fri</td>
-                <td>4:30pm</td>
+                <td>4:15pm</td>
               </tr>
               <tr>
                 <td>Sat-Sun</td>
@@ -54,6 +54,8 @@ export default () => {
               </tr>
             </table>
             <p>
+              On Mondays and Wednesdays, we'll wait until 4:30PM to start running
+              to accommodate 3-4:20PM classes.
               All runs start and end at the Bear Statue outside the Nelson Fitness Center.
               Come anywhere from once to seven times a week; it’s up to you!
               For the competitive team, Tuesday and Saturday are generally organized workouts
@@ -62,7 +64,7 @@ export default () => {
               on days we have races, so see our meet schedule below.
             </p>
           </Card>
-          <Season season="Fall 2021" info="This schedule will be updated as more meets are planned."/>
+          <Season season="Fall 2021" />
           <MediaQuery query="(max-width: 1150px)">
             {narrowContent}
           </MediaQuery>
