@@ -1,6 +1,6 @@
 import React from "react"
 import TitleImage from "../components/title-image"
-import Kickoff from "../images/kickoff.png"
+import Kickoff from "../images/kickoff.jpg"
 import IvyBrownLogo from "../images/ivybrownlogo.png"
 import theme from "../config/theme"
 import Card from "../components/card"

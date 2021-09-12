@@ -1,5 +1,5 @@
 import React from "react"
-import Kickoff from "../images/kickoff.png"
+import Kickoff from "../images/kickoff.jpg"
 import theme from "../config/theme"
 import Card from "../components/card"
 import PageBody from "../components/page-body"
