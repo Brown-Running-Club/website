@@ -1,5 +1,5 @@
 import React from "react"
-import TitleImage from "../images/donations.png"
+import TitleImage from "../images/donations.jpg"
 import theme from "../config/theme"
 import PageBody from "../components/page-body"
 import WideContainer from "../components/wide-container"
@@ -22,22 +22,22 @@ export default () => {
   );
   const donorsCard = (
     <Card title="Thank you to our donors!" centeredTitle>
-      <p style={styles.donorsText}>Doug Chu <br/>
-      Christopher Cobb <br/>
-      Michael Hantke <br/>
-      Sally Healy <br/>
-      Doug & Sally Hunter <br/>
-      Kathy & John Kriz <br/>
-      Adam Janik <br/>
-      Cindy & Don Janik <br/>
-      Max Janik <br/>
-      Michael Janik <br/>
-      Sally Leete <br/>
-      Liz Martineau <br/>
-      Connie & Dick Mayer <br/>
-      Debra Mayer <br/>
-      Pamela Mayer <br/>
-      Lisa Nelson</p>
+      <p style={styles.donorsText}>Doug Chu <br />
+        Christopher Cobb <br />
+        Michael Hantke <br />
+        Sally Healy <br />
+        Doug & Sally Hunter <br />
+        Kathy & John Kriz <br />
+        Adam Janik <br />
+        Cindy & Don Janik <br />
+        Max Janik <br />
+        Michael Janik <br />
+        Sally Leete <br />
+        Liz Martineau <br />
+        Connie & Dick Mayer <br />
+        Debra Mayer <br />
+        Pamela Mayer <br />
+        Lisa Nelson</p>
     </Card>
   );
   return (
@@ -57,7 +57,7 @@ export default () => {
               We work hard to provide great training and racing opportunities for everyone, and
               we also want the club to be as accessible as possible to runners from all sorts
               of financial situations, so we try as hard as we can to keep costs and dues low for members.
-            <br/><br/>
+              <br /><br />
               However, Running Club is not free: as we become more competitive and travel to
               more races, as well as championship meets which may be far away from Brown
               (cross country nationals this year are in Shelbyville, Indiana!), the cost of items
@@ -83,7 +83,7 @@ export default () => {
       </PageBody>
     </Layout>
   )
-  
+
 }
 
 const styles = {

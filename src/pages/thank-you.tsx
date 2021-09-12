@@ -1,5 +1,5 @@
 import React from "react"
-import TitleImage from "../images/thank-you.png"
+import TitleImage from "../images/thank-you.jpg"
 import theme from "../config/theme"
 import PageBody from "../components/page-body"
 import WideContainer from "../components/wide-container"
