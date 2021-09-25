@@ -36,12 +36,12 @@ class Records extends React.Component<{ raceType: string }, { records?: RecordDa
         <p style={styles.summaryText}>
           <b>Women</b>
         </p>
-        {Table({header: headers, body: records.women})}
+        {records ? Table({header: headers, body: records.women}) : <></>}
         <br />
         <p style={styles.summaryText}>
           <b>Men</b>
         </p>
-        {Table({header: headers, body: records.men})}
+        {records ? Table({header: headers, body: records.men}) : <></>}
       </Card>
     )
   }
