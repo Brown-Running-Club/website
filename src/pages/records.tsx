@@ -7,6 +7,54 @@ import Card from "../components/card"
 import WiderContainer from "../components/wider-container"
 import Layout from "../components/layout"
 
+const SHEET_ID = "1-0FhSZemh9iVF5bEOnqRGIH3ZFAHb9-ktbw5I2Zz9eE"
+const RANGE = "A2:D100"
+
+type RecordData = {
+  men: string[][]
+  women: string[][]
+}
+
+async function getRecords(raceType: string): RecordData {
+  return {
+    men: getRecordsForGender(raceType, "Men"),
+    women: getRecordsForGender(raceType, "Women"),
+  }
+}
+
+async function getRecordsForGender(raceType: string, gender: string): string[][] {
+  const sheetName = raceType + " - " + gender;
+  return await getSheetData(SHEET_ID, encodeURIComponent(sheetName + "!" + RANGE));
+}
+
+class Records extends React.Component<{ raceType: string }, { records?: RecordData }> {
+  render() {
+    const records = this.state?.records;
+    const headers = ["Event", "Name", "Time", "Year"];
+    return (
+      <Card title={this.props.season} centeredTitle>
+        {schedule ? createMeetTable(schedule) : <></>}
+        {this.props.info ? <p>{this.props.info}</p> : <></>}
+      </Card>
+      <Card title={raceType}>
+        <p style={styles.summaryText}>
+          <b>Women</b>
+        </p>
+        {Table({header: headers, body: records.women})}
+        <br />
+        <p style={styles.summaryText}>
+          <b>Men</b>
+        </p>
+        {Table({header: headers, body: records.men})}
+      </Card>
+    )
+  }
+
+  componentDidMount() {
+    getRecords(this.props.raceType).then(records => this.setState({ records: records }))
+  }
+}
+
 export default () => (
   <Layout title="Records" image={RecordsImage}>
     <PageBody>
@@ -34,53 +82,10 @@ export default () => (
           </p>
         </Card>
 
-        <Card title="Cross Country">
-          <p style={styles.summaryText}>
-            <b>Women</b>
-          </p>
-          <Table season="women_xc"></Table>
-          <br />
-          <p style={styles.summaryText}>
-            <b>Men</b>
-          </p>
-          <Table season="men_xc"></Table>
-        </Card>
-
-        <Card title="Indoor Track">
-          <p style={styles.summaryText}>
-            <b>Women</b>
-          </p>
-          <Table season="women_itrack"></Table>
-          <br />
-          <p style={styles.summaryText}>
-            <b>Men</b>
-          </p>
-          <Table season="men_itrack"></Table>
-        </Card>
-
-        <Card title="Outdoor Track">
-          <p style={styles.summaryText}>
-            <b>Women</b>
-          </p>
-          <Table season="women_otrack"></Table>
-          <br />
-          <p style={styles.summaryText}>
-            <b>Men</b>
-          </p>
-          <Table season="men_otrack"></Table>
-        </Card>
-
-        <Card title="Road Races">
-          <p style={styles.summaryText}>
-            <b>Women</b>
-          </p>
-          <Table season="women_rr"></Table>
-          <br />
-          <p style={styles.summaryText}>
-            <b>Men</b>
-          </p>
-          <Table season="men_rr"></Table>
-        </Card>
+        <Records raceType="Cross Country" />
+        <Records raceType="Indoor Track" />
+        <Records raceType="Outdoor Track" />
+        <Records raceType="Road Races" />
       </WiderContainer>
     </PageBody>
   </Layout>
