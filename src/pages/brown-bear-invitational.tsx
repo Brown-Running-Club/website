@@ -1,5 +1,5 @@
 import React from "react"
-import Kickoff from "../images/kickoff.png"
+import Kickoff from "../images/kickoff.jpg"
 import theme from "../config/theme"
 import Card from "../components/card"
 import PageBody from "../components/page-body"
@@ -7,8 +7,8 @@ import WideContainer from "../components/wide-container"
 import Photo1 from "../images/brown-bear-invitational/course-photo-1.jpg"
 import Photo2 from "../images/brown-bear-invitational/course-photo-2.jpg"
 import Photo3 from "../images/brown-bear-invitational/course-photo-3.jpg"
-import Map6k from "../images/brown-bear-invitational/6k.png"
-import Map8k from "../images/brown-bear-invitational/8k.png"
+import Map6k from "../images/brown-bear-invitational/6k.jpg"
+import Map8k from "../images/brown-bear-invitational/8k.jpg"
 import Layout from "../components/layout"
 
 export default () => (
@@ -89,25 +89,26 @@ export default () => (
           </p>
         </Card>
         <Card title="Course Photos">
-          <img src={Photo1} alt="Highland Park XC Course"></img>
+          <img style={styles.image} src={Photo1} alt="Highland Park XC Course"></img>
           <br />
-          <img src={Photo2} alt="Highland Park XC Course"></img>
+          <img style={styles.image} src={Photo2} alt="Highland Park XC Course"></img>
           <br />
-          <img src={Photo3} alt="Highland Park XC Course"></img>
+          <img style={styles.image} src={Photo3} alt="Highland Park XC Course"></img>
           <br />
-          <img src={Map6k} alt="Highland Park 6k XC Course"></img>
+          <img style={styles.image} src={Map6k} alt="Highland Park 6k XC Course"></img>
           <br />
-          <img src={Map8k} alt="Highland Park 8k XC Course"></img>
+          <img style={styles.image} src={Map8k} alt="Highland Park 8k XC Course"></img>
           <br />
-          <iframe
-            width="672"
-            height="378"
-            src="https://www.youtube.com/embed/yRjvYiw_eNs"
-            title="Highland Park 5k XC course recording"
-            frameBorder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowFullScreen
-          ></iframe>
+          <div style={styles.videoContainer}>
+            <iframe
+              style={styles.video}
+              src="https://www.youtube.com/embed/yRjvYiw_eNs"
+              title="Highland Park 5k XC course recording"
+              frameBorder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowFullScreen
+            ></iframe>
+          </div>
         </Card>
       </WideContainer>
     </PageBody>
@@ -143,4 +144,21 @@ const styles = {
     fontWeight: "normal" as "normal",
     margin: 0,
   },
+  videoContainer: {
+    position: 'relative' as const,
+    width: '100%',
+    height: 0,
+    paddingBottom: '56.25%',
+  },
+  video: {
+    position: 'absolute' as const,
+    top: 0,
+    left: 0,
+    width: '100%',
+    height: '100%',
+  },
+  image: {
+    width: '100%',
+    height: 'auto'
+  }
 }

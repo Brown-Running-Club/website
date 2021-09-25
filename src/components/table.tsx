@@ -8,6 +8,7 @@ import TableHead from "@material-ui/core/TableHead"
 import TableRow from "@material-ui/core/TableRow"
 import Paper from "@material-ui/core/Paper"
 import theme from "../config/theme"
+import { useMediaQuery } from "react-responsive"
 
 const StyledTableCell = withStyles(theme => ({
   head: {
@@ -35,9 +36,6 @@ const StyledTableRow = withStyles(theme => ({
 }))(TableRow)
 
 const useStyles = makeStyles({
-  table: {
-    minWidth: 650,
-  },
   header: {
     ...(theme.typography.h4 as any),
     backgroundColor: theme.palette.brown,
@@ -57,14 +55,33 @@ interface TableProps {
   body: Array<Array<React.Component>>,
 }
 
+const useStylesMobile = makeStyles({
+  header: {
+    ...(theme.typography.h4 as any),
+    backgroundColor: theme.palette.brown,
+    color: theme.palette.white,
+    margin: 0,
+    marginBottom: theme.spacing.unit * 2,
+    fontSize: 13,
+    padding: theme.spacing.unit,
+  },
+  row: {
+    ...(theme.typography.h4 as any),
+    color: theme.palette.black,
+    fontSize: 12,
+    padding: theme.spacing.unit,
+  },
+})
+
 export default function BasicTable(
   props: React.PropsWithChildren<TableProps>
 ) {
-  const classes = useStyles()
+  const isBigScreen = useMediaQuery({ query: '(min-width: 600px)' })
+  const classes = isBigScreen ? useStyles() : useStylesMobile();
 
   return (
     <TableContainer component={Paper}>
-      <Table className={classes.table} aria-label="simple table">
+      <Table aria-label="simple table">
         <TableHead>
           <TableRow>
             {props.header.map(cell => (

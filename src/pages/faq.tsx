@@ -25,10 +25,11 @@ export default () => (
             Center at 4:15 pm on weekdays and 10 am on weekends during the Fall
             and Spring semesters (we occasionally have practice at other times
             due to special events or races; see our calendar for accurate
-            information). Arrive early to get some extra stretching in. There is
-            no set end time for practices, as it depends on how long you plan to
-            run. Generally, this will be somewhere between a half hour to an
-            hour and a half.
+            information). Practices begin with stretching and core exercises.
+            On Mondays and Wednesdays, we'll wait until 4:30pm to start running
+            to accommodate 3-4:20pm classes. There is no set end time for
+            practices, as it depends on how long you plan to run. Generally,
+            this will be somewhere between a half hour to an hour and a half.
           </p>
         </Card>
 

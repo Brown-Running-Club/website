@@ -1,4 +1,5 @@
 import React from "react"
+import MediaQuery from "react-responsive"
 import theme from "../config/theme"
 
 type Props = {
@@ -6,7 +7,14 @@ type Props = {
 }
 
 const PageBody = (props: Props) => (
-  <div style={styles.container}>{props.children}</div>
+  <>
+    <MediaQuery query="(min-width: 600px)">
+      <div style={styles.container}>{props.children}</div>
+    </MediaQuery>
+    <MediaQuery query="(max-width: 599px)">
+      <div style={{...styles.container, ...styles.containerMobile}}>{props.children}</div>
+    </MediaQuery>
+  </>
 )
 export default PageBody
 
@@ -18,5 +26,10 @@ const styles = {
     justifyContent: "center" as const,
     paddingLeft: theme.spacing.unit * 2,
     paddingRight: theme.spacing.unit * 2,
+    paddingBottom: theme.spacing.unit * 5,
   },
+  containerMobile: {
+    paddingLeft: 0,
+    paddingRight: 0,
+  }
 }

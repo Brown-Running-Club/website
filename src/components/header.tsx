@@ -1,5 +1,7 @@
 import * as React from "react"
 import { Link } from "gatsby"
+import MediaQuery from "react-responsive"
+import { slide as BurgerMenu } from "react-burger-menu"
 import theme from "../config/theme"
 import BrownIvyB from "../images/ivyblogo.png"
 
@@ -65,6 +67,7 @@ const menus: Array<Menu> = [
 
 type State = {
   openMenu: string | null
+  burgerMenuOpen: boolean,
 }
 
 export default class NavigationBar extends React.Component<{}, State> {
@@ -72,8 +75,10 @@ export default class NavigationBar extends React.Component<{}, State> {
     super(props)
     this.state = {
       openMenu: null,
+      burgerMenuOpen: false,
     }
     this.renderMenu = this.renderMenu.bind(this)
+    this.renderHamburgerMenu = this.renderHamburgerMenu.bind(this);
   }
 
   renderMenu(menu: Menu) {
@@ -123,6 +128,58 @@ export default class NavigationBar extends React.Component<{}, State> {
     )
   }
 
+  renderHamburgerMenu() {
+    const content = menus.map((menu) => {
+      const elt = (
+        <p
+          style={
+            this.state.openMenu === menu.name
+              ? styles.navigationHeaderHighlightedBurger
+              : styles.navigationHeaderBurger
+          }
+        >
+          {menu.name.toUpperCase()}
+        </p>
+      )
+      return (
+        <div
+          style={styles.navigationMenuBurger}
+          onMouseDown={() => {
+            this.setState({ openMenu: menu.name })
+          }}
+        >
+          <div style={{ cursor: "pointer" }}>{elt}</div>
+          {this.state.openMenu === menu.name && (
+            <div style={styles.navigationSubmenuBurger}>
+              {menu.list &&
+                menu.list.map(submenuItem => (
+                  <Link to={submenuItem.link} {...theme.linkProps}>
+                      <p style={styles.navigationSubmenuItemTextBurger}>
+                        {submenuItem.name.toUpperCase()}
+                      </p>
+                  </Link>
+                ))}
+            </div>
+          )}
+        </div>
+      )
+    });
+    return (
+      <div>
+        <MediaQuery query="(min-width: 600px)">
+          <BurgerMenu right styles={styles.burgerMenu}>
+            {content}
+          </BurgerMenu>
+        </MediaQuery>
+        <MediaQuery query="(max-width: 599px)">
+          <BurgerMenu width="100%" right styles={styles.burgerMenu}>
+            {content}
+          </BurgerMenu>
+        </MediaQuery>
+      </div>
+    )
+  }
+
   render() {
     return (
       <>
@@ -134,7 +191,12 @@ export default class NavigationBar extends React.Component<{}, State> {
             <Link to="/" {...theme.linkProps}>
               <p style={styles.title}>RUNNING CLUB</p>
             </Link>
-            {menus.map(this.renderMenu)}
+            <MediaQuery query="(min-width: 1150px)">
+              {menus.map(this.renderMenu)}
+            </MediaQuery>
+            <MediaQuery query="(max-width: 1149px)">
+              {this.renderHamburgerMenu()}
+            </MediaQuery>
           </div>
           <div style={styles.spacer} />
         </header>
@@ -205,5 +267,86 @@ const styles = {
   },
   navigationSubmenuItemText: {
     margin: 0,
+  },
+  burgerMenu: {
+    bmBurgerButton: {
+      position: 'fixed',
+      width: `${theme.spacing.unit * 3}px`,
+      height: `${theme.spacing.unit * 3}px`,
+      right: `${theme.spacing.unit * 3}px`,
+      top: `${theme.spacing.unit * 2.5}px`,
+    },
+    bmBurgerBars: {
+      background: theme.palette.gray,
+    },
+    bmBurgerBarsHover: {
+      opacity: 1,
+      background: theme.palette.white,
+    },
+    bmCrossButton: {
+      position: 'fixed',
+      right: `${theme.spacing.unit * 3}px`,
+      top: `${theme.spacing.unit * 1.5}px`,
+    },
+    bmCross: {
+      background: theme.palette.gray,
+      width: `${theme.spacing.unit * 0.5}px`,
+      height: `${theme.spacing.unit * 3.5}px`,
+    },
+    bmMenuWrap: {
+      position: 'fixed',
+      height: '100%',
+      top: 0,
+    },
+    bmMenu: {
+      background: theme.palette.brown,
+      padding: `${theme.spacing.unit * 2}`,
+    },
+    bmItemList: {
+      background: theme.palette.brown,
+      marginTop: `${theme.spacing.unit * 8}px`,
+      height: null,
+    },
+    bmItem: {
+    },
+    bmOverlay: {
+      display: 'none',
+    }
+  },
+  navigationMenuBurger: {
+    outline: 'none',
+  },
+  navigationSubmenuItemTextBurger: {
+    paddingLeft: theme.spacing.unit * 2,
+    paddingRight: theme.spacing.unit * 4,
+    paddingBottom: theme.spacing.unit * 2,
+    paddingTop: theme.spacing.unit * 2,
+    ...(theme.typography.h3 as any),
+    color: theme.palette.brown,
+    textAlign: 'right',
+    margin: 0,
+  },
+  navigationSubmenuBurger: {
+    backgroundColor: theme.palette.lightGray,
+    width: '100%',
+    padding: 0,
+  },
+  navigationHeaderBurger: {
+    ...(theme.typography.h2 as any),
+    color: theme.palette.gray,
+    paddingRight: theme.spacing.unit * 4,
+    textAlign: 'right',
+    margin: 0,
+    paddingBottom: theme.spacing.unit * 1.5,
+    paddingTop: theme.spacing.unit * 1.5,
+  },
+  navigationHeaderHighlightedBurger: {
+    ...(theme.typography.h2 as any),
+    color: theme.palette.white,
+    paddingRight: theme.spacing.unit * 4,
+    textAlign: 'right',
+    margin: 0,
+    paddingBottom: theme.spacing.unit * 2,
+    paddingTop: theme.spacing.unit * 2,
   },
 }

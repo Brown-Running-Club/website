@@ -46,8 +46,6 @@ export default () => (
           <Table season="men_xc"></Table>
         </Card>
 
-        <br />
-
         <Card title="Indoor Track">
           <p style={styles.summaryText}>
             <b>Women</b>
@@ -60,8 +58,6 @@ export default () => (
           <Table season="men_itrack"></Table>
         </Card>
 
-        <br />
-
         <Card title="Outdoor Track">
           <p style={styles.summaryText}>
             <b>Women</b>
@@ -73,8 +69,6 @@ export default () => (
           </p>
           <Table season="men_otrack"></Table>
         </Card>
-
-        <br />
 
         <Card title="Road Races">
           <p style={styles.summaryText}>
@@ -100,12 +94,10 @@ const styles = {
   summaryText: {
     ...(theme.typography.h4 as any),
     margin: 2,
-    textAlign: "center" as "center",
   },
   disclaimerText: {
     ...(theme.typography.h2 as any),
     margin: 2,
-    textAlign: "center" as "center",
   },
   headerText: {
     ...theme.typography.h1,
