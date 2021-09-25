@@ -2,13 +2,13 @@ import React from "react"
 import theme from "../config/theme"
 import Card from "./card"
 import "./season.css"
-import {getSheetData} from "../api-calls.tsx"
+import { getSheetData } from "../api-calls"
 import Table from "./table"
 
 type Meet = {
   race: string
   description?: string
-  date: Date
+  date: string
   link?: string
   location: string
 }
@@ -18,9 +18,9 @@ type Schedule = Meet[]
 const SHEET_ID = "1hvbRCCS-jP2bxBD9HoRZ3bKetfV-LiKb-ZT8a7Y5-NU"
 const RANGE = "A2:E100"
 
-async function getSeason(season) {
+async function getSeason(season: string) {
   return await getSheetData(SHEET_ID, encodeURIComponent(season + "!" + RANGE))
-    .then(meets => meets.map(meet => ({
+    .then((meets: string[]) => meets.map(meet => ({
       date: meet[0],
       race: meet[1],
       location: meet[2],
@@ -33,19 +33,19 @@ function createMeetTable(schedule: Schedule) {
   const headers = ["Date", "Meet", "Location"];
   const data = [];
   for (const meet of schedule) {
-    const name = {
-    meet.link === undefined
-      ? meet.race
-      : (<a href={meet.link}>{meet.race}</a>)
+    const name = <>{
+      meet.link === undefined
+        ? meet.race
+        : (<a href={meet.link}>{meet.race}</a>)
     }{
-      meet.description === undefined
-       ? <></>
-       : <><br />{meet.description}</>
-    };
+        meet.description === undefined
+          ? <></>
+          : <><br />{meet.description}</>
+      }</>;
 
-    data.append([meet.date, name, meet.location]);
+    data.push([<>meet.date</>, name, <>meet.location</>]);
   }
-  return Table({header: headers, body: data});
+  return Table({ header: headers, body: data });
 }
 
 export default class Season extends React.Component<{ season: string, info?: string }, { schedule?: Schedule }> {
@@ -53,7 +53,7 @@ export default class Season extends React.Component<{ season: string, info?: str
     const schedule = this.state?.schedule
     return (
       <Card title={this.props.season} centeredTitle>
-        {createMeetTable(schedule)}
+        {schedule ? createMeetTable(schedule) : <></>}
         {this.props.info ? <p>{this.props.info}</p> : <></>}
       </Card>
     )

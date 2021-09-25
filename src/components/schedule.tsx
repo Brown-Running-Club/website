@@ -1,17 +1,11 @@
 import React from "react"
 import theme from "../config/theme"
-import {getWeekEvents} from "../api-calls.tsx"
+import { getWeekEvents, GCalEvent } from "../api-calls"
 
 type Event = {
   start: Date
   name: string
   description?: string
-}
-
-interface GCalEvent {
-  start: { dateTime?: string }
-  summary: string
-  description: string
 }
 
 type Week = {

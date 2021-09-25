@@ -52,7 +52,7 @@ const useStyles = makeStyles({
 
 interface TableProps {
   header: Array<string>,
-  body: Array<Array<React.Component>>,
+  body: Array<Array<JSX.Element>>,
 }
 
 const useStylesMobile = makeStyles({
@@ -93,14 +93,14 @@ export default function BasicTable(
         </TableHead>
         <TableBody>
           {props.body.map(row => (
-            <TableRow key={row.year}>
+            <TableRow>
               {row.map(cell =>
                 <TableCell className={classes.row} align="left">
                   {cell}
                 </TableCell>
               )}
             </TableRow>
-          )}
+          ))}
         </TableBody>
       </Table>
     </TableContainer>
