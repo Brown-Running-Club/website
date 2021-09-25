@@ -32,7 +32,7 @@ class Records extends React.Component<{ raceType: string }, { records?: RecordDa
     const records = this.state?.records;
     const headers = ["Event", "Name", "Time", "Year"];
     return (
-      <Card title={raceType}>
+      <Card title={this.props.raceType}>
         <p style={styles.summaryText}>
           <b>Women</b>
         </p>
