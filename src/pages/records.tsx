@@ -6,6 +6,7 @@ import Table from "../components/table"
 import Card from "../components/card"
 import WiderContainer from "../components/wider-container"
 import Layout from "../components/layout"
+import { getSheetData } from "../api-calls"
 
 const SHEET_ID = "1-0FhSZemh9iVF5bEOnqRGIH3ZFAHb9-ktbw5I2Zz9eE"
 const RANGE = "A2:D100"
