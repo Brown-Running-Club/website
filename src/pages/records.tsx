@@ -32,10 +32,6 @@ class Records extends React.Component<{ raceType: string }, { records?: RecordDa
     const records = this.state?.records;
     const headers = ["Event", "Name", "Time", "Year"];
     return (
-      <Card title={this.props.season} centeredTitle>
-        {schedule ? createMeetTable(schedule) : <></>}
-        {this.props.info ? <p>{this.props.info}</p> : <></>}
-      </Card>
       <Card title={raceType}>
         <p style={styles.summaryText}>
           <b>Women</b>
