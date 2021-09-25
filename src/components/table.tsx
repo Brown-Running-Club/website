@@ -205,7 +205,8 @@ const women_rr = [
 ]
 
 const men_rr = [
-  createData("5k", "Adam Janik", "16:01", "2018"),
+  createData("5k", "Aaron Gruen", "15:23", "2021"),
+  createData("5 Mile", "Max Heller", "25:53", "2021"),
   createData("10k", "Adam Janik", "33:23", "2018"),
   createData("10 Mile", "Adam Janik", "55:54", "2018"),
   createData("Half Marathon", "Adam Janik", "1:11:40", "2019"),
