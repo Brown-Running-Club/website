@@ -1,6 +1,12 @@
+export interface GCalEvent {
+  start: { dateTime?: string }
+  summary: string
+  description: string
+}
+
 const API_KEY = "AIzaSyB_4qRtTbmqHERuJLpTJAWOjkFwx4c2zMo"
 
-export async function getSheetData(sheetId, range) {
+export async function getSheetData(sheetId: string, range: string) {
   const url =
     "https://sheets.googleapis.com/v4/spreadsheets/" +
     sheetId +
@@ -13,7 +19,7 @@ export async function getSheetData(sheetId, range) {
     .then(res => res.values)
 }
 
-export async function getWeekEvents(start: Date, calId) {
+export async function getWeekEvents(start: Date, calId: string): Promise<GCalEvent[]> {
   // get events for a week
   start.setHours(0)
   start.setSeconds(0)
