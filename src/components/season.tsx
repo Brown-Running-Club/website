@@ -43,7 +43,7 @@ function createMeetTable(schedule: Schedule) {
           : <><br />{meet.description}</>
       }</>;
 
-    data.push([<>meet.date</>, name, <>meet.location</>]);
+    data.push([<>{meet.date}</>, name, <>{meet.location}</>]);
   }
   return Table({ header: headers, body: data });
 }

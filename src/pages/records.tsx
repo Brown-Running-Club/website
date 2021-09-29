@@ -26,7 +26,7 @@ async function getRecords(raceType: string): Promise<RecordData> {
 async function getRecordsForGender(raceType: string, gender: string): Promise<JSX.Element[][]> {
   const sheetName = raceType + " - " + gender;
   return await getSheetData(SHEET_ID, encodeURIComponent(sheetName + "!" + RANGE))
-    .then((records: string[][]) => records.map(record => record.map(elt => <>elt</>)));
+    .then((records: string[][]) => records.map(record => record.map(elt => <>{elt}</>)));
 }
 
 class Records extends React.Component<{ raceType: string }, { records?: RecordData }> {
