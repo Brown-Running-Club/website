@@ -35,6 +35,20 @@ const StyledTableRow = withStyles(theme => ({
   },
 }))(TableRow)
 
+const bigScreen = {
+  header: {
+    ...(theme.typography.h4 as any),
+    backgroundColor: theme.palette.brown,
+    color: theme.palette.white,
+    margin: 0,
+    marginBottom: theme.spacing.unit * 2,
+  },
+  row: {
+    ...(theme.typography.h4 as any),
+    color: theme.palette.black,
+    fontSize: 18,
+  },
+};
 const useStyles = makeStyles({
   header: {
     ...(theme.typography.h4 as any),
@@ -55,6 +69,23 @@ interface TableProps {
   body: Array<Array<JSX.Element>>,
 }
 
+const mobile = {
+  header: {
+    ...(theme.typography.h4 as any),
+    backgroundColor: theme.palette.brown,
+    color: theme.palette.white,
+    margin: 0,
+    marginBottom: theme.spacing.unit * 2,
+    fontSize: 13,
+    padding: theme.spacing.unit,
+  },
+  row: {
+    ...(theme.typography.h4 as any),
+    color: theme.palette.black,
+    fontSize: 12,
+    padding: theme.spacing.unit,
+  },
+};
 const useStylesMobile = makeStyles({
   header: {
     ...(theme.typography.h4 as any),
@@ -76,9 +107,6 @@ const useStylesMobile = makeStyles({
 export default function BasicTable(
   props: React.PropsWithChildren<TableProps>
 ) {
-  const bigScreen = useStyles();
-  const mobile = useStylesMobile();
-
   return (
     <TableContainer component={Paper}>
       <Table aria-label="simple table">

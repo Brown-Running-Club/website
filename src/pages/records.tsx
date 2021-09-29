@@ -12,20 +12,21 @@ const SHEET_ID = "1-0FhSZemh9iVF5bEOnqRGIH3ZFAHb9-ktbw5I2Zz9eE"
 const RANGE = "A2:D100"
 
 type RecordData = {
-  men: string[][]
-  women: string[][]
+  men: JSX.Element[][]
+  women: JSX.Element[][]
 }
 
-async function getRecords(raceType: string): RecordData {
+async function getRecords(raceType: string): Promise<RecordData> {
   return {
-    men: getRecordsForGender(raceType, "Men"),
-    women: getRecordsForGender(raceType, "Women"),
+    men: await getRecordsForGender(raceType, "Men"),
+    women: await getRecordsForGender(raceType, "Women"),
   }
 }
 
-async function getRecordsForGender(raceType: string, gender: string): string[][] {
+async function getRecordsForGender(raceType: string, gender: string): Promise<JSX.Element[][]> {
   const sheetName = raceType + " - " + gender;
-  return await getSheetData(SHEET_ID, encodeURIComponent(sheetName + "!" + RANGE));
+  return await getSheetData(SHEET_ID, encodeURIComponent(sheetName + "!" + RANGE))
+    .then((records: string[][]) => records.map(record => record.map(elt => <>elt</>)));
 }
 
 class Records extends React.Component<{ raceType: string }, { records?: RecordData }> {
@@ -37,12 +38,12 @@ class Records extends React.Component<{ raceType: string }, { records?: RecordDa
         <p style={styles.summaryText}>
           <b>Women</b>
         </p>
-        {records ? Table({header: headers, body: records.women}) : <></>}
+        {records ? Table({ header: headers, body: records.women }) : <></>}
         <br />
         <p style={styles.summaryText}>
           <b>Men</b>
         </p>
-        {records ? Table({header: headers, body: records.men}) : <></>}
+        {records ? Table({ header: headers, body: records.men }) : <></>}
       </Card>
     )
   }
