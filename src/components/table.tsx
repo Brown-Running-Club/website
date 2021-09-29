@@ -8,7 +8,7 @@ import TableHead from "@material-ui/core/TableHead"
 import TableRow from "@material-ui/core/TableRow"
 import Paper from "@material-ui/core/Paper"
 import theme from "../config/theme"
-import { useMediaQuery } from "react-responsive"
+import MediaQuery from "react-responsive"
 
 const StyledTableCell = withStyles(theme => ({
   head: {
@@ -76,8 +76,8 @@ const useStylesMobile = makeStyles({
 export default function BasicTable(
   props: React.PropsWithChildren<TableProps>
 ) {
-  const isBigScreen = useMediaQuery({ query: '(min-width: 600px)' })
-  const classes = isBigScreen ? useStyles() : useStylesMobile();
+  const bigScreen = useStyles();
+  const mobile = useStylesMobile();
 
   return (
     <TableContainer component={Paper}>
@@ -85,9 +85,18 @@ export default function BasicTable(
         <TableHead>
           <TableRow>
             {props.header.map(cell => (
-              <TableCell className={classes.header} align="left">
-                {cell}
-              </TableCell>
+              <>
+                <MediaQuery query="(min-width: 600px)">
+                  <TableCell className={bigScreen.header} align="left">
+                    {cell}
+                  </TableCell>
+                </MediaQuery>
+                <MediaQuery query="(max-width: 599px)">
+                  <TableCell className={mobile.header} align="left">
+                    {cell}
+                  </TableCell>
+                </MediaQuery>
+              </>
             ))}
           </TableRow>
         </TableHead>
@@ -95,9 +104,18 @@ export default function BasicTable(
           {props.body.map(row => (
             <TableRow>
               {row.map(cell =>
-                <TableCell className={classes.row} align="left">
-                  {cell}
-                </TableCell>
+                <>
+                  <MediaQuery query="(min-width: 600px)">
+                    <TableCell className={bigScreen.row} align="left">
+                      {cell}
+                    </TableCell>
+                  </MediaQuery>
+                  <MediaQuery query="(max-width: 599px)">
+                    <TableCell className={mobile.row} align="left">
+                      {cell}
+                    </TableCell>
+                  </MediaQuery>
+                </>
               )}
             </TableRow>
           ))}
