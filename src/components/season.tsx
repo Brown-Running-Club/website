@@ -55,7 +55,7 @@ const Season = ({ season, info }: { season: string, info?: string }) => {
   })
   return (
     <Card title={season} centeredTitle>
-      {schedule ? createMeetTable(schedule) : <></>}
+      {createMeetTable(schedule ?? [])}
       {info ? <p>{info}</p> : <></>}
     </Card>
   )

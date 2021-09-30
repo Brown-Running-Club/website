@@ -43,12 +43,12 @@ const Records = ({ raceType }: { raceType: string }) => {
       <p style={styles.summaryText}>
         <b>Women</b>
       </p>
-      {records ? Table({ header: headers, body: records.women }) : <></>}
+      {Table({ header: headers, body: records?.women ?? [] })}
       <br />
       <p style={styles.summaryText}>
         <b>Men</b>
       </p>
-      {records ? Table({ header: headers, body: records.men }) : <></>}
+      {Table({ header: headers, body: records?.men ?? [] })}
     </Card>
   )
 }
