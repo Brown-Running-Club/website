@@ -1,4 +1,4 @@
-import React from "react"
+import React, { useEffect, useState } from "react"
 import theme from "../config/theme"
 import Card from "./card"
 import "./season.css"
@@ -48,18 +48,17 @@ function createMeetTable(schedule: Schedule) {
   return Table({ header: headers, body: data });
 }
 
-export default class Season extends React.Component<{ season: string, info?: string }, { schedule?: Schedule }> {
-  render() {
-    const schedule = this.state?.schedule
-    return (
-      <Card title={this.props.season} centeredTitle>
-        {schedule ? createMeetTable(schedule) : <></>}
-        {this.props.info ? <p>{this.props.info}</p> : <></>}
-      </Card>
-    )
-  }
+const Season = ({ season, info }: { season: string, info?: string }) => {
+  const [schedule, setSchedule] = useState<Schedule | undefined>(undefined);
+  useEffect(() => {
+    if (schedule === undefined) getSeason(season).then(setSchedule)
+  })
+  return (
+    <Card title={season} centeredTitle>
+      {schedule ? createMeetTable(schedule) : <></>}
+      {info ? <p>{info}</p> : <></>}
+    </Card>
+  )
 
-  componentDidMount() {
-    getSeason(this.props.season).then(schedule => this.setState({ schedule: schedule }))
-  }
 }
+export default Season

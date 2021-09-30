@@ -8,7 +8,7 @@ import TableHead from "@material-ui/core/TableHead"
 import TableRow from "@material-ui/core/TableRow"
 import Paper from "@material-ui/core/Paper"
 import theme from "../config/theme"
-import MediaQuery from "react-responsive"
+import { useMediaQuery } from "react-responsive"
 
 const StyledTableCell = withStyles(theme => ({
   head: {
@@ -35,20 +35,6 @@ const StyledTableRow = withStyles(theme => ({
   },
 }))(TableRow)
 
-const bigScreen = {
-  header: {
-    ...(theme.typography.h4 as any),
-    backgroundColor: theme.palette.brown,
-    color: theme.palette.white,
-    margin: 0,
-    marginBottom: theme.spacing.unit * 2,
-  },
-  row: {
-    ...(theme.typography.h4 as any),
-    color: theme.palette.black,
-    fontSize: 18,
-  },
-};
 const useStyles = makeStyles({
   header: {
     ...(theme.typography.h4 as any),
@@ -69,23 +55,6 @@ interface TableProps {
   body: Array<Array<JSX.Element>>,
 }
 
-const mobile = {
-  header: {
-    ...(theme.typography.h4 as any),
-    backgroundColor: theme.palette.brown,
-    color: theme.palette.white,
-    margin: 0,
-    marginBottom: theme.spacing.unit * 2,
-    fontSize: 13,
-    padding: theme.spacing.unit,
-  },
-  row: {
-    ...(theme.typography.h4 as any),
-    color: theme.palette.black,
-    fontSize: 12,
-    padding: theme.spacing.unit,
-  },
-};
 const useStylesMobile = makeStyles({
   header: {
     ...(theme.typography.h4 as any),
@@ -107,24 +76,17 @@ const useStylesMobile = makeStyles({
 export default function BasicTable(
   props: React.PropsWithChildren<TableProps>
 ) {
+  const isBigScreen = useMediaQuery({ query: '(min-width: 600px)' })
+  const classes = isBigScreen ? useStyles() : useStylesMobile();
   return (
     <TableContainer component={Paper}>
       <Table aria-label="simple table">
         <TableHead>
           <TableRow>
             {props.header.map(cell => (
-              <>
-                <MediaQuery query="(min-width: 600px)">
-                  <TableCell className={bigScreen.header} align="left">
-                    {cell}
-                  </TableCell>
-                </MediaQuery>
-                <MediaQuery query="(max-width: 599px)">
-                  <TableCell className={mobile.header} align="left">
-                    {cell}
-                  </TableCell>
-                </MediaQuery>
-              </>
+              <TableCell className={classes.header} align="left">
+                {cell}
+              </TableCell>
             ))}
           </TableRow>
         </TableHead>
@@ -132,18 +94,9 @@ export default function BasicTable(
           {props.body.map(row => (
             <TableRow>
               {row.map(cell =>
-                <>
-                  <MediaQuery query="(min-width: 600px)">
-                    <TableCell className={bigScreen.row} align="left">
-                      {cell}
-                    </TableCell>
-                  </MediaQuery>
-                  <MediaQuery query="(max-width: 599px)">
-                    <TableCell className={mobile.row} align="left">
-                      {cell}
-                    </TableCell>
-                  </MediaQuery>
-                </>
+                <TableCell className={classes.row} align="left">
+                  {cell}
+                </TableCell>
               )}
             </TableRow>
           ))}

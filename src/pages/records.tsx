@@ -1,4 +1,4 @@
-import React from "react"
+import React, { useEffect, useState } from "react"
 import RecordsImage from "../images/records.jpg"
 import theme from "../config/theme"
 import PageBody from "../components/page-body"
@@ -26,31 +26,31 @@ async function getRecords(raceType: string): Promise<RecordData> {
 async function getRecordsForGender(raceType: string, gender: string): Promise<JSX.Element[][]> {
   const sheetName = raceType + " - " + gender;
   return await getSheetData(SHEET_ID, encodeURIComponent(sheetName + "!" + RANGE))
+    .then(records => records ?? [])
     .then((records: string[][]) => records.map(record => record.map(elt => <>{elt}</>)));
 }
 
-class Records extends React.Component<{ raceType: string }, { records?: RecordData }> {
-  render() {
-    const records = this.state?.records;
-    const headers = ["Event", "Name", "Time", "Year"];
-    return (
-      <Card title={this.props.raceType}>
-        <p style={styles.summaryText}>
-          <b>Women</b>
-        </p>
-        {records ? Table({ header: headers, body: records.women }) : <></>}
-        <br />
-        <p style={styles.summaryText}>
-          <b>Men</b>
-        </p>
-        {records ? Table({ header: headers, body: records.men }) : <></>}
-      </Card>
-    )
-  }
+const Records = ({ raceType }: { raceType: string }) => {
+  const [records, setRecords] = useState<RecordData | undefined>(undefined);
+  const headers = ["Event", "Name", "Time", "Year"];
 
-  componentDidMount() {
-    getRecords(this.props.raceType).then(records => this.setState({ records: records }))
-  }
+  useEffect(() => {
+    if (records === undefined) getRecords(raceType).then(setRecords)
+  })
+
+  return (
+    <Card title={raceType}>
+      <p style={styles.summaryText}>
+        <b>Women</b>
+      </p>
+      {records ? Table({ header: headers, body: records.women }) : <></>}
+      <br />
+      <p style={styles.summaryText}>
+        <b>Men</b>
+      </p>
+      {records ? Table({ header: headers, body: records.men }) : <></>}
+    </Card>
+  )
 }
 
 export default () => (
