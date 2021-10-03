@@ -33,6 +33,7 @@ async function getRoutes(routeType: string): Promise<Route[]> {
 
 function createRouteTable(routes: Route[]): JSX.Element {
   const data = [];
+  const headers = ["Route", "Distance", "Description"]
   for (const routes of routes) {
     const name = <>
       route.link === undefined
