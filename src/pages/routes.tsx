@@ -1,4 +1,4 @@
-import React from "react"
+import React, { useEffect, useState } from "react"
 import TitleImage from "../components/title-image"
 import RoutesImage from "../images/schedule.jpg"
 import theme from "../config/theme"
