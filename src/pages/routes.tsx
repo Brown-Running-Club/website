@@ -9,6 +9,7 @@ import NarrowContainer from "../components/narrow-container"
 import Button from "../components/button"
 import Layout from "../components/layout"
 import { getSheetData } from "../api-calls"
+import Table from "../components/table"
 
 const SHEET_ID = "1TXeyBP-qka8t8wsWUT8SxnyYWZ67JFQT2a9Mo7AzWl0"
 const RANGE = "A2:D100"
