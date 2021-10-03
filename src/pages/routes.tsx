@@ -35,11 +35,10 @@ function createRouteTable(routes: Route[]): JSX.Element {
   const data = [];
   const headers = ["Route", "Distance", "Description"]
   for (const route of routes) {
-    const name = <>
+    const name = 
       route.link === undefined
-        ? route.name
-        : (<a href={route.link}>{route.name}</a>)
-    </>;
+        ? <>route.name</>
+        : (<a href={route.link}>{route.name}</a>);
     data.push([name, <>{route.distance}</>, <>{route.description}</>]);
   }
   return <Table header={headers} body={data} />;
