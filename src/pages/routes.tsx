@@ -50,7 +50,7 @@ const Routes = ({ routeType }: { routeType: string }) => {
     if (routes === undefined) getRoutes(routeType).then(setRoutes)
   })
 
-  return createRouteTable(routes) ?? [];
+  return createRouteTable(routes ?? []);
 }
 
 export default () => (
