@@ -1,17 +1,11 @@
-import React from "react"
+import React, { useEffect, useState } from "react"
 import theme from "../config/theme"
-import {getWeekEvents} from "../api-calls.tsx"
+import { getWeekEvents, GCalEvent } from "../api-calls"
 
 type Event = {
   start: Date
   name: string
   description?: string
-}
-
-interface GCalEvent {
-  start: { dateTime?: string }
-  summary: string
-  description: string
 }
 
 type Week = {
@@ -76,44 +70,42 @@ function prettyTime(date: Date) {
   return time
 }
 
-export default class Schedule extends React.Component<{}, { week?: Week }> {
-  renderDay(day: string, events: Event[]) {
-    const eventElements = events.map(event => (
-      <div style={styles.eventContainer}>
-        <div style={styles.eventTimeContainer}>
-          <p style={styles.eventTime}>{prettyTime(event.start)}</p>
-        </div>
-        <div>
-          <p style={styles.eventTime}>{event.name}</p>
-          {event.description && (
-            <p style={styles.eventDescription}>{event.description}</p>
-          )}
-        </div>
+function renderDay(day: string, events: Event[]) {
+  const eventElements = events.map(event => (
+    <div style={styles.eventContainer}>
+      <div style={styles.eventTimeContainer}>
+        <p style={styles.eventTime}>{prettyTime(event.start)}</p>
       </div>
-    ))
-    return (
-      <>
-        <p style={styles.dayText}>{day.toUpperCase()}</p>
-        {eventElements}
-      </>
+      <div>
+        <p style={styles.eventTime}>{event.name}</p>
+        {event.description && (
+          <p style={styles.eventDescription}>{event.description}</p>
+        )}
+      </div>
+    </div>
+  ))
+  return (
+    <>
+      <p style={styles.dayText}>{day.toUpperCase()}</p>
+      {eventElements}
+    </>
+  )
+}
+
+const Schedule = () => {
+  const [week, setWeek] = useState<Week | undefined>(undefined);
+  useEffect(() => {
+    if (week === undefined) getWeek().then(setWeek)
+  })
+  let days: JSX.Element[] = []
+  if (week) {
+    Object.entries(week).forEach(([day, events]) =>
+      days.push(renderDay(day, events))
     )
   }
-
-  render() {
-    const week = this.state?.week
-    let days: JSX.Element[] = []
-    if (week) {
-      Object.entries(week).forEach(([day, events]) =>
-        days.push(this.renderDay(day, events))
-      )
-    }
-    return <>{days}</>
-  }
-
-  componentDidMount() {
-    getWeek().then(week => this.setState({ week: week }))
-  }
+  return <>{days}</>
 }
+export default Schedule
 
 const styles = {
   dayText: {
