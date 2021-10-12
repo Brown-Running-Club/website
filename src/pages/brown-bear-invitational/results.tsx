@@ -1,23 +1,16 @@
 import React from "react"
 import Kickoff from "../../images/kickoff.jpg"
 import theme from "../../config/theme"
-import Card from "../../components/card"
 import PageBody from "../../components/page-body"
 import WideContainer from "../../components/wide-container"
 import Layout from "../../components/layout"
+import Results from "../../components/brown-bear-invitational/results"
 
 export default () => (
   <Layout title="Brown Bear Invitational Results" image={Kickoff}>
     <PageBody>
       <WideContainer>
-        <Card title="2021">
-          <a href="2021/overall-women.html">Overall Women</a>
-          <a href="2021/overall-men.html">Overall Men</a>
-          <a href="2021/nirca-women.html">NIRCA Women</a>
-          <a href="2021/nirca-men.html">NIRCA Men</a>
-          <a href="2021/usatf-teams-women.html">USATF Teams Women</a>
-          <a href="2021/usatf-teams-men.html">USATF Teams Men</a>
-        </Card>
+        <Results />
       </WideContainer>
     </PageBody>
   </Layout>

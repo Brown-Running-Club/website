@@ -1,0 +1,318 @@
+Men’s Individual Results
+ PLC    Name                          TIME   PACE        TEAM           BIB 
+ ====  ============================ ======= ====== ==================== =====
+   1    Luke Janik                   25:18.5 5:05  Northeastern Univers   161  
+   2    Austin Scott                 26:17.6 5:17  Old Goat Track Club    177  
+   3    Leonard Cameron              26:26.5 5:19  Northeastern Univers   154  
+   4    DJ Raboin                    26:43.1 5:22  Central mass strider   247  
+   5    Brendan Hehir                26:59.8 5:25  Northeastern Univers   159  
+   6    Thomas Hinds                 27:07.1 5:27  Northeastern Univers   160  
+   7    Alphonse Harris              27:17.9 5:29  Greater Boston TC      258  
+   8    Adam Janik                   27:21.9 5:30  Brown University       80   
+   9    Trevor Houchens              27:26.6 5:31  Brown University       79   
+   10   TIMOTHY FORREST              27:35.6 5:32  W Mass Distance Proj   235  
+   11   Matt Dynan                   27:36.7 5:33  Old Goat Track Club    172  
+   12   Donal O'Sullivan             27:37.2 5:33  BAA                    72   
+   13   Samuel Goldberg              27:45.8 5:35  MIT                    146  
+   14   Eli Turner                   27:51.4 5:36  Brown University       92   
+   15   Matthew Petrocelli           27:53.0 5:36  Northeastern Univers   167  
+   16   Daniel Mortimer              27:59.2 5:37  Old Goat Track Club    175  
+   17   Brian Krusell                28:00.6 5:38  Unattached             252  
+   18   Tyler Locke                  28:00.6 5:38  Northeastern Univers   162  
+   19   Mchael Stubna                28:01.5 5:38  Unattached             262  
+   20   Robert LaMarre               28:02.2 5:38  Greater Boston TC      257  
+   21   James Gusmer                 28:02.7 5:38  Harvard University     126  
+   22   TJ Unger                     28:03.7 5:38  HFC Striders           143  
+   23   John Loftus                  28:04.4 5:38  Boston University      96   
+   24   Jarret Harrigan              28:06.1 5:39  Greater Boston TC      108  
+   25   Vincent Castronuovo          28:08.4 5:39  Northeastern Univers   155  
+   26   Steven Hammar                28:09.6 5:39  Unattached             238  
+   27   Collin McGlynn               28:09.8 5:39  Univ of Mass Amherst   204  
+   28   Eliot Laidlaw                28:14.9 5:40  Brown University       82   
+   29   Will Taylor                  28:15.7 5:41  Harvard University     128  
+   30   Harry Gould                  28:23.4 5:42  Northeastern Univers   158  
+   31   David Allen                  28:24.4 5:42  Northeastern Univers   151  
+   32   Daniel Adrion                28:26.9 5:43  Northeastern Univers   150  
+   33   Patrick Brett                28:30.7 5:44  W Mass Distance Proj   234  
+   34   Matt Rabasco                 28:37.4 5:45  Old Goat Track Club    176  
+   35   Ivan Pineda-Dominguez        28:38.0 5:45  Brown University       85   
+   36   Jhair Torres                 28:38.9 5:45  Brown University       91   
+   37   Abdel Khalil                 28:42.6 5:46  Stony Brook Universi   190  
+   38   Anthony Cusato               28:47.6 5:47  Northeastern Univers   157  
+   39   Max Heller                   28:49.6 5:47  Brown University       78   
+   40   Matthew Vigilante            28:51.9 5:48  Brown University       93   
+   41   Pat Kelly                    28:54.7 5:48  HFC Striders           136  
+   42   Arthur Besse                 28:55.9 5:49  Central mass strider   102  
+   43   Dylan Carey                  28:59.6 5:49  Univ of Mass Lowell    209  
+   44   Alex Le                      29:02.0 5:50  Brown University       83   
+   45   Ethan Nedeau                 29:02.3 5:50  Greater Springfield    259  
+   46   David Muir                   29:11.1 5:52  Northeastern Univers   165  
+   47   William Holz                 29:11.6 5:52  Univ of Mass Lowell    213  
+   48   Derek Walsh                  29:12.1 5:52  Harvard University     129  
+   49   Josh Brodin                  29:16.9 5:53  Greater Boston TC      107  
+   50   Juan Estela                  29:18.5 5:53  Boston University      94   
+   51   Remington Gaetjens           29:22.1 5:54  Old Goat Track Club    173  
+   52   Justin Trott                 29:22.7 5:54  Old Goat Track Club    178  
+   53   Kyle Gerlach                 29:22.9 5:54  Old Goat Track Club    174  
+   54   Zachary Harris               29:39.2 5:57  Brown University       77   
+   55   Victor Yang                  29:41.2 5:58  Harvard University     130  
+   56   Peter Biegel                 29:43.7 5:58  Univ of Mass Amherst   193  
+   57   Drew McGlynn                 29:44.8 5:58  Northeastern Univers   163  
+   58   Jake Cardello                29:47.8 5:59  URI Club Track and F   230  
+   59   Seth Camara                  29:48.5 5:59  URI Club Track and F   229  
+   60   Jacob Wormald                29:50.2 6:00  Gate City Striders     106  
+   61   Jason Cakouros               30:00.3 6:02  HFC Striders           132  
+   62   Jonny Benoit                 30:05.5 6:03  Brown University       74   
+   63   AndrAcs Beltran              30:05.9 6:03  Brown University       73   
+   64   Michael Brady                30:08.0 6:03  Unattached             253  
+   65   Rory Milsark                 30:08.8 6:03  Univ of Mass Amherst   206  
+   66   Mihir Gowda                  30:09.2 6:03  Harvard University     125  
+   67   Satch Sumner-Waldman         30:14.9 6:04  Brown University       89   
+   68   Karna Morey                  30:19.4 6:05  MIT                    148  
+   69   Titus Mutinda                30:26.9 6:07  Greater Boston TC      261  
+   70   Mark Kenwood                 30:28.9 6:07  HFC Striders           138  
+   71   Bennett Solomon              30:32.2 6:08  Boston University      97   
+   72   William Kleinschmidt         30:33.5 6:08  Univ of Mass Amherst   199  
+   73   Dave Moyer                   30:42.9 6:10  Greater Boston TC      109  
+   74   Dan Verrington               30:47.3 6:11  Central mass strider   103  
+   75   Colin Messinger              30:57.9 6:13  Univ of Mass Amherst   205  
+   76   Duncan Brown                 31:03.4 6:14  PC Running Club        179  
+   77   Benjamin Palumbo             31:03.6 6:14  Univ of Mass Amherst   207  
+   78   Arya Bhansali                31:04.9 6:14  Univ of Mass Amherst   192  
+   79   Scott Grandfield             31:07.8 6:15  HFC Striders           134  
+   80   SHAWN CONWAY                 31:11.7 6:16  Greater Lowell Road    110  
+   81   Nick Galang                  31:20.1 6:18  Univ of Mass Amherst   194  
+   82   Sam Culver                   31:21.8 6:18  Northeastern Univers   156  
+   83   Carter Cobb                  31:22.6 6:18  Brown University       75   
+   84   Tom Vossen                   31:24.0 6:18  HFC Striders           144  
+   85   Daniel Hartman               31:24.1 6:18  W Mass Distance Proj   236  
+   86   Chris Hancock                31:25.1 6:19  Greater Lowell Road    111  
+   87   Edward Parrot                31:29.5 6:19  Greater Springfield    118  
+   88   Jeremy McCulloch             31:31.6 6:20  MIT                    147  
+   89   Trey Lawson                  31:35.2 6:21  Univ of Mass Amherst   200  
+   90   Garret Kern                  31:37.7 6:21  Brown University       81   
+   91   James Doty                   31:50.7 6:24  Old Goat Track Club    171  
+   92   Grayson McDowell             31:53.6 6:24  Univ of Mass Amherst   203  
+   93   Alex Sharp                   31:53.7 6:24  Unattached             226  
+   94   Joey Colaizzo                32:03.9 6:26  Stony Brook Universi   188  
+   95   Charlie Muse                 32:04.7 6:26  Greater Lowell Road    113  
+   96   Kyle Nameth                  32:10.2 6:28  Northeastern Univers   166  
+   97   Brendan Surette              32:12.8 6:28  Univ of Mass Lowell    221  
+   98   Jonathan Miller              32:16.9 6:29  Northeastern Univers   164  
+   99   Josh Miller                  32:18.6 6:29  Unattached             225  
+   100  Jason Eveleth                32:23.0 6:30  Brown University       76   
+   101  Richard Hovasse              32:23.6 6:30  Univ of Mass Lowell    214  
+   102  Billy Beauregard             32:36.9 6:33  Harvard University     121  
+   103  Robert Landry                32:40.1 6:34  Greater Springfield    117  
+   104  Chris Kelly                  32:50.6 6:36  HFC Striders           137  
+   105  Lars Ankile                  33:00.2 6:38  Harvard University     120  
+   106  Sean Rayment                 33:07.4 6:39  Brown University       86   
+   107  Peter LaGoy                  33:14.1 6:41  Greater Lowell Road    112  
+   108  Alex Bjornson                33:36.3 6:45  URI Club Track and F   228  
+   109  Jacob Scott                  34:01.0 6:50  Univ of Mass Amherst   208  
+   110  John Fuller                  34:15.4 6:53  W Mass Distance Proj   243  
+   111  Simon Bass                   34:16.2 6:53  Northeastern Univers   153  
+   112  ANDREW BRAGG                 34:19.9 6:54  Gate City Striders     104  
+   113  Lian Szwed                   34:21.5 6:54  Northeastern Univers   170  
+   114  Koyla Bough                  34:23.0 6:54  Harvard University     122  
+   115  Braiden Wills                34:39.8 6:58  PC Running Club        183  
+   116  Sacha Servan-Schreiber       34:42.2 6:58  MIT                    149  
+   117  Domenic Privitera            34:50.7 7:00  Northeastern Univers   168  
+   118  Jimmy Leroux                 34:55.4 7:01  Brown University       84   
+   119  Joshua Walsh                 35:02.0 7:02  Univ of Mass Lowell    222  
+   120  Kevin Goshay                 35:04.1 7:03  Harvard University     124  
+   121  Mark Crane                   35:13.8 7:05  Gate City Striders     105  
+   122  Nicholas Roeder-Yika         35:21.6 7:06  PC Running Club        181  
+   123  Alejandro Heuck              35:23.6 7:07  Greater Springfield    116  
+   124  Preston Mattson              35:50.8 7:12  Univ of Mass Amherst   202  
+   125  James Provencher             35:53.5 7:13  Univ of Mass Lowell    218  
+   126  Andrew Parker                36:23.3 7:19  Univ of Mass Lowell    217  
+   127  Gavin Kearney                36:25.3 7:19  CC Rhode Island        100  
+   128  David Gilbride               36:32.7 7:20  Univ of Mass Lowell    212  
+   129  Michael Tully                37:08.1 7:28  Greater Lowell Road    115  
+   130  Henry Rayner                 37:10.7 7:28  Brown University       87   
+   131  Steve Houde                  37:30.9 7:32  HFC Striders           135  
+   132  Ronny Lopez Arevalo          37:38.0 7:34  Univ of Mass Lowell    216  
+   133  Jack Bold                    37:44.1 7:35  Stony Brook Universi   186  
+   134  Brandon Bun                  37:54.6 7:37  CC Rhode Island        98   
+   135  Dario Cruz                   37:57.1 7:38  Harvard University     123  
+   136  David Penn                   38:12.1 7:41  Greater Lowell Road    114  
+   137  Patrick Vogt                 38:12.8 7:41  PC Running Club        182  
+   138  Kevin Pfau                   38:41.4 7:46  Greater Springfield    119  
+   139  Christopher Pasko            38:47.1 7:48  Wellesley Wings        233  
+   140  Patrick Fuss                 38:55.4 7:49  Univ of Mass Lowell    211  
+   141  Brendan Hamaty               39:01.3 7:50  Univ of Mass Amherst   195  
+   142  Serdar Sungun                39:06.2 7:51  Brown University       90   
+   143  Michael Jackson              39:08.0 7:52  URI Club Track and F   231  
+   144  Ryan Rossi                   39:20.4 7:54  Univ of Mass Lowell    219  
+   145  Matt Lynch                   39:51.9 8:01  HFC Striders           139  
+   146  David Lee                    40:49.3 8:12  Univ of Mass Lowell    215  
+   147  Wyatt Howe                   41:30.3 8:20  Boston University      95   
+   148  George Balis                 41:54.0 8:25  Univ of Mass Amherst   191  
+   149  Daniel Thomas                42:39.0 8:34  HFC Striders           142  
+   150  Ilyaas Sugal                 42:40.1 8:35  Brown University       88   
+   151  Eric Klein                   43:19.3 8:42  Univ of Mass Amherst   198  
+   152  Ryan Fitzgerald              48:13.6 9:42  Univ of Mass Lowell    210  
+   153  Tom Derderian                50:46.9 10:12 Greater Boston TC      241  
+
+Men’s Nirca Team scores
+   Plc    Score     Team Name                                      Cumm Time  (# Fin)
+   =========================================================================== 
+     1      18      Northeastern University                        2:13:44.9  ( 19)
+   =========================================================================== 
+            1      Luke Janik                  SR    25:18.5  5:05
+            2      Leonard Cameron             FR    26:26.5  5:19
+            3      Brendan Hehir               JR    26:59.8  5:25
+            4      Thomas Hinds                SO    27:07.1  5:27
+            8      Matthew Petrocelli          --    27:53.0  5:36
+            (9)    Tyler Locke                 --    28:00.6  5:38
+            (11)   Vincent Castronuovo         SO    28:08.4  5:39
+   =========================================================================== 
+     2      46      Brown University                               2:19:32.8  ( 21)
+   =========================================================================== 
+            5      Adam Janik                  SR    27:21.9  5:30
+            6      Trevor Houchens             JR    27:26.6  5:31
+            7      Eli Turner                  SO    27:51.4  5:36
+            13     Eliot Laidlaw               SO    28:14.9  5:40
+            15     Ivan Pineda-Dominguez       SO    28:38.0  5:45
+            (16)   Jhair Torres                GR    28:38.9  5:45
+            (17)   Max Heller                  SO    28:49.6  5:47
+   =========================================================================== 
+     3      89      Harvard University                             2:25:20.9  ( 10)
+   =========================================================================== 
+            10     James Gusmer                JR    28:02.7  5:38
+            14     Will Taylor                 GR    28:15.7  5:41
+            20     Derek Walsh                 FR    29:12.1  5:52
+            21     Victor Yang                 SR    29:41.2  5:58
+            24     Mihir Gowda                 FR    30:09.2  6:03
+            (31)   Billy Beauregard            FR    32:36.9  6:33
+            (32)   Lars Ankile                 SR    33:00.2  6:38
+   =========================================================================== 
+     4      108      Univ of Mass Amherst                           2:29:33.7  ( 15)
+   =========================================================================== 
+            12     Collin McGlynn              FR    28:09.8  5:39
+            22     Peter Biegel                FR    29:43.7  5:58
+            23     Rory Milsark                JR    30:08.8  6:03
+            25     William Kleinschmidt        JR    30:33.5  6:08
+            26     Colin Messinger             FR    30:57.9  6:13
+            (27)   Benjamin Palumbo            FR    31:03.6  6:14
+            (28)   Arya Bhansali               FR    31:04.9  6:14
+   =========================================================================== 
+     5      129      Univ of Mass Lowell                            2:37:49.6  ( 13)
+   =========================================================================== 
+            18     Dylan Carey                 SO    28:59.6  5:49
+            19     William Holz                FR    29:11.6  5:52
+            29     Brendan Surette             SR    32:12.8  6:28
+            30     Richard Hovasse             SR    32:23.6  6:30
+            33     Joshua Walsh                SO    35:02.0  7:02
+            (34)   James Provencher            --    35:53.5  7:13
+            (35)   Andrew Parker               --    36:23.3  7:19
+
+Women’s individual Results
+ PLC    Name                          TIME   PACE        TEAM           BIB 
+ ====  ============================ ======= ====== ==================== =====
+   1    April Sabadosa               23:04.7 6:11  W Mass Distance Proj   254  
+   2    Allison McCabe               23:10.7 6:12  Greater Boston TC      239  
+   3    Shelby Cuddeback             23:25.9 6:16  Greater Boston TC      249  
+   4    Lara Shonkwiler              24:16.4 6:30  MIT                    33   
+   5    Maura Driscoll               24:19.4 6:31  Brown University       3    
+   6    Dana DeIngenis               24:26.8 6:33  HFC Striders           22   
+   7    Shannoj Trant                24:27.8 6:33  Greater Boston TC      255  
+   8    Alicia Cutler                24:31.3 6:34  Greater Boston TC      256  
+   9    Gabby Rao                    24:38.6 6:36  Northeastern Univers   45   
+   10   Elizabeth McDermott          24:41.6 6:37  Univ of Mass Amherst   60   
+   11   Rebecca Elliott              24:55.5 6:41  Northeastern Univers   38   
+   12   Christine Howe               25:02.9 6:42  HFC Striders           24   
+   13   Natalia Kelley               25:08.7 6:44  Boston University      10   
+   14   Caroline Evans               25:15.3 6:46  Northeastern Univers   39   
+   15   Alia Moustafa                25:15.7 6:46  Harvard University     20   
+   16   Nicole Hamilton              25:29.3 6:50  HFC Striders           23   
+   17   Kim Krusell                  25:39.5 6:52  Unattached             251  
+   18   Nicole Nelson                25:53.6 6:56  HFC Striders           27   
+   19   Lily Corcoran                26:05.4 6:59  HFC Striders           21   
+   20   Casey Nelson                 26:08.5 7:00  Brown University       7    
+   21   Sarah Praisner               26:09.7 7:00  Stony Brook Universi   52   
+   22   Emily Newman                 26:12.5 7:01  Old Goat Track Club    48   
+   23   Julia McClellan              26:14.6 7:02  Brown University       5    
+   24   Meghan Quon                  26:17.6 7:02  Northeastern Univers   44   
+   25   Sophie Chong                 26:27.4 7:05  Northeastern Univers   36   
+   26   Erin Dillmann                26:48.9 7:11  Northeastern Univers   37   
+   27   Violet Sackett               26:55.2 7:13  Brown University       9    
+   28   Anna Cutrone                 26:55.9 7:13  Univ of Mass Amherst   55   
+   29   Caroline Diggins             26:59.7 7:14  Harvard University     19   
+   30   Leah Carpenter               27:05.3 7:15  Stony Brook Universi   50   
+   31   Kate Nolan                   27:20.0 7:19  Northeastern Univers   43   
+   32   Rose McDonnell               27:20.7 7:19  Northeastern Univers   42   
+   33   Dana Parrot                  27:28.2 7:21  W Mass Distance Proj   246  
+   34   Caitlin Lourenco             27:29.7 7:22  Northeastern Univers   41   
+   35   Mary McNulty                 27:38.4 7:24  HFC Striders           26   
+   36   Susan McNatt                 27:45.4 7:26  Cambridge Sports Uni   13   
+   37   Elena Betke-Brunswick        28:07.5 7:32  W Mass Distance Proj   245  
+   38   Carolyn Morgensten           28:15.3 7:34  Greater Derry          260  
+   39   Heidi Besse                  28:24.4 7:37  W Mass Distance Proj   71   
+   40   Hannah Hajjaj                28:27.8 7:37  Univ of Mass Amherst   57   
+   41   Jen Kallin                   28:42.4 7:41  Univ of Mass Amherst   59   
+   42   Ava Maurillo                 28:57.5 7:45  Boston University      11   
+   43   Jessica Schueler             28:57.5 7:45  Boston University      12   
+   44   Ava Asai-Sarris              29:07.8 7:48  Northeastern Univers   34   
+   45   Lisa Ferrisi                 29:21.9 7:52  Greater Derry          250  
+   46   Liane Pancoast               29:28.5 7:54  Greater Lowell Road    17   
+   47   Samantha Molina              29:35.3 7:56  Brown University       6    
+   48   Rachel Aalto                 29:40.7 7:57  Univ of Mass Amherst   53   
+   49   Sara Cerullo                 29:54.5 8:01  Unattached             65   
+   50   Arianna Ferretti             30:06.5 8:04  Brown University       4    
+   51   Olivia McGranaghan           30:09.7 8:05  Stony Brook Universi   51   
+   52   Karin George                 30:17.2 8:07  W Mass Distance Proj   244  
+   53   Siena Uyenoyama              30:32.5 8:11  Brookline Track Club   1    
+   54   Angel Kleiman                30:51.4 8:16  URI Club Track and F   68   
+   55   Laura Brigandi               31:11.2 8:21  Northeastern Univers   35   
+   56   Catherine Merra              31:14.5 8:22  Greater Derry          248  
+   57   Anna Vardaro                 31:32.1 8:27  Northeastern Univers   47   
+   58   Ashley Lawrence              31:34.4 8:27  CC Rhode Island        15   
+   59   Madeline Holden              31:35.6 8:28  CC Rhode Island        14   
+   60   Emma Wilson                  32:07.4 8:36  URI Club Track and F   70   
+   61   Carlyn Uyenoyama             32:17.3 8:39  Liberty Athletic Clu   31   
+   62   Grecia Castelazo             32:19.5 8:39  MIT                    32   
+   63   Tara Towle                   32:44.6 8:46  Gate City Striders     16   
+   64   Kylie Bane                   33:23.5 8:57  Univ of Mass Amherst   54   
+   65   Charlotte Nyblade            33:28.4 8:58  Brown University       8    
+   66   Mandy Mariano                34:27.8 9:14  URI Club Track and F   69   
+   67   Cynthia Hasings              34:45.4 9:19  Greater Boston TC      242  
+   68   Li Fen Frothingham           34:53.8 9:21  Univ of Mass Amherst   56   
+   69   Sera Rivers                  34:56.6 9:22  Unattached             67   
+   70   Caroline Bisio               35:32.4 9:31  Univ of Mass Lowell    63   
+   71   Erica Schmidt                35:39.9 9:33  Univ of Mass Amherst   61   
+   72   Karen Lein                   35:57.3 9:38  Liberty Athletic Clu   30   
+
+Women’s Nirca Team scores
+   Plc    Score     Team Name                                      Cumm Time  (# Fin)
+   =========================================================================== 
+     1      28      Northeastern University                        2:07:34.4  ( 12)
+   =========================================================================== 
+            2      Gabby Rao                   SR    24:38.6  6:36
+            4      Rebecca Elliott             SR    24:55.5  6:41
+            5      Caroline Evans              SR    25:15.3  6:46
+            8      Meghan Quon                 JR    26:17.6  7:02
+            9      Sophie Chong                --    26:27.4  7:05
+            (10)   Erin Dillmann               GR    26:48.9  7:11
+            (13)   Kate Nolan                  JR    27:20.0  7:19
+   =========================================================================== 
+     2      41      Brown University                               2:13:13.0  ( 7)
+   =========================================================================== 
+            1      Maura Driscoll              SO    24:19.4  6:31
+            6      Casey Nelson                JR    26:08.5  7:00
+            7      Julia McClellan             JR    26:14.6  7:02
+            11     Violet Sackett              SR    26:55.2  7:13
+            16     Samantha Molina             FR    29:35.3  7:56
+            (18)   Arianna Ferretti            JR    30:06.5  8:04
+            (20)   Charlotte Nyblade           JR    33:28.4  8:58
+   =========================================================================== 
+     3      61      Univ of Mass Amherst                           2:18:28.4  ( 8)
+   =========================================================================== 
+            3      Elizabeth McDermott         GR    24:41.6  6:37
+            12     Anna Cutrone                --    26:55.9  7:13
+            14     Hannah Hajjaj               --    28:27.8  7:37
+            15     Jen Kallin                  SR    28:42.4  7:41
+            17     Rachel Aalto                --    29:40.7  7:57
+            (19)   Kylie Bane                  FR    33:23.5  8:57
+            (21)   Li Fen Frothingham          FR    34:53.8  9:21
