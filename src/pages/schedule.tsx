@@ -64,7 +64,7 @@ export default () => {
               on days we have races, so see our meet schedule below.
             </p>
           </Card>
-          <Season season="Fall 2021" />
+          <Season season="Spring 2022" />
           <MediaQuery query="(max-width: 1150px)">
             {narrowContent}
           </MediaQuery>
