@@ -1,5 +1,5 @@
 import React from "react"
-import Kickoff from "../images/kickoff.jpg"
+import Omac from "../images/omac.jpg"
 import theme from "../config/theme"
 import Card from "../components/card"
 import PageBody from "../components/page-body"
@@ -15,7 +15,7 @@ export default () => {
       <Results />
     </Card>;
   return (
-    <Layout title="Billy Brockmueller Invitational" image={Kickoff}>
+    <Layout title="Billy Brockmueller Invitational" image={Omac}>
       <PageBody>
         <WideContainer>
           <Card>
