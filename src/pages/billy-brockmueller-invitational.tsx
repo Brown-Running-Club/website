@@ -34,18 +34,14 @@ export default () => {
   const schedule =
     <Card title="Schedule">
       <b>Order of events (TENTATIVE):</b>
+      <br />
       <OrderOfEvents />
       <br />
-      Approximate event start times will be posted closer to the meet.
-      <br />
-      Women will run before men in all races.
-      <br />
-      Heats will run faster to slower.
+
+      Women will run before men and heats will run fast to slow.
       <br />
       Long jump will be an open pit from 12:30-2:00.
       Jumpers may not do walkthroughs once the event has started.
-      <br />
-      <br />
     </Card>;
 
   return (
@@ -130,8 +126,7 @@ export default () => {
               <b>Accessibility:</b> The facility is ADA accessible. Call or email ahead for ground-level entrance.
               <br />
               <br />
-              <b>Contact:</b> Max Heller, Meet Director:{" "}
-              <a href="mailto:run@brown.edu">run@brown.edu</a> (preferred) or 518-364-7530
+              <b>Contact:</b> Max Heller, Meet Director: <a href="mailto:run@brown.edu">run@brown.edu</a> (preferred) or 518-364-7530
             </p>
           </Card>
           <MediaQuery query="(max-width: 799px)">
