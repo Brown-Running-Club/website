@@ -98,8 +98,9 @@ export default () => (
             Grace is charge of organizing race logistics and generally keeping
             the club running by coordinating training plans. Grace likes
             Maroon 5, watermelon, almond hershey’s kisses, and chewing gum.
-            In her first attempt, Grace became our women’s record holder in the
-            semiannual Hard To Chug Beverage Mile (HTCB).
+            Grace was excited to visit New Hampshire and Vermont for the first
+            time this fall, but still needs to go to Maine to see all of New
+            England.
           </p>
         </CharacterCard>
 
