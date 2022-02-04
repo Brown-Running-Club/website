@@ -20,8 +20,8 @@ export default () => {
       <p>
       This meet is named in memory of Brown Running Club member Billy Brockmueller.
       Billy graduated with a Master’s degree in Physics from Brown University in spring of 2018,
-      and passed away in December of 2018. In Billy's honor, proceeds from concessions at the
-      meet go to <a href="www.simbaministries.com">Simba Ministries</a>, an organization which Billy
+      and passed away the following winter. In Billy's honor, proceeds from concessions at the
+      meet go to <a href="https://www.simbaministries.com">Simba Ministries</a>, an organization which Billy
       was involved with during his time at Brown.
       </p>
       <Button
