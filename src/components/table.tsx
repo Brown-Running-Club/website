@@ -14,6 +14,12 @@ import { useMediaQuery } from "react-responsive"
 export type Headers = string[]
 export type Row = JSX.Element[]
 
+interface TableProps {
+  header: Array<string>,
+  body: Array<Row>,
+  fontsize: number,
+}
+
 const useStyles = makeStyles({
   header: {
     ...(theme.typography.h4 as any),
@@ -21,18 +27,14 @@ const useStyles = makeStyles({
     color: theme.palette.white,
     margin: 0,
     marginBottom: theme.spacing.unit * 2,
+    padding: theme.spacing.unit,
   },
   row: {
     ...(theme.typography.h4 as any),
     color: theme.palette.black,
+    padding: theme.spacing.unit,
   },
 })
-
-interface TableProps {
-  header: Array<string>,
-  body: Array<Row>,
-  fontsize: number,
-}
 
 const useStylesMobile = makeStyles({
   header: {
