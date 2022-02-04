@@ -44,7 +44,6 @@ export default () => {
                 <li>Registration Closes: 11:59 pm, Monday, March 7</li>
               </ul>
               <br />
-              <br />
               <b>Entry Fee:</b>
               <ul>
                 <li>$15/athlete for college club athletes (NIRCA) and high schoolers</li>
@@ -81,9 +80,7 @@ export default () => {
                 </li>
               </ul>
               <br />
-              <br />
               <b>Spectator Admission:</b> Free <br />
-              <br />
               <br />
               <b>COVID-19 Policies:</b> All participants and spectators are required to adhere to Brown's visitor guidelines.
               Namely, athletes are required to wear masks except while competing, and spectators are required to wear masks at all times.
@@ -107,10 +104,10 @@ export default () => {
               <br />
               <br />
               <b>Contact:</b> Max Heller, Meet Director:{" "}
-              <a href="mailto:run@brown.edu">run@brown.edu</a> (preferred) or
-              518-364-7530
+              <a href="mailto:run@brown.edu">run@brown.edu</a> (preferred) or 518-364-7530
               <br />
-              The facility is ADA accessible. Call or email ahead for ground-level entrance.
+              <br />
+              <b>Accessibility:</b> The facility is ADA accessible. Call or email ahead for ground-level entrance.
             </p>
           </Card>
           <MediaQuery query="(max-width: 799px)">
