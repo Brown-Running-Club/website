@@ -8,7 +8,11 @@ import TableHead from "@material-ui/core/TableHead"
 import TableRow from "@material-ui/core/TableRow"
 import Paper from "@material-ui/core/Paper"
 import theme from "../config/theme"
+import { getSheetData } from "../api-calls"
 import { useMediaQuery } from "react-responsive"
+
+export type Headers = string[]
+export type Row = JSX.Element[]
 
 const StyledTableCell = withStyles(theme => ({
   head: {
@@ -52,7 +56,7 @@ const useStyles = makeStyles({
 
 interface TableProps {
   header: Array<string>,
-  body: Array<Array<JSX.Element>>,
+  body: Array<Row>,
 }
 
 const useStylesMobile = makeStyles({
@@ -104,6 +108,19 @@ export default function BasicTable(
       </Table>
     </TableContainer>
   )
+}
+export { BasicTable as Table }
+
+async function loadSheetData(sheetId: string, sheetName: string, range: string): Promise<[Headers, Row[]]> {
+  const data = await getSheetData(sheetId, encodeURIComponent(sheetName + "!" + range)) ?? [];
+  const headers = data[0];
+  const rows = data.slice(1).map(record => record.map(elt => <>{elt}</>));
+  return [headers, rows];
+}
+
+export async function tableFromSheet(sheetId: string, sheetName: string, range: string): Promise<JSX.Element> {
+  const [header, body] = await loadSheetData(sheetId, sheetName, range);
+  return BasicTable({ header, body })
 }
 
 const styles = {

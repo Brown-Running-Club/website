@@ -6,7 +6,7 @@ export interface GCalEvent {
 
 const API_KEY = "AIzaSyB_4qRtTbmqHERuJLpTJAWOjkFwx4c2zMo"
 
-export async function getSheetData(sheetId: string, range: string) {
+export async function getSheetData(sheetId: string, range: string): Promise<string[][]> {
   const url =
     "https://sheets.googleapis.com/v4/spreadsheets/" +
     sheetId +
