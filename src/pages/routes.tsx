@@ -18,7 +18,7 @@ type Route = {
 }
 
 async function getRoutes(routeType: string): Promise<Route[]> {
-  return await getSheetData(SHEET_ID, routeType)
+  return await getSheetData(SHEET_ID, `${routeType}!A2:Z100`)
     .then((routes: string[][]) => routes.map(route => ({
       name: route[0],
       distance: route[1],
@@ -37,7 +37,7 @@ function createRouteTable(routes: Route[]): JSX.Element {
         : (<a href={route.link}>{route.name}</a>);
     data.push([name, <>{route.distance}</>, <>{route.description}</>]);
   }
-  return <Table header={headers} body={data} />;
+  return <Table header={headers} body={data} fontsize={15} padding={8} />;
 }
 
 const Routes = ({ routeType }: { routeType: string }) => {

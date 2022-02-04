@@ -17,7 +17,7 @@ type Schedule = Meet[]
 const SHEET_ID = "1hvbRCCS-jP2bxBD9HoRZ3bKetfV-LiKb-ZT8a7Y5-NU"
 
 async function getSeason(season: string) {
-  return await getSheetData(SHEET_ID, season)
+  return await getSheetData(SHEET_ID, `${season}!A2:Z100`)
     .then((meets) => meets.map(meet => ({
       date: meet[0],
       race: meet[1],
@@ -43,7 +43,7 @@ function createMeetTable(schedule: Schedule) {
 
     data.push([<>{meet.date}</>, name, <>{meet.location}</>]);
   }
-  return Table({ header: headers, body: data });
+  return Table({ header: headers, body: data, fontsize: 15, padding: 8 });
 }
 
 const Season = ({ season, info }: { season: string, info?: string }) => {
