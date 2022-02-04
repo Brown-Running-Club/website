@@ -1,5 +1,5 @@
 import React from "react"
-import BackgroundImage from "../../images/natalie.jpg"
+import BackgroundImage from "../../images/about-billy.jpg"
 import Billy from "../../images/billy.jpg"
 import theme from "../../config/theme"
 import Card from "../../components/card"
@@ -10,6 +10,7 @@ import MediaQuery from "react-responsive"
 import Layout from "../../components/layout"
 
 export default () => {
+  const billyPic = <img style={styles.image} src={Billy} alt="Billy Brockmueller"></img>
   return (
     <Layout title="Remembering Billy" image={BackgroundImage}>
       <PageBody>
@@ -45,10 +46,17 @@ export default () => {
         </WideContainer>
         <MediaQuery query="(min-width: 800px)">
           <NarrowContainer>
-            {Billy}
+            {billyPic}
           </NarrowContainer>
         </MediaQuery>
       </PageBody>
     </Layout>
   )
+}
+
+const styles = {
+  image: {
+    width: '100%',
+    height: 'auto'
+  }
 }
