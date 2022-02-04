@@ -21,18 +21,17 @@ const useStyles = makeStyles({
     color: theme.palette.white,
     margin: 0,
     marginBottom: theme.spacing.unit * 2,
-    fontSize: 14,
   },
   row: {
     ...(theme.typography.h4 as any),
     color: theme.palette.black,
-    fontSize: 14,
   },
 })
 
 interface TableProps {
   header: Array<string>,
   body: Array<Row>,
+  fontsize: number,
 }
 
 const useStylesMobile = makeStyles({
@@ -42,13 +41,11 @@ const useStylesMobile = makeStyles({
     color: theme.palette.white,
     margin: 0,
     marginBottom: theme.spacing.unit * 2,
-    fontSize: 13,
     padding: theme.spacing.unit,
   },
   row: {
     ...(theme.typography.h4 as any),
     color: theme.palette.black,
-    fontSize: 12,
     padding: theme.spacing.unit,
   },
 })
@@ -64,7 +61,7 @@ export default function BasicTable(
         <TableHead>
           <TableRow>
             {props.header.map(cell => (
-              <TableCell className={classes.header} align="left">
+              <TableCell className={classes.header} align="left" style={{ fontSize: props.fontsize }}>
                 {cell}
               </TableCell>
             ))}
@@ -74,7 +71,7 @@ export default function BasicTable(
           {props.body.map(row => (
             <TableRow>
               {row.map(cell =>
-                <TableCell className={classes.row} align="left">
+                <TableCell className={classes.row} align="left" style={{ fontSize: props.fontsize }}>
                   {cell}
                 </TableCell>
               )}
@@ -82,7 +79,7 @@ export default function BasicTable(
           ))}
         </TableBody>
       </Table>
-    </TableContainer>
+    </TableContainer >
   )
 }
 export { BasicTable as Table }
@@ -94,11 +91,11 @@ async function loadSheetData(sheetId: string, range: string): Promise<[Headers, 
   return [headers, rows];
 }
 
-export function GSheetsTable({ sheetId, range }: { sheetId: string; range: string }) {
+export function GSheetsTable({ sheetId, range, fontsize }: { sheetId: string; range: string; fontsize: number }) {
   const empty: [Headers, Row[]] = [[], []];
   const [data, setData] = useState(empty);
   useEffect(() => {
     if (data === empty) loadSheetData(sheetId, range).then(setData)
   })
-  return BasicTable({ header: data[0], body: data[1] });
+  return BasicTable({ header: data[0], body: data[1], fontsize });
 }

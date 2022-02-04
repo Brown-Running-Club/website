@@ -31,21 +31,22 @@ export default () => {
       ></Button>
     </Card>;
 
-  const schedule = <>
-    <b>Order of events (TENTATIVE):</b>
-    <OrderOfEvents />
-    <br />
-    Approximate event start times will be posted closer to the meet.
-    <br />
-    Women will run before men in all races.
-    <br />
-    Heats will run faster to slower.
-    <br />
-    Long jump will be an open pit from 12:30-2:00.
-    Jumpers may not do walkthroughs once the event has started.
-    <br />
-    <br />
-  </>;
+  const schedule =
+    <Card title="Schedule">
+      <b>Order of events (TENTATIVE):</b>
+      <OrderOfEvents />
+      <br />
+      Approximate event start times will be posted closer to the meet.
+      <br />
+      Women will run before men in all races.
+      <br />
+      Heats will run faster to slower.
+      <br />
+      Long jump will be an open pit from 12:30-2:00.
+      Jumpers may not do walkthroughs once the event has started.
+      <br />
+      <br />
+    </Card>;
 
   return (
     <Layout title="Billy Brockmueller Invitational" image={Omac}>
