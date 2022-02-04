@@ -10,7 +10,7 @@ export default () => (
   <Layout title="Billy Brockmueller Invitational Records" image={Omac}>
     <PageBody>
       <WideContainer>
-        <Records raceType="Billy Brockmueller Invitational" overrideHeaders={["Event", "Time", "Year", "Name", "Team"]}/>
+        <Records raceType="Billy Brockmueller Invitational" />
       </WideContainer>
     </PageBody>
   </Layout>
