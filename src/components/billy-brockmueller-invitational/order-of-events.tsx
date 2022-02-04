@@ -6,7 +6,8 @@ const ORDER_OF_EVENTS_SHEET_NAME = "Schedule";
 const OrderOfEvents = () => GSheetsTable({
     sheetId: ORDER_OF_EVENTS_SHEET_ID,
     range: ORDER_OF_EVENTS_SHEET_NAME,
-    fontsize: 12
+    fontsize: 12,
+    padding: 4,
 });
 
 export default OrderOfEvents

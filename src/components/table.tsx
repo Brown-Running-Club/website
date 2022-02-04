@@ -18,6 +18,7 @@ interface TableProps {
   header: Array<string>,
   body: Array<Row>,
   fontsize: number,
+  padding: number,
 }
 
 const useStyles = makeStyles({
@@ -27,12 +28,10 @@ const useStyles = makeStyles({
     color: theme.palette.white,
     margin: 0,
     marginBottom: theme.spacing.unit * 2,
-    padding: theme.spacing.unit,
   },
   row: {
     ...(theme.typography.h4 as any),
     color: theme.palette.black,
-    padding: theme.spacing.unit,
   },
 })
 
@@ -43,12 +42,10 @@ const useStylesMobile = makeStyles({
     color: theme.palette.white,
     margin: 0,
     marginBottom: theme.spacing.unit * 2,
-    padding: theme.spacing.unit,
   },
   row: {
     ...(theme.typography.h4 as any),
     color: theme.palette.black,
-    padding: theme.spacing.unit,
   },
 })
 
@@ -57,13 +54,14 @@ export default function BasicTable(
 ) {
   const isBigScreen = useMediaQuery({ query: '(min-width: 600px)' })
   const classes = isBigScreen ? useStyles() : useStylesMobile();
+  const styles = { fontSize: props.fontsize, padding: props.padding };
   return (
     <TableContainer component={Paper}>
       <Table aria-label="simple table">
         <TableHead>
           <TableRow>
             {props.header.map(cell => (
-              <TableCell className={classes.header} align="left" style={{ fontSize: props.fontsize }}>
+              <TableCell className={classes.header} align="left" style={styles}>
                 {cell}
               </TableCell>
             ))}
@@ -73,7 +71,7 @@ export default function BasicTable(
           {props.body.map(row => (
             <TableRow>
               {row.map(cell =>
-                <TableCell className={classes.row} align="left" style={{ fontSize: props.fontsize }}>
+                <TableCell className={classes.row} align="left" style={styles}>
                   {cell}
                 </TableCell>
               )}
@@ -93,11 +91,11 @@ async function loadSheetData(sheetId: string, range: string): Promise<[Headers, 
   return [headers, rows];
 }
 
-export function GSheetsTable({ sheetId, range, fontsize }: { sheetId: string; range: string; fontsize: number }) {
+export function GSheetsTable({ sheetId, range, fontsize, padding }: { sheetId: string; range: string; fontsize: number; padding: number }) {
   const empty: [Headers, Row[]] = [[], []];
   const [data, setData] = useState(empty);
   useEffect(() => {
     if (data === empty) loadSheetData(sheetId, range).then(setData)
   })
-  return BasicTable({ header: data[0], body: data[1], fontsize });
+  return BasicTable({ header: data[0], body: data[1], fontsize, padding });
 }
