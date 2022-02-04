@@ -19,7 +19,7 @@ export default () => {
       <PageBody>
         <WideContainer>
           <Card>
-            <p style={styles.welcomeText}>
+            <p>
               <b>Date:</b> Saturday, March 12, 2022 <br />
               <b>Time:</b> Events begin at noon. Teams may arrive <b>no earlier than 11am</b>.
               <br />
@@ -36,14 +36,13 @@ export default () => {
               Jumpers may not do walkthroughs once the event has started.
               <br />
               <br />
-              <b>Registration:</b>
+              <b>Registration: </b>
                 The preferred method for entries is on <a href="https://www.directathletics.com/meets/track/72457.html">DirectAthletics</a>.
                 Otherwise, email <a href="mailto:run@brown.edu">run@brown.edu</a> to request an entry form.
               <ul>
                 <li>Registration Opens: 12:00 am, Monday, February 14</li>
                 <li>Registration Closes: 11:59 pm, Monday, March 7</li>
               </ul>
-              <br />
               <b>Entry Fee:</b>
               <ul>
                 <li>$15/athlete for college club athletes (NIRCA) and high schoolers</li>
@@ -79,7 +78,6 @@ export default () => {
                   1933, Providence, RI 02912{'"'}
                 </li>
               </ul>
-              <br />
               <b>Spectator Admission:</b> Free <br />
               <br />
               <b>COVID-19 Policies:</b> All participants and spectators are required to adhere to Brown's visitor guidelines.
@@ -103,11 +101,11 @@ export default () => {
               <b>Awards:</b> At clerk table: medal awarded to top three finishers in each, ribbons to second and third place. Plaques to top men and women NIRCA teams.
               <br />
               <br />
+              <b>Accessibility:</b> The facility is ADA accessible. Call or email ahead for ground-level entrance.
+              <br />
+              <br />
               <b>Contact:</b> Max Heller, Meet Director:{" "}
               <a href="mailto:run@brown.edu">run@brown.edu</a> (preferred) or 518-364-7530
-              <br />
-              <br />
-              <b>Accessibility:</b> The facility is ADA accessible. Call or email ahead for ground-level entrance.
             </p>
           </Card>
           <MediaQuery query="(max-width: 799px)">
