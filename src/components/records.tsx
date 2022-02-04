@@ -5,7 +5,7 @@ import Card from "../components/card"
 import { getSheetData } from "../api-calls"
 
 const SHEET_ID = "1-0FhSZemh9iVF5bEOnqRGIH3ZFAHb9-ktbw5I2Zz9eE"
-const RANGE = "A2:D100"
+const RANGE = "A2:E100"
 
 type RecordData = {
   men: JSX.Element[][]
