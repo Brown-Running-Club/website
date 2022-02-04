@@ -88,7 +88,7 @@ export default () => {
               For the most up-to-date information, see <a href="https://healthy.brown.edu/visitors-guests">Brown's website</a>.
               <br />
               <br />
-              <b>Check-in:</b> You may check with the clerk in up to 60 minutes before your event.
+              <b>Check-in:</b> You may check in with the clerk up to 60 minutes before your event.
                 Please check in no later than 20 minutes before your scheduled event time,
                 or you will be scratched. We will run up to 5 minutes ahead of the listed schedule.
               <br />
