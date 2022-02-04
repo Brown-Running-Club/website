@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react"
 import theme from "../config/theme"
-import { tableFromSheet, Table } from "../components/table"
+import { GSheetsTable } from "../components/table"
 import Card from "../components/card"
 
 const SHEET_ID = "1-0FhSZemh9iVF5bEOnqRGIH3ZFAHb9-ktbw5I2Zz9eE"
@@ -10,35 +10,31 @@ type RecordTables = {
   women: JSX.Element
 }
 
-async function getRecords(raceType: string): Promise<RecordTables> {
-  const records = [getRecordsForGender(raceType, "Men"), getRecordsForGender(raceType, "Women")];
-  const [men, women] = await Promise.all(records);
-  return { men, women }
+function getRecords(raceType: string): RecordTables {
+  return {
+    men: getRecordsForGender(raceType, "Men"),
+    women: getRecordsForGender(raceType, "Women"),
+  }
 }
 
-async function getRecordsForGender(raceType: string, gender: string): Promise<JSX.Element> {
+function getRecordsForGender(raceType: string, gender: string): JSX.Element {
   const sheetName = raceType + " - " + gender;
-  return tableFromSheet(SHEET_ID, sheetName);
+  return GSheetsTable(SHEET_ID, sheetName);
 }
 
 const Records = ({ raceType }: { raceType: string }) => {
-  const [records, setRecords] = useState<RecordTables | undefined>(undefined);
-
-  useEffect(() => {
-    if (records === undefined) getRecords(raceType).then(setRecords)
-  })
-
+  const records = getRecords(raceType);
   return (
     <Card title={raceType}>
       <p style={styles.summaryText}>
         <b>Women</b>
       </p>
-      {records?.women ?? Table({ header: [], body: [] })}
+      {records.women}
       <br />
       <p style={styles.summaryText}>
         <b>Men</b>
       </p>
-      {records?.men ?? Table({ header: [], body: [] })}
+      {records.men}
     </Card>
   )
 }

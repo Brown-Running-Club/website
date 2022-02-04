@@ -1,4 +1,4 @@
-import React from "react"
+import React, { useEffect, useState } from "react"
 import { withStyles, makeStyles } from "@material-ui/core/styles"
 import Table from "@material-ui/core/Table"
 import TableBody from "@material-ui/core/TableBody"
@@ -118,9 +118,15 @@ async function loadSheetData(sheetId: string, range: string): Promise<[Headers, 
   return [headers, rows];
 }
 
-export async function tableFromSheet(sheetId: string, range: string): Promise<JSX.Element> {
-  const [header, body] = await loadSheetData(sheetId, range);
-  return BasicTable({ header, body })
+export function GSheetsTable(sheetId: string, range: string) {
+  const empty = BasicTable({ header: [], body: [] });
+  const [table, setTable] = useState(empty);
+  useEffect(() => {
+    if (table === empty) {
+      loadSheetData(sheetId, range).then(([header, body]) => setTable(BasicTable({ header, body })))
+    }
+  })
+  return table;
 }
 
 const styles = {
