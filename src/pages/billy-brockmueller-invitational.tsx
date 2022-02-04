@@ -24,14 +24,15 @@ export default () => {
               <b>Time:</b> Events begin at noon. Teams may arrive <b>no earlier than 11am</b>.
               <br />
               <b>Location:</b> Olney-Margolies Athletic Center, 235 Hope Street, Providence, RI 02906 <br />
-              // <b>Parking:</b> TBD
               <br />
               <br />
               <b>Events:</b> 60m, 60m Hurdles, 200m, 400m, 800m, Mile, 3k, 5k, 4x200m Relay, 4x400m Relay, 4x800m Relay, Long Jump, High Jump
               <br />
               Approximate event start times will be posted closer to the meet.
               <br />
-              Women will run before men in all races. Heats will run faster to slower.
+              Women will run before men in all races.
+              <br />
+              Heats will run faster to slower.
               <br />
               Long jump will be an open pit from 12:30-2:00.
               Jumpers may not do walkthroughs once the event has started.
@@ -45,8 +46,7 @@ export default () => {
                 <li>Registration Closes: 11:59 pm, Monday, March 7</li>
               </ul>
               <br />
-              <br />
-              <b>Entry Fee:</b>
+              <b>Entry Fees:</b>
               <ul style={{ listStyleType: "none" }}>
                 <li>$15/athlete for college club athletes (NIRCA) and high schoolers</li>
                 <li>$20/athlete for other participants (college varsity athletes, non-collegiate club teams, unattached athletes)</li>
@@ -81,7 +81,6 @@ export default () => {
                   1933, Providence, RI 02912{'"'}
                 </li>
               </ul>
-              <br />
               <br />
               <b>Spectator Admission:</b> Free <br />
               <br />
