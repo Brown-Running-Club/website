@@ -26,7 +26,7 @@ async function getRecordsForGender(raceType: string, gender: string): Promise<JS
     .then((records: string[][]) => records.map(record => record.map(elt => <>{elt}</>)));
 }
 
-export const Records = ({ raceType, overrideHeaders }: { raceType: string; overrideHeaders?: string[]  }) => {
+const Records = ({ raceType, overrideHeaders }: { raceType: string; overrideHeaders?: string[]  }) => {
   const [records, setRecords] = useState<RecordData | undefined>(undefined);
   const headers = overrideHeaders ? overrideHeaders : ["Event", "Name", "Time", "Year"];
 
@@ -48,6 +48,8 @@ export const Records = ({ raceType, overrideHeaders }: { raceType: string; overr
     </Card>
   )
 }
+
+export default Records
 
 const styles = {
   infoText: {
