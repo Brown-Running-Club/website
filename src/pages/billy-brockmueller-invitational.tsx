@@ -24,11 +24,12 @@ export default () => {
               <b>Time:</b> Events begin at noon. Teams may arrive <b>no earlier than 11am</b>.
               <br />
               <b>Location:</b> Olney-Margolies Athletic Center, 235 Hope Street, Providence, RI 02906 <br />
-              <b>Parking:</b> TBD
+              // <b>Parking:</b> TBD
               <br />
               <br />
-              <b>Events:</b> Approximate event start times will be posted closer to the meet.
-              TODO
+              <b>Events:</b> 60m, 60m Hurdles, 200m, 400m, 800m, Mile, 3k, 5k, 4x200m Relay, 4x400m Relay, 4x800m Relay, Long Jump, High Jump
+              <br />
+              Approximate event start times will be posted closer to the meet.
               <br />
               Women will run before men in all races. Heats will run faster to slower.
               <br />
@@ -39,12 +40,14 @@ export default () => {
               <b>Registration: </b>
                 The preferred method for entries is on <a href="https://www.directathletics.com/meets/track/72457.html">DirectAthletics</a>.
                 Otherwise, email <a href="mailto:run@brown.edu">run@brown.edu</a> to request an entry form.
-              <ul>
+              <ul style={{ listStyleType: "none" }}>
                 <li>Registration Opens: 12:00 am, Monday, February 14</li>
                 <li>Registration Closes: 11:59 pm, Monday, March 7</li>
               </ul>
+              <br />
+              <br />
               <b>Entry Fee:</b>
-              <ul>
+              <ul style={{ listStyleType: "none" }}>
                 <li>$15/athlete for college club athletes (NIRCA) and high schoolers</li>
                 <li>$20/athlete for other participants (college varsity athletes, non-collegiate club teams, unattached athletes)</li>
                 <li>$250 max/gender team (applies to all teams and clubs)</li>
@@ -78,6 +81,8 @@ export default () => {
                   1933, Providence, RI 02912{'"'}
                 </li>
               </ul>
+              <br />
+              <br />
               <b>Spectator Admission:</b> Free <br />
               <br />
               <b>COVID-19 Policies:</b> All participants and spectators are required to adhere to Brown's visitor guidelines.
@@ -120,52 +125,4 @@ export default () => {
       </PageBody>
     </Layout>
   )
-}
-
-const styles = {
-  welcomeText: {
-    ...(theme.typography.h4 as any),
-    margin: 0,
-  },
-  dayText: {
-    ...(theme.typography.h2 as any),
-    color: theme.palette.red,
-    margin: 0,
-    marginBottom: theme.spacing.unit,
-    paddingTop: theme.spacing.unit,
-    borderTop: "1px solid " + theme.palette.lightGray,
-  },
-  eventContainer: {
-    display: "flex",
-    marginBottom: theme.spacing.unit,
-  },
-  eventTimeContainer: {
-    width: theme.spacing.unit * 7,
-  },
-  eventTime: {
-    ...(theme.typography.h2 as any),
-    margin: 0,
-  },
-  eventDescription: {
-    ...(theme.typography.h2 as any),
-    fontWeight: "normal" as "normal",
-    margin: 0,
-  },
-  videoContainer: {
-    position: 'relative' as const,
-    width: '100%',
-    height: 0,
-    paddingBottom: '56.25%',
-  },
-  video: {
-    position: 'absolute' as const,
-    top: 0,
-    left: 0,
-    width: '100%',
-    height: '100%',
-  },
-  image: {
-    width: '100%',
-    height: 'auto'
-  }
 }
