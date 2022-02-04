@@ -1,18 +1,14 @@
 import React, { useEffect, useState } from "react"
-import TitleImage from "../components/title-image"
 import RoutesImage from "../images/schedule.jpg"
 import theme from "../config/theme"
 import PageBody from "../components/page-body"
 import WideContainer from "../components/wide-container"
 import Card from "../components/card"
-import NarrowContainer from "../components/narrow-container"
-import Button from "../components/button"
 import Layout from "../components/layout"
 import { getSheetData } from "../api-calls"
 import Table from "../components/table"
 
 const SHEET_ID = "1TXeyBP-qka8t8wsWUT8SxnyYWZ67JFQT2a9Mo7AzWl0"
-const RANGE = "A2:D100"
 
 type Route = {
   name: string,
@@ -22,7 +18,7 @@ type Route = {
 }
 
 async function getRoutes(routeType: string): Promise<Route[]> {
-  return await getSheetData(SHEET_ID, encodeURIComponent(routeType + "!" + RANGE))
+  return await getSheetData(SHEET_ID, `${routeType}!A2:Z100`)
     .then((routes: string[][]) => routes.map(route => ({
       name: route[0],
       distance: route[1],
@@ -35,13 +31,13 @@ function createRouteTable(routes: Route[]): JSX.Element {
   const data = [];
   const headers = ["Route", "Distance", "Description"]
   for (const route of routes) {
-    const name = 
+    const name =
       route.link === undefined
         ? <>route.name</>
         : (<a href={route.link}>{route.name}</a>);
     data.push([name, <>{route.distance}</>, <>{route.description}</>]);
   }
-  return <Table header={headers} body={data} />;
+  return <Table header={headers} body={data} fontsize={15} padding={8} />;
 }
 
 const Routes = ({ routeType }: { routeType: string }) => {
@@ -64,13 +60,13 @@ export default () => (
           </p>
         </Card>
         <Card title="Local Routes">
-          <Routes routeType="Local"/>
+          <Routes routeType="Local" />
         </Card>
         <Card title="Local Tracks">
-          <Routes routeType="Tracks"/>
+          <Routes routeType="Tracks" />
         </Card>
         <Card title="Travel Routes">
-          <Routes routeType="Travel"/>
+          <Routes routeType="Travel" />
         </Card>
       </WideContainer>
     </PageBody>

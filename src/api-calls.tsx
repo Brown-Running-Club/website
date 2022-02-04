@@ -6,12 +6,12 @@ export interface GCalEvent {
 
 const API_KEY = "AIzaSyB_4qRtTbmqHERuJLpTJAWOjkFwx4c2zMo"
 
-export async function getSheetData(sheetId: string, range: string) {
+export async function getSheetData(sheetId: string, range: string): Promise<string[][]> {
   const url =
     "https://sheets.googleapis.com/v4/spreadsheets/" +
     sheetId +
     "/values/" +
-    range +
+    encodeURIComponent(range) +
     "?key=" +
     API_KEY
   return await fetch(url)
@@ -41,5 +41,5 @@ export async function getWeekEvents(start: Date, calId: string): Promise<GCalEve
 
   return await fetch(url)
     .then(res => res.json())
-    .then(res => res.items)
+    .then(res => res.items ?? [])
 }

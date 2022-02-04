@@ -1,54 +1,40 @@
 import React, { useEffect, useState } from "react"
 import theme from "../config/theme"
-import Table from "../components/table"
+import { GSheetsTable } from "../components/table"
 import Card from "../components/card"
-import { getSheetData } from "../api-calls"
 
 const SHEET_ID = "1-0FhSZemh9iVF5bEOnqRGIH3ZFAHb9-ktbw5I2Zz9eE"
-const RANGE = "A1:Z100"
 
-type Headers = string[]
-type Row = JSX.Element[]
-type RecordData = {
-  men: [Headers, Row[]]
-  women: [Headers, Row[]]
+type RecordTables = {
+  men: JSX.Element
+  women: JSX.Element
 }
 
-async function getRecords(raceType: string): Promise<RecordData> {
-  const records = [getRecordsForGender(raceType, "Men"), getRecordsForGender(raceType, "Women")];
-  const [men, women] = await Promise.all(records);
-  return { men, women }
+function getRecords(raceType: string): RecordTables {
+  return {
+    men: getRecordsForGender(raceType, "Men"),
+    women: getRecordsForGender(raceType, "Women"),
+  }
 }
 
-async function getRecordsForGender(raceType: string, gender: string): Promise<[Headers, Row[]]> {
+function getRecordsForGender(raceType: string, gender: string): JSX.Element {
   const sheetName = raceType + " - " + gender;
-  return await getSheetData(SHEET_ID, encodeURIComponent(sheetName + "!" + RANGE))
-    .then(records => records ?? [])
-    .then((records: string[][]) => {
-      const headers = records[0];
-      const rows = records.slice(1).map(record => record.map(elt => <>{elt}</>));
-      return [headers, rows];
-    });
+  return GSheetsTable({ sheetId: SHEET_ID, range: sheetName, fontsize: 15, padding: 8 });
 }
 
 const Records = ({ raceType }: { raceType: string }) => {
-  const [records, setRecords] = useState<RecordData | undefined>(undefined);
-
-  useEffect(() => {
-    if (records === undefined) getRecords(raceType).then(setRecords)
-  })
-
+  const records = getRecords(raceType);
   return (
     <Card title={raceType}>
       <p style={styles.summaryText}>
         <b>Women</b>
       </p>
-      {Table({ header: records?.women[0] ?? [], body: records?.women[1] ?? [] })}
+      {records.women}
       <br />
       <p style={styles.summaryText}>
         <b>Men</b>
       </p>
-      {Table({ header: records?.men[0] ?? [], body: records?.men[1] ?? [] })}
+      {records.men}
     </Card>
   )
 }
