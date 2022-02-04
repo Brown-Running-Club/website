@@ -88,18 +88,16 @@ export { BasicTable as Table }
 
 async function loadSheetData(sheetId: string, range: string): Promise<[Headers, Row[]]> {
   const data = await getSheetData(sheetId, range) ?? [];
-  const headers = data[0];
+  const headers = data[0] ?? [];
   const rows = data.slice(1).map(record => record.map(elt => <>{elt}</>));
   return [headers, rows];
 }
 
-export function GSheetsTable(sheetId: string, range: string) {
-  const empty = BasicTable({ header: [], body: [] });
-  const [table, setTable] = useState(empty);
+export function GSheetsTable({ sheetId, range }: { sheetId: string; range: string }) {
+  const empty: [Headers, Row[]] = [[], []];
+  const [data, setData] = useState(empty);
   useEffect(() => {
-    if (table === empty) {
-      loadSheetData(sheetId, range).then(([header, body]) => setTable(BasicTable({ header, body })))
-    }
+    if (data === empty) loadSheetData(sheetId, range).then(setData)
   })
-  return table;
+  return BasicTable({ header: data[0], body: data[1] });
 }

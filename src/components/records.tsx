@@ -19,7 +19,7 @@ function getRecords(raceType: string): RecordTables {
 
 function getRecordsForGender(raceType: string, gender: string): JSX.Element {
   const sheetName = raceType + " - " + gender;
-  return GSheetsTable(SHEET_ID, sheetName);
+  return GSheetsTable({ sheetId: SHEET_ID, range: sheetName });
 }
 
 const Records = ({ raceType }: { raceType: string }) => {

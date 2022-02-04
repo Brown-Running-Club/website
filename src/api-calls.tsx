@@ -41,5 +41,5 @@ export async function getWeekEvents(start: Date, calId: string): Promise<GCalEve
 
   return await fetch(url)
     .then(res => res.json())
-    .then(res => res.items)
+    .then(res => res.items ?? [])
 }
