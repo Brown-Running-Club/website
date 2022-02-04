@@ -3,6 +3,7 @@ import Omac from "../images/omac.jpg"
 import theme from "../config/theme"
 import Card from "../components/card"
 import PageBody from "../components/page-body"
+import Button from "../components/button"
 import WideContainer from "../components/wide-container"
 import NarrowContainer from "../components/narrow-container"
 import MediaQuery from "react-responsive"
@@ -14,6 +15,20 @@ export default () => {
     <Card title="Results">
       <Results />
     </Card>;
+  const billyBio =
+    <Card title="About Billy">
+      <p>
+      This meet is named in memory of Brown Running Club member Billy Brockmueller.
+      Billy graduated with a Master’s degree in Physics from Brown University in spring of 2018,
+      and passed away the following winter. In Billy's honor, proceeds from concessions at the
+      meet go to <a href="https://www.simbaministries.com">Simba Ministries</a>, an organization which Billy
+      was involved with during his time at Brown.
+      </p>
+      <Button
+        text="Read more about Billy ➞"
+        link="/billy-brockmueller-invitational/about-billy"
+      ></Button>
+    </Card>
   return (
     <Layout title="Billy Brockmueller Invitational" image={Omac}>
       <PageBody>
@@ -113,11 +128,13 @@ export default () => {
             </p>
           </Card>
           <MediaQuery query="(max-width: 799px)">
+            {billyBio}
             {results}
           </MediaQuery>
         </WideContainer>
         <MediaQuery query="(min-width: 800px)">
           <NarrowContainer>
+            {billyBio}
             {results}
           </NarrowContainer>
         </MediaQuery>
