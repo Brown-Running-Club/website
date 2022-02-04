@@ -111,15 +111,15 @@ export default function BasicTable(
 }
 export { BasicTable as Table }
 
-async function loadSheetData(sheetId: string, sheetName: string, range: string): Promise<[Headers, Row[]]> {
-  const data = await getSheetData(sheetId, encodeURIComponent(sheetName + "!" + range)) ?? [];
+async function loadSheetData(sheetId: string, range: string): Promise<[Headers, Row[]]> {
+  const data = await getSheetData(sheetId, range) ?? [];
   const headers = data[0];
   const rows = data.slice(1).map(record => record.map(elt => <>{elt}</>));
   return [headers, rows];
 }
 
-export async function tableFromSheet(sheetId: string, sheetName: string, range: string): Promise<JSX.Element> {
-  const [header, body] = await loadSheetData(sheetId, sheetName, range);
+export async function tableFromSheet(sheetId: string, range: string): Promise<JSX.Element> {
+  const [header, body] = await loadSheetData(sheetId, range);
   return BasicTable({ header, body })
 }
 

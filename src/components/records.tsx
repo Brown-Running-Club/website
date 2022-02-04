@@ -4,7 +4,6 @@ import { tableFromSheet, Table } from "../components/table"
 import Card from "../components/card"
 
 const SHEET_ID = "1-0FhSZemh9iVF5bEOnqRGIH3ZFAHb9-ktbw5I2Zz9eE"
-const RANGE = "A1:Z100"
 
 type RecordTables = {
   men: JSX.Element
@@ -19,7 +18,7 @@ async function getRecords(raceType: string): Promise<RecordTables> {
 
 async function getRecordsForGender(raceType: string, gender: string): Promise<JSX.Element> {
   const sheetName = raceType + " - " + gender;
-  return tableFromSheet(SHEET_ID, sheetName, RANGE);
+  return tableFromSheet(SHEET_ID, sheetName);
 }
 
 const Records = ({ raceType }: { raceType: string }) => {

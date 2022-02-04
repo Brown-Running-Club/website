@@ -11,7 +11,7 @@ export async function getSheetData(sheetId: string, range: string): Promise<stri
     "https://sheets.googleapis.com/v4/spreadsheets/" +
     sheetId +
     "/values/" +
-    range +
+    encodeURIComponent(range) +
     "?key=" +
     API_KEY
   return await fetch(url)

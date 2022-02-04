@@ -9,8 +9,7 @@ const OrderOfEvents = () => {
 
     useEffect(() => {
         if (schedule === undefined) {
-            tableFromSheet(ORDER_OF_EVENTS_SHEET_ID, ORDER_OF_EVENTS_SHEET_NAME, "A1:")
-                .then(setSchedule)
+            tableFromSheet(ORDER_OF_EVENTS_SHEET_ID, ORDER_OF_EVENTS_SHEET_NAME).then(setSchedule)
         }
     })
 
