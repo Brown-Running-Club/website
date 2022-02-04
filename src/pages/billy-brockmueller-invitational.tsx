@@ -25,7 +25,6 @@ export default () => {
               <br />
               <b>Location:</b> Olney-Margolies Athletic Center, 235 Hope Street, Providence, RI 02906 <br />
               <br />
-              <br />
               <b>Events:</b> 60m, 60m Hurdles, 200m, 400m, 800m, Mile, 3k, 5k, 4x200m Relay, 4x400m Relay, 4x800m Relay, Long Jump, High Jump
               <br />
               Approximate event start times will be posted closer to the meet.
@@ -95,14 +94,15 @@ export default () => {
               <br />
               <br />
               <b>Heat Sheets and Results:</b> Heat sheets will be posted in the facility and on the meet homepage.
-                Final results will be available there, via email, and on clubrunning.org. Meet updates and results will be posted online via DirectAthletics and in the facility as the day progresses.
+                Final results will be available there and emailed to participants.
+                Meet updates and results will be posted online via DirectAthletics and in the facility as the day progresses.
               <br />
               <br />
               <b>Restrooms/Locker Rooms:</b> There are limited restrooms and changing facilities available in the OMAC.
                 Those not racing within the next hour should use the restrooms in the Nelson Fitness Center lobby next door.
               <br />
               <br />
-              <b>Awards:</b> At clerk table: medal awarded to top three finishers in each, ribbons to second and third place. Plaques to top men and women NIRCA teams.
+              <b>Awards:</b> At clerk table: medal awarded to top three finishers in each event. Plaques to top men and women NIRCA teams.
               <br />
               <br />
               <b>Accessibility:</b> The facility is ADA accessible. Call or email ahead for ground-level entrance.
