@@ -111,7 +111,7 @@ export default () => (
               <b>Focus:</b> Communications <br></br>
               <b>Class:</b> Freshman<br></br>
               <b>Concentration:</b> Undecided (Leaning Biology) <br></br>
-              <b>Hometown: Mahattan Beach, California</b> <br></br>
+              <b>Hometown:</b> Mahattan Beach, California <br></br>
             </p>
           )}
         >
