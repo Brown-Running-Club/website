@@ -21,11 +21,12 @@ const useStyles = makeStyles({
     color: theme.palette.white,
     margin: 0,
     marginBottom: theme.spacing.unit * 2,
+    fontSize: 14,
   },
   row: {
     ...(theme.typography.h4 as any),
     color: theme.palette.black,
-    fontSize: 18,
+    fontSize: 14,
   },
 })
 
