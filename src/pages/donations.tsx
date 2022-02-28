@@ -15,8 +15,9 @@ export default () => {
       <Button
         leftAlign
         text="Donate to the Brown Running Club ➞"
-        link="https://www.paypal.com/donate?hosted_button_id=MTNR2276CT7H8"
+        link="https://bbis.advancement.brown.edu/BBPhenix/give-now"
       />
+      Search for "Running Club".
       <p>If you would like to donate using an alternate method, please contact run@brown.edu.</p>
     </Card>
   );
@@ -53,14 +54,14 @@ export default () => {
               with a core competitive team of roughly 40 runners, and many dozens more who
               regularly take advantage of our recreational running offerings. We’re also
               increasingly competitive: the racing team has grown exponentially in recent years,
-              and we have now qualified for the cross country national championships three times.
+              and we have now qualified for the cross country national championships four times.
               We work hard to provide great training and racing opportunities for everyone, and
               we also want the club to be as accessible as possible to runners from all sorts
               of financial situations, so we try as hard as we can to keep costs and dues low for members.
               <br /><br />
               However, Running Club is not free: as we become more competitive and travel to
               more races, as well as championship meets which may be far away from Brown
-              (cross country nationals this year are in Shelbyville, Indiana!), the cost of items
+              (cross country nationals this year were in Shelbyville, Indiana!), the cost of items
               like transportation, entry fees, lodging, and uniforms starts to add up! Additionally,
               as a club sport, only a fraction of our operating costs are covered by the Athletic
               Department. A significant portion of our funding comes through fundraising and semesterly
