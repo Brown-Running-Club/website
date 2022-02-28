@@ -15,8 +15,9 @@ export default () => {
       <Button
         leftAlign
         text="Donate to the Brown Running Club ➞"
-        link="https://www.paypal.com/donate?hosted_button_id=MTNR2276CT7H8"
+        link="https://bbis.advancement.brown.edu/BBPhenix/give-now"
       />
+      Search for "Running Club".
       <p>If you would like to donate using an alternate method, please contact run@brown.edu.</p>
     </Card>
   );
