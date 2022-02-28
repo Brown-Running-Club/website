@@ -33,7 +33,7 @@ export default () => {
 
   const schedule =
     <Card title="Schedule">
-      <b>Order of events (TENTATIVE):</b>
+      <b>Order of events (TIMES TENTATIVE):</b>
       <br />
       <OrderOfEvents />
       <br />
@@ -65,6 +65,7 @@ export default () => {
               <br />
               <b>Entry Fees:</b>
               <ul style={{ listStyleType: "none" }}>
+                <li>$10/athlete for middle schoolers (be sure to include class year in registration)</li>
                 <li>$15/athlete for college club athletes (NIRCA) and high schoolers</li>
                 <li>$20/athlete for other participants (college varsity athletes, non-collegiate club teams, unattached athletes)</li>
                 <li>$250 max/gender team (applies to all teams and clubs)</li>
