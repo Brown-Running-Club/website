@@ -21,16 +21,16 @@ export default () => (
             <br />
             Records may be set at any event or course as long as the athlete is
             in a Brown Running Club uniform. The athlete must be a full-time
-            student at Brown University or Rhode Island School of Design. All
-            records were set after the club’s affiliation with NIRCA. Only new
-            records will be accepted. New records must be submitted within one
-            month of the performance date.
+            student at Brown University. All records were set after the club’s
+            affiliation with NIRCA. Only new records will be accepted. New
+            records must be submitted within one month of the performance date.
             <br />
-            <p style={styles.disclaimerText}>
+            <p>
               <b>h</b> indicates a handtime for events 800m and shorter
               <br />
               <b>c</b> indicates a conversion was used for this record
             </p>
+            Bolded records were set in the current year.
           </p>
         </Card>
 
@@ -50,10 +50,6 @@ const styles = {
   },
   summaryText: {
     ...(theme.typography.h4 as any),
-    margin: 2,
-  },
-  disclaimerText: {
-    ...(theme.typography.h2 as any),
     margin: 2,
   },
   headerText: {
