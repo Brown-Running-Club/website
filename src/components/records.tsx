@@ -29,8 +29,8 @@ async function getRecords(raceType: string): RecordTables {
 
 async function getRecordsForGender(raceType: string, gender: string): JSX.Element {
   const sheetName = raceType + " - " + gender;
-  return await getSheetData(SHEET_ID, `${sheetName}!A2:Z100`)
-    .then((records) => records.map(record => ({
+  return await getSheetData(SHEET_ID, sheetName)
+    .then((records) => records.slice(1).map(record => ({
       event: record[0],
       name: record[1],
       time: record[2],
