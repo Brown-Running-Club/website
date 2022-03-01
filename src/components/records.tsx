@@ -46,7 +46,7 @@ function createRecordsTable(records: Record[]) {
   const data = [];
   for (const r of records) {
     const race = <>{
-      r.link === undefined
+      (r.link === undefined || r.link === "")
         ? r.race
         : (<a href={r.link}>{r.race}</a>)
     }</>;
