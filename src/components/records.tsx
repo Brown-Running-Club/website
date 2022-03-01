@@ -36,8 +36,8 @@ async function getRecordsForGender(raceType: string, gender: string): JSX.Elemen
       time: record[2],
       year: record[3],
       race: record[4],
-      link: record.length > 5 ? record[5] : null,
-      current: record.length > 6 ? record[6] : null
+      link: record.length > 5 ? record[5] : undefined,
+      current: record.length > 6 ? record[6] : undefined
     })));
 }
 
@@ -46,7 +46,7 @@ function createRecordsTable(records: Record[]) {
   const data = [];
   for (const r of records) {
     const race = <>{
-      r.link === undefined
+      (r.link === undefined || r.link === "")
         ? r.race
         : (<a href={r.link}>{r.race}</a>)
     }</>;
