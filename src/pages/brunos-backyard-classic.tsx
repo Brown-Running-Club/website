@@ -46,7 +46,7 @@ export default () => {
               Meet updates and results will communicated via email and in the facility as the day progresses.
               <br />
               <br />
-              <b>Awards:</b> Medal will be awarded to top three finishers in each event and plaques to the top men's and women's NIRCA teams.
+              <b>Awards:</b> Medals will be awarded to top three finishers in each event and plaques to the top men's and women's NIRCA teams.
               <br />
               <br />
               <b>Contact:</b> Max Heller, Meet Director: <a href="mailto:run@brown.edu">run@brown.edu</a> (preferred) or 518-364-7530
