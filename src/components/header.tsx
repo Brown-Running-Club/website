@@ -51,7 +51,7 @@ const menus: Array<Menu> = [
     ],
   },
   {
-    name: "invitationals",
+    name: "meets",
     list: [
       {
         name: "brown bear invitational",
@@ -60,6 +60,10 @@ const menus: Array<Menu> = [
       {
         name: "billy brockmueller invitational",
         link: "/billy-brockmueller-invitational",
+      },
+      {
+        name: "bruno's backyard classic",
+        link: "/brunos-backyard-classic",
       },
     ],
   },
@@ -296,7 +300,7 @@ const styles = {
     bmMenuWrap: {
       position: 'fixed',
       height: '100%',
-      top: 0,
+      top: '0',
     },
     bmMenu: {
       background: theme.palette.brown,
@@ -305,7 +309,7 @@ const styles = {
     bmItemList: {
       background: theme.palette.brown,
       marginTop: `${theme.spacing.unit * 8}px`,
-      height: null,
+      height: undefined,
     },
     bmItem: {
     },
