@@ -32,6 +32,7 @@ export default () => {
               <br />
               <b>Payment:</b> Invoices will be sent after registration closes.
               <br />
+              <br />
               <b>Spectator Admission:</b> Free
               <br />
               <br />
