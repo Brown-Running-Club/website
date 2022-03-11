@@ -40,8 +40,9 @@ export default () => {
 
       Women will run before men and heats will run fast to slow.
       <br />
-      Long jump will be an open pit from 12:30-2:00.
-      Jumpers may not do walkthroughs once the event has started.
+      Long jump will be an open pit from 12:15-1:45 PM.
+      High jump will start at 12:15 PM at 3'8".
+      Jumpers may not do runthroughs once the event has started.
     </Card>;
 
   return (
