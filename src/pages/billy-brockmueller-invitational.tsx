@@ -33,7 +33,7 @@ export default () => {
 
   const schedule =
     <Card title="Schedule">
-      <b>Order of events (TIMES TENTATIVE):</b>
+      <b>Schedule:</b>
       <br />
       <OrderOfEvents />
       <br />
