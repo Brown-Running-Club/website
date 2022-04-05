@@ -133,7 +133,7 @@ export default () => {
             </p>
           </Card>
           <MediaQuery query="(max-width: 799px)">
-            {schedule}
+            {/* schedule */}
             {results}
             {billyBio}
           </MediaQuery>
@@ -141,7 +141,7 @@ export default () => {
         <MediaQuery query="(min-width: 800px)">
           <NarrowContainer>
             {billyBio}
-            {schedule}
+            {/* schedule */}
             {results}
           </NarrowContainer>
         </MediaQuery>
