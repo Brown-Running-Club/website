@@ -1,7 +1,7 @@
 import { GSheetsTable } from "../table"
 
 const ORDER_OF_EVENTS_SHEET_ID = "1l2xNdYDhPGymM981DcrBkpUcrMMqUi9Fh8OFEaoqXho";
-const ORDER_OF_EVENTS_SHEET_NAME = "Indoor Schedule";
+const ORDER_OF_EVENTS_SHEET_NAME = "Outdoor Schedule";
 
 const OrderOfEvents = () => GSheetsTable({
     sheetId: ORDER_OF_EVENTS_SHEET_ID,
