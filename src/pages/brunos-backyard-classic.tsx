@@ -11,8 +11,6 @@ import Schedule from "../components/brunos-backyard-classic/order-of-events"
 export default () => {
   const schedule =
     <Card title="Schedule">
-      <b>Schedule:</b>
-      <br />
       <Schedule />
       <br />
 

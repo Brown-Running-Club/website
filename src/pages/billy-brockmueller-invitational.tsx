@@ -33,8 +33,6 @@ export default () => {
 
   const schedule =
     <Card title="Schedule">
-      <b>Schedule:</b>
-      <br />
       <OrderOfEvents />
       <br />
 
