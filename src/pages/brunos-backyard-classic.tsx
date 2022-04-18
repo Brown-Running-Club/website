@@ -3,9 +3,24 @@ import BrownStadium from "../images/brown-stadium.jpg"
 import Card from "../components/card"
 import PageBody from "../components/page-body"
 import WideContainer from "../components/wide-container"
+import NarrowContainer from "../components/narrow-container"
+import MediaQuery from "react-responsive"
 import Layout from "../components/layout"
+import Schedule from "../components/brunos-backyard-classic/order-of-events"
 
 export default () => {
+  const schedule =
+    <Card title="Schedule">
+      <Schedule />
+      <br />
+
+      Women will run before men and heats will run fast to slow.
+      <br />
+      Long jump will be an open pit from 11:15-12:45 PM.
+      High jump will start at 11:15 PM at 3'8".
+      Jumpers may not do runthroughs once the event has started.
+    </Card>;
+
   return (
     <Layout title="Bruno's Backyard Classic" image={BrownStadium}>
       <PageBody>
@@ -49,10 +64,18 @@ export default () => {
               <b>Awards:</b> Medals will be awarded to top three finishers in each event and plaques to the top men's and women's NIRCA teams.
               <br />
               <br />
-              <b>Contact:</b> Max Heller, Meet Director: <a href="mailto:run@brown.edu">run@brown.edu</a> (preferred) or 518-364-7530
+              <b>Contact:</b> Aidan Hennessey, Meet Director: <a href="mailto:run@brown.edu">run@brown.edu</a> (preferred) or 518-364-7530
             </p>
           </Card>
+          <MediaQuery query="(max-width: 799px)">
+            {schedule}
+          </MediaQuery>
         </WideContainer>
+        <MediaQuery query="(min-width: 800px)">
+          <NarrowContainer>
+            {schedule}
+          </NarrowContainer>
+        </MediaQuery>
       </PageBody>
     </Layout>
   )
