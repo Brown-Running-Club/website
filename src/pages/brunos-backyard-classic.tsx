@@ -7,8 +7,14 @@ import NarrowContainer from "../components/narrow-container"
 import MediaQuery from "react-responsive"
 import Layout from "../components/layout"
 import Schedule from "../components/brunos-backyard-classic/order-of-events"
+import Results from "../components/brunos-backyard-classic/results"
 
 export default () => {
+  const results =
+    <Card title="Results">
+      <Results />
+    </Card>;
+
   const schedule =
     <Card title="Schedule">
       <Schedule />
@@ -68,12 +74,14 @@ export default () => {
             </p>
           </Card>
           <MediaQuery query="(max-width: 799px)">
-            {schedule}
+            {/* {schedule} */}
+            {results}
           </MediaQuery>
         </WideContainer>
         <MediaQuery query="(min-width: 800px)">
           <NarrowContainer>
-            {schedule}
+            {/* {schedule} */}
+            {results}
           </NarrowContainer>
         </MediaQuery>
       </PageBody>
