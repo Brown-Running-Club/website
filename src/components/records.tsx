@@ -3,6 +3,7 @@ import theme from "../config/theme"
 import { getSheetData } from "../api-calls"
 import Table from "../components/table"
 import Card from "../components/card"
+import { useMediaQuery } from "react-responsive"
 
 const SHEET_ID = "1-0FhSZemh9iVF5bEOnqRGIH3ZFAHb9-ktbw5I2Zz9eE"
 
@@ -80,7 +81,7 @@ function createRecordsTable(records: Record[], wideScreen: boolean) {
 const Records = ({ raceType }: { raceType: string }) => {
   const [records, setRecords] = useState<RecordData | undefined>(undefined);
   const wideScreen = useMediaQuery({ query: '(min-width: 600px)' })
-  
+
   useEffect(() => {
     if (records === undefined) getRecords(raceType).then(setRecords)
   })
