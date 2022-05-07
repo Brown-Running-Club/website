@@ -43,7 +43,7 @@ const Meet = (props: Props) => (
     <a href = {props.link}>
       <div>
         <h3 styles={styles.title}>{props.season}</h3>
-        <img src={props.image}>
+        <img src={props.image}></img>
         <h3 styles={styles.title}>{props.name}</h3>
       </div>
     </a>
