@@ -20,7 +20,7 @@ type Bio = {
 }
 
 async function getBios(): Promise<Bio[]> {
-  const data = await getSheetData(LEADERSHIP_BIO_SHEET_ID, "Bios!A1:Z");
+  const data = await getSheetData(LEADERSHIP_BIO_SHEET_ID, "Bios!A2:Z");
   return data.map(row => ({
     name: row[0],
     focus: row[1],
