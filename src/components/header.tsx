@@ -20,7 +20,6 @@ const menus: Array<Menu> = [
     name: "info",
     list: [
       { name: "about", link: "/about" },
-      { name: "announcements", link: "/announcements" },
       { name: "faq", link: "/faq" },
       { name: "leadership", link: "/leadership" },
     ],
@@ -35,20 +34,13 @@ const menus: Array<Menu> = [
     ],
   },
   {
-    name: "competitive",
+    name: "competing",
     list: [
       { name: "info", link: "/competitive" },
       { name: "race schedule", link: "/schedule" },
       { name: "records", link: "/records" },
     ],
     link: "/competitive",
-  },
-  {
-    name: "recreation",
-    list: [
-      { name: "events", link: "/events" },
-      { name: "photos", link: "/photos" },
-    ],
   },
   {
     name: "meets",

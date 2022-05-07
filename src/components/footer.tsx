@@ -17,8 +17,8 @@ const links: Array<MenuItem> = [
     link: "/contact",
   },
   {
-    name: "newsletter",
-    link: "/newsletter",
+    name: "instagram",
+    link: "https://www.instagram.com/brownrunningclub",
   },
 ]
 
