@@ -9,7 +9,7 @@ import PageBody from "../components/page-body"
 import WideContainer from "../components/wide-container"
 import NarrowContainer from "../components/narrow-container"
 import Layout from "../components/layout"
-import Announcements from "../components/announcements"
+import MeetHosting from "../components/meet-hosting"
 import Schedule from "../components/schedule"
 import MediaQuery from "react-responsive"
 
@@ -38,12 +38,7 @@ export default () => {
     </Card>
   );
 
-  const announcementsCard = (
-    <Card title="Announcements">
-      <Announcements />
-      <Button text="More announcements ➞" link="/announcements" />
-    </Card>
-  );
+  const meetHosting = <MeetHosting />
 
   const strava = (
     <>
@@ -75,7 +70,7 @@ export default () => {
       <PageBody>
         <WideContainer>
           {welcomeCard}
-          {announcementsCard}
+          {meetHosting}
           <MediaQuery query="(max-width: 1149px)">
             {scheduleCard}
             {strava}
