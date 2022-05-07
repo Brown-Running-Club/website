@@ -67,6 +67,7 @@ const styles = {
   meetDiv: {
     display: "inline-block",
     padding: theme.spacing.unit,
+    width: theme.spacing.unit * 25,
   },
   title: {
     ...theme.typography.h3,
