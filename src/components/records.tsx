@@ -41,17 +41,33 @@ async function getRecordsForGender(raceType: string, gender: string): JSX.Elemen
     })));
 }
 
-function createRecordsTable(records: Record[]) {
-  const headers = ["Event", "Name", "Time", "Year", "Race"];
+function makeLink(text: string, link?: string) {
+  return <>{
+    (link === undefined || link === "")
+      ? text
+      : (<a href={link}>{text}</a>)
+  }</>;
+}
+
+// Create the record table, leaving meet off if on mobile
+function createRecordsTable(records: Record[], wideScreen: boolean) {
+  let headers = ["Event", "Name", "Time", "Year"];
+  if (wideScreen) {
+    headers.push("Race");
+  }
+
   const data = [];
   for (const r of records) {
-    const race = <>{
-      (r.link === undefined || r.link === "")
-        ? r.race
-        : (<a href={r.link}>{r.race}</a>)
-    }</>;
+    let row;
+    // attach link to race if not on mobile, to time if on mobile
+    if (wideScreen) {
+      const race = makeLink(r.race, r.link);
+      row = [<>{r.event}</>, <>{r.name}</>, <>{r.time}</>, <>{r.year}</>, race];
+    } else {
+      const time = makeLink(r.time, r.link);
+      row = [<>{r.event}</>, <>{r.name}</>, time, <>{r.year}</>];
+    }
 
-    let row = [<>{r.event}</>, <>{r.name}</>, <>{r.time}</>, <>{r.year}</>, race];
     // bold results from the current year, as listed in the sheet
     if (r.current !== undefined && r.current === "yes") {
        row = row.map(cell => <b>{cell}</b>);
@@ -63,7 +79,8 @@ function createRecordsTable(records: Record[]) {
 
 const Records = ({ raceType }: { raceType: string }) => {
   const [records, setRecords] = useState<RecordData | undefined>(undefined);
-
+  const wideScreen = useMediaQuery({ query: '(min-width: 600px)' })
+  
   useEffect(() => {
     if (records === undefined) getRecords(raceType).then(setRecords)
   })
@@ -73,12 +90,12 @@ const Records = ({ raceType }: { raceType: string }) => {
       <p style={styles.summaryText}>
         <b>Women</b>
       </p>
-      {createRecordsTable(records?.women ?? [])}
+      {createRecordsTable(records?.women ?? [], wideScreen)}
       <br />
       <p style={styles.summaryText}>
         <b>Men</b>
       </p>
-      {createRecordsTable(records?.men ?? [])}
+      {createRecordsTable(records?.men ?? [], wideScreen)}
     </Card>
   )
 }
