@@ -16,7 +16,6 @@ type Props = {
 export default () => {
   return (
     <Card title="Meet Hosting">
-      //<p>{description}</p>
       <>
         <Meet
           name="Brown Bear Classic"
