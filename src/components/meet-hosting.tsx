@@ -1,6 +1,10 @@
+import React from "react"
+import MediaQuery from "react-responsive"
+import theme from "../config/theme"
 import BrownBear from "../images/brown-bear-logo.png"
 import BillyBrockmueller from "../images/sillhouttes-small.png"
 import BrunoBackyard from "../images/brown-stadium-small.jpg"
+import Card from "../components/card"
 
 type Props = {
   name: string
