@@ -42,12 +42,12 @@ export default () => {
 
 
 const Meet = (props: Props) => (
-  <div styles={styles.meetDiv}>
+  <div style={styles.meetDiv}>
     <a href = {props.link}>
       <div>
-        <h3 styles={styles.title}>{props.season}</h3>
-        <img src={props.image}></img>
-        <h3 styles={styles.title}>{props.name}</h3>
+        <h3 style={styles.title}>{props.season}</h3>
+        <img src={props.image} style={styles.image}></img>
+        <h3 style={styles.title}>{props.name}</h3>
       </div>
     </a>
   </div>
