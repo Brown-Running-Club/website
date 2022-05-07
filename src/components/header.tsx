@@ -34,7 +34,7 @@ const menus: Array<Menu> = [
     ],
   },
   {
-    name: "competitive",
+    name: "competing",
     list: [
       { name: "info", link: "/competitive" },
       { name: "race schedule", link: "/schedule" },
