@@ -12,6 +12,7 @@ import Layout from "../components/layout"
 import MeetHosting from "../components/meet-hosting"
 import Schedule from "../components/schedule"
 import MediaQuery from "react-responsive"
+import { CurrentSeason } from "../components/season"
 
 export default () => {
   const welcomeCard = (
@@ -37,8 +38,6 @@ export default () => {
       <Schedule />
     </Card>
   );
-
-  const meetHosting = <MeetHosting />
 
   const strava = (
     <>
@@ -70,9 +69,13 @@ export default () => {
       <PageBody>
         <WideContainer>
           {welcomeCard}
-          {meetHosting}
+          <MeetHosting />
+          <MediaQuery query="(min-width: 1150px)">
+            <CurrentSeason/>
+          </MediaQuery>
           <MediaQuery query="(max-width: 1149px)">
             {scheduleCard}
+            <CurrentSeason/>
             {strava}
           </MediaQuery>
         </WideContainer>

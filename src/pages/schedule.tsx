@@ -8,7 +8,7 @@ import Card from "../components/card"
 import NarrowContainer from "../components/narrow-container"
 import Button from "../components/button"
 import Layout from "../components/layout"
-import Season from "../components/season"
+import {CurrentSeason} from "../components/season"
 import Schedule from "../components/schedule"
 import MediaQuery from "react-responsive"
 
@@ -64,7 +64,7 @@ export default () => {
               on days we have races, so see our meet schedule below.
             </p>
           </Card>
-          <Season season="Spring 2022" />
+          <CurrentSeason/>
           <MediaQuery query="(max-width: 1150px)">
             {narrowContent}
           </MediaQuery>
