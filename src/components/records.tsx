@@ -22,13 +22,13 @@ type RecordTables = {
   women: Record[]
 }
 
-async function getRecords(raceType: string): RecordTables {
+async function getRecords(raceType: string): Promise<RecordTables> {
   const records = [getRecordsForGender(raceType, "Men"), getRecordsForGender(raceType, "Women")];
   const [men, women] = await Promise.all(records);
   return { men, women }
 }
 
-async function getRecordsForGender(raceType: string, gender: string): JSX.Element {
+async function getRecordsForGender(raceType: string, gender: string): Promise<Record[]> {
   const sheetName = raceType + " - " + gender;
   return await getSheetData(SHEET_ID, sheetName)
     .then((records) => records.slice(1).map(record => ({
@@ -79,7 +79,7 @@ function createRecordsTable(records: Record[], wideScreen: boolean) {
 }
 
 const Records = ({ raceType }: { raceType: string }) => {
-  const [records, setRecords] = useState<RecordData | undefined>(undefined);
+  const [records, setRecords] = useState<RecordTables | undefined>(undefined);
   const wideScreen = useMediaQuery({ query: '(min-width: 600px)' })
 
   useEffect(() => {

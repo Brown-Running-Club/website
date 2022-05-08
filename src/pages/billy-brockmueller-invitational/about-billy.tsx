@@ -1,7 +1,6 @@
 import React from "react"
 import BackgroundImage from "../../images/about-billy.jpg"
 import Billy from "../../images/billy.jpg"
-import theme from "../../config/theme"
 import Card from "../../components/card"
 import PageBody from "../../components/page-body"
 import WideContainer from "../../components/wide-container"

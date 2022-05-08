@@ -5,8 +5,6 @@ import theme from "../config/theme"
 import PageBody from "../components/page-body"
 import WideContainer from "../components/wide-container"
 import Card from "../components/card"
-import NarrowContainer from "../components/narrow-container"
-import Button from "../components/button"
 import Layout from "../components/layout"
 import Season from "../components/season"
 

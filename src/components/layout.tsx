@@ -7,7 +7,7 @@ import Seo from "./seo"
 import theme from "../config/theme"
 import TitleImage from "../components/title-image"
 
-type Props = { children: any; title: string | null; image?: any }
+type Props = { children?: any; title: string | null; image?: any }
 
 const Layout = ({ children, title, image }: Props) => (
   <>
@@ -17,7 +17,7 @@ const Layout = ({ children, title, image }: Props) => (
         <Seo title={title} />
         { image ? (
           <TitleImage image={image}>
-            <p style={styles.titleText}>{title.toUpperCase()}</p>
+            <p style={styles.titleText}>{title?.toUpperCase()}</p>
           </TitleImage>
           ) : <></>
         }

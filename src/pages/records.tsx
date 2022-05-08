@@ -13,17 +13,11 @@ export default () => (
       <WiderContainer>
         <Card>
           <p style={styles.summaryText}>
-            Have a faster time? Submit a form{" "}
-            <a href="https://docs.google.com/forms/d/e/1FAIpQLSdS0wNnun2CGI22-G20EvecTGuoWLsR9uvxZeA51b1zGxireQ/viewform">
-              here
-            </a>
-            .
             <br />
-            Records may be set at any event or course as long as the athlete is
-            in a Brown Running Club uniform. The athlete must be a full-time
-            student at Brown University. All records were set after the club’s
-            affiliation with NIRCA. Only new records will be accepted. New
-            records must be submitted within one month of the performance date.
+            Records may be set at any event or course as long as the
+            athlete is a full-time student at Brown University and
+            competes in a Brown Running Club uniform.
+            All records were set after the club's affiliation with NIRCA.
             <br />
             <p>
               <b>h</b> indicates a handtime for events 800m and shorter

@@ -1,6 +1,5 @@
 import React from "react"
 import Omac from "../../images/omac.jpg"
-import theme from "../../config/theme"
 import PageBody from "../../components/page-body"
 import WideContainer from "../../components/wide-container"
 import Layout from "../../components/layout"
