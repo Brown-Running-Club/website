@@ -1,5 +1,4 @@
 import React from "react"
-import MediaQuery from "react-responsive"
 import theme from "../config/theme"
 import BrownBear from "../images/brown-bear-logo.png"
 import BillyBrockmueller from "../images/sillhouttes-small.png"
@@ -15,8 +14,8 @@ type Props = {
 
 export default () => {
   return (
-    <Card title="Meet Hosting">
-      <>
+    <Card title="Meets">
+      <div style={styles.allMeets}>
         <Meet
           name="Brown Bear Classic"
           season="Cross Country"
@@ -35,7 +34,7 @@ export default () => {
           image={BrunoBackyard}
           link="/brunos-backyard-classic"
         />
-      </>
+      </div>
     </Card>
   )
 }
@@ -43,11 +42,11 @@ export default () => {
 
 const Meet = (props: Props) => (
   <div style={styles.meetDiv}>
-    <a href = {props.link}>
+    <a href = {props.link} style={{textDecoration: "none"}}>
       <div>
-        <h3 style={styles.title}>{props.season}</h3>
+        <p style={styles.title}>{props.season}</p>
         <img src={props.image} style={styles.image}></img>
-        <h3 style={styles.title}>{props.name}</h3>
+        <p style={styles.title}>{props.name}</p>
       </div>
     </a>
   </div>
@@ -57,21 +56,19 @@ const styles = {
   image: {
     height: theme.spacing.unit * 25,
     width: theme.spacing.unit * 25,
-    opacity: "100%",
-    objectFit: "cover" as "cover",
   },
-  imageMobile: {
-    width: '100%',
-    opacity: "100%",
+  allMeets: {
+    display: "flex",
+    justifyContent: "space-evenly",
+    flexWrap: "wrap" as const,
   },
   meetDiv: {
-    display: "inline-block",
     padding: theme.spacing.unit,
-    width: theme.spacing.unit * 25,
+    width: theme.spacing.unit * 26,
   },
   title: {
-    ...theme.typography.h3,
+    ...theme.typography.h2,
     color: theme.palette.brown,
-    textAlign: "center" as "center",
+    textAlign: "center" as const,
   }
 }
