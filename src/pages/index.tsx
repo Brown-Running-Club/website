@@ -9,9 +9,10 @@ import PageBody from "../components/page-body"
 import WideContainer from "../components/wide-container"
 import NarrowContainer from "../components/narrow-container"
 import Layout from "../components/layout"
-import Announcements from "../components/announcements"
+import MeetHosting from "../components/meet-hosting"
 import Schedule from "../components/schedule"
 import MediaQuery from "react-responsive"
+import { CurrentSeason } from "../components/season"
 
 export default () => {
   const welcomeCard = (
@@ -35,13 +36,6 @@ export default () => {
   const scheduleCard = (
     <Card title="This Week" centeredTitle>
       <Schedule />
-    </Card>
-  );
-
-  const announcementsCard = (
-    <Card title="Announcements">
-      <Announcements />
-      <Button text="More announcements ➞" link="/announcements" />
     </Card>
   );
 
@@ -75,9 +69,13 @@ export default () => {
       <PageBody>
         <WideContainer>
           {welcomeCard}
-          {announcementsCard}
+          <MeetHosting />
+          <MediaQuery query="(min-width: 1150px)">
+            <CurrentSeason/>
+          </MediaQuery>
           <MediaQuery query="(max-width: 1149px)">
             {scheduleCard}
+            <CurrentSeason/>
             {strava}
           </MediaQuery>
         </WideContainer>
