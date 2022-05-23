@@ -29,7 +29,7 @@ const menus: Array<Menu> = [
     name: "training",
     list: [
       { name: "routes", link: "/routes" },
-      { name: "summer training", link: "/summer" },
+      { name: "summer training", link: "https://docs.google.com/spreadsheets/d/1Tc1AE1bX_N9utbOa8-lygtV8U4E9xYTE6bPGleNyJGs/edit" },
       { name: "health", link: "/health" },
     ],
   },
