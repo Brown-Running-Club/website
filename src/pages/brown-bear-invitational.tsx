@@ -25,15 +25,15 @@ export default () => {
         <WideContainer>
           <Card>
             <p style={styles.welcomeText}>
-              <b>Date:</b> Saturday, September 25, 2021 <br />
+              <b>Date:</b> Saturday, October 1, 2022 <br />
               <br />
               <b>Location:</b> Highland Park, 104 Mechanic Street, Attleboro, MA
               02703 <br />
               <b>Parking:</b> 95 Rathbun Willard Drive, Attleboro, MA 02703
               <br />
               <br />
-              <b>Registration Opens:</b> 12:00 am, Sunday, August 1 <br />
-              <b>Registration Closes:</b> 11:59 pm, Wednesday, September 22
+              <b>Registration Opens:</b> 12:00 am, Monday, August 1 <br />
+              <b>Registration Closes:</b> 11:59 pm, Wednesday, September 28
               <br />
               <br />
               <b>Registration:</b>
@@ -41,8 +41,8 @@ export default () => {
                 <li>NIRCA: <a href="https://clubrunning.org/races/race_info.php?race=926">clubrunning.org</a></li>
                 <li>All other entries: <a href="https://www.directathletics.com/meets/xc/17785.html">DirectAthletics</a></li>
               </ul>
-              <b>Entry Fee:</b> $15/athlete for NIRCA clubs, max $250/gender for
-              teams. $20/open athletes. $30/day of.
+              <b>Entry Fee:</b> $17/athlete for NIRCA clubs, max $280/gender for
+              teams. $25/open athletes. $35/day of.
               <br />
               <br />
               <b>Spectator Admission:</b> Free <br />
@@ -68,18 +68,9 @@ export default () => {
               <ul style={{ listStyleType: "none" }}>
                 <li>
                   <b>
-                    <a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=89BERVN4EHAXQ">
-                      Credit Card/PayPal:
-                    </a>
+                    TouchNet Invoice
                   </b>{" "}
-                  follow link or send to run@brown.edu
-                </li>
-                <li>
-                  <b>
-                    <a href="https://venmo.com/brownrunningclub">Venmo:</a>
-                  </b>{" "}
-                  follow link or send to @BrownRunningClub. Include full name in
-                  description
+                  Pay invoice online before arrival
                 </li>
                 <li>
                   <b>Cash:</b> Pay in cash when you check-in
@@ -90,9 +81,9 @@ export default () => {
                   1933, Providence, RI 02912{'"'}
                 </li>
               </ul>
-              <b>Contact:</b> Max Heller, Meet Director:{" "}
+              <b>Contact:</b> Sydney Roberts, Meet Director:{" "}
               <a href="mailto:run@brown.edu">run@brown.edu</a> (preferred) or
-              518-364-7530
+              415-866-5446
             </p>
           </Card>
           <MediaQuery query="(max-width: 799px)">
