@@ -67,10 +67,7 @@ export default () => {
               <b>Payment Options:</b>
               <ul style={{ listStyleType: "none" }}>
                 <li>
-                  <b>
-                    TouchNet Invoice
-                  </b>{" "}
-                  Pay invoice online before arrival
+                  <b>TouchNet Invoice:</b>Pay invoice online before arrival
                 </li>
                 <li>
                   <b>Cash:</b> Pay in cash when you check-in
