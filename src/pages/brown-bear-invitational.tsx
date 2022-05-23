@@ -41,7 +41,7 @@ export default () => {
                 <li>NIRCA: <a href="https://clubrunning.org/races/race_info.php?race=926">clubrunning.org</a></li>
                 <li>All other entries: <a href="https://www.directathletics.com/meets/xc/17785.html">DirectAthletics</a></li>
               </ul>
-              <b>Entry Fee:</b> $17/athlete for NIRCA clubs, max $280/gender for
+              <b>Entry Fee:</b> $17/athlete for NIRCA clubs, max $300/gender for
               teams. $25/open athletes. $35/day of.
               <br />
               <br />
@@ -67,7 +67,7 @@ export default () => {
               <b>Payment Options:</b>
               <ul style={{ listStyleType: "none" }}>
                 <li>
-                  <b>TouchNet Invoice:</b>Pay invoice online before arrival
+                  <b>TouchNet Invoice:</b> Pay invoice online before arrival
                 </li>
                 <li>
                   <b>Cash:</b> Pay in cash when you check-in
@@ -78,6 +78,8 @@ export default () => {
                   1933, Providence, RI 02912{'"'}
                 </li>
               </ul>
+              <br />
+              <br />
               <b>Contact:</b> Sydney Roberts, Meet Director:{" "}
               <a href="mailto:run@brown.edu">run@brown.edu</a> (preferred) or
               415-866-5446
