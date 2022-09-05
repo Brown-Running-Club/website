@@ -15,6 +15,7 @@ export default () => (
     </TitleImage>
     <PageBody>
       <WideContainer>
+        <Season season="Spring 2022" />
         <Season season="Fall 2021" />
         <Card title="Spring 2021" centeredTitle>
           <p>We were unable to compete in Spring 2021 due to COVID-19.</p>
