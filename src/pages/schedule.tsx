@@ -59,7 +59,7 @@ export default () => {
               All runs start and end at the Bear Statue outside the Nelson Fitness Center.
               Come anywhere from once to seven times a week; it’s up to you!
               For the competitive team, Tuesday and Thursday are generally organized workouts
-              (Intervals, Speed Work, Hills, Tempo Runs, etc.), while Sunday is generally a Long Run.
+              (Tempo Runs, Intervals, Hills, etc.), while Sunday is generally a Long Run.
               Other days are easy to moderate steady runs. We usually do not have practice
               on days we have races, so see our meet schedule below.
             </p>
