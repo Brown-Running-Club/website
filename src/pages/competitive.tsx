@@ -30,7 +30,7 @@ export default () => (
           </p>
           <Button
             text="Fill out the interest form ➞"
-            link="https://docs.google.com/forms/d/e/1FAIpQLScGnFIokalaJHDQlNwLP5UzDjBDt26pXbv5pKeCs--GZ16OOw/viewform?usp=sf_link"
+            link="https://docs.google.com/forms/d/e/1FAIpQLScf2eR0jeE0KdJfRTBCyIIQxPbC2PXXlqdTgDzU7XxtHImAgg/viewform?usp=sf_link"
           ></Button>
           <p style={styles.bodyText}>
             Next, in order to race with us, you’ll need to be on our roster with
@@ -56,7 +56,7 @@ export default () => (
           </p>
           <Button
             text="Sign the contract ➞"
-            link="https://docs.google.com/forms/d/e/1FAIpQLSexBqftrnGd4JfZo9Rm25B5aUCMFN-g2HMQrMyrnfcVBQ05Fg/viewform?usp=sf_link"
+            link="https://docs.google.com/forms/d/e/1FAIpQLSdllVFcR4fijQruPOgqz6nyg_tVVKDwIeKNAr2WgANsZZSz0Q/viewform?usp=sf_link"
           ></Button>
         </Card>
       </WideContainer>
