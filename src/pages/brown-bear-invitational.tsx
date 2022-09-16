@@ -67,7 +67,7 @@ export default () => {
               <b>Payment Options:</b>
               <ul style={{ listStyleType: "none" }}>
                 <li>
-                  <b>TouchNet Invoice:</b> Pay invoice online before arrival
+                  <b><a href="https://payment.brown.edu/C20460_ustores/web/product_detail.jsp?PRODUCTID=3987&SINGLESTORE=true">TouchNet</a> Invoice:</b> Pay invoice online before arrival
                 </li>
                 <li>
                   <b>Cash:</b> Pay in cash when you check-in
