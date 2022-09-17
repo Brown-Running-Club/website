@@ -27,9 +27,7 @@ export default () => {
         <b>4:15PM Mon-Fri and 10:00AM Sat-Sun</b> and meet at{" "}
         <b>the bear statue outside the Nelson Fitness Center</b>.
         On Mondays and Wednesdays, we'll wait until 4:30PM to start running
-        to accommodate 3-4:20PM classes. <br />
-        <br />
-        If you are an incoming frosh or prospective new member, fill out <a href="https://go.brown.edu/brc/interestform/2022-23">this interest form</a> to stay in the loop! 
+        to accommodate 3-4:20PM classes. 
       </p>
       <Button text="Learn more about Running Club ➞" link="/about" />
     </Card>
