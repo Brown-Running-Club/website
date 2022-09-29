@@ -29,8 +29,6 @@ export default () => {
               <br />
               <b>Location:</b> Highland Park, 104 Mechanic Street, Attleboro, MA
               02703 <br />
-        <!--  <b>Parking:</b> 95 Rathbun Willard Drive, Attleboro, MA 02703
-              <br /> -->
               <br />
               <b>Registration Opens:</b> 12:00 am, Monday, August 1 <br />
               <b>Registration Closes:</b> 11:59 pm, Wednesday, September 28
