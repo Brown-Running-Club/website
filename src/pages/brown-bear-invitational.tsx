@@ -31,7 +31,8 @@ export default () => {
               02703 <br />
               <br />
               <b>Registration Opens:</b> 12:00 am, Monday, August 1 <br />
-              <b>Registration Closes:</b> 11:59 pm, Wednesday, September 28
+              <b>Registration Closes:</b> 11:59 pm, Wednesday, September 28 <br />
+              <b>Day-Of Registration:</b> Saturday, October 1
               <br />
               <br />
               <b>Registration:</b>
