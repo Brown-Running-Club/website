@@ -59,7 +59,7 @@ export default () => {
               at 2:00 pm.
               <br />
               <br />
-              <b>Results:</b> Available on <a href="https://www.tfrrs.org/results/xc/17785/Brown_Bear_Invitational">TFRRS</a> and clubrunning.org (soon).
+              <b>Live Results:</b> Available on <a href="http://milesplit.live/meets/503874">MileSplit</a> and clubrunning.org (soon).
               <br />
               <br />
               <b>Payment Options:</b>
