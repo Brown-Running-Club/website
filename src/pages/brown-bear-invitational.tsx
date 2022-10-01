@@ -41,7 +41,8 @@ export default () => {
                 <li>All other entries: <a href="https://www.directathletics.com/meets/xc/19430.html">DirectAthletics</a></li>
               </ul>
               <b>Entry Fee:</b> $17/athlete for NIRCA clubs, max $300/gender for
-              teams. $25/open athletes. $35/day of.
+              teams. $25/open athletes. $35/day of. <br />
+              <b>Refunds:</b> We are unable to offer refunds for any reason. 
               <br />
               <br />
               <b>Spectator Admission:</b> Free <br />
