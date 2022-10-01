@@ -61,7 +61,7 @@ export default () => {
               at 2:00 pm.
               <br />
               <br />
-              <b>Live Results:</b> Available on <a href="http://milesplit.live/meets/503874">MileSplit</a> and clubrunning.org (soon).
+              <b>Live Results:</b> Available on <a href="https://ma.milesplit.com/meets/503874-brown-bear-invitational-2022/results#.YzjSVuzMJpJ">MileSplit</a> and clubrunning.org (soon).
               <br />
               <br />
               <b>Payment Options:</b>
