@@ -41,14 +41,6 @@ export default () => (
             text="Fill out the club sports waiver ➞"
             link="https://brownrec.com/sports/2018/8/14/club-sports-registrations-offerings.aspx"
           ></Button>
-          <p style={styles.bodyTextNoButton}>
-            Running club charges dues for competitive runners to defray costs of
-            travel, registration, and more. Dues are $30 per semester or $50 for
-            the year if you pay in the first few weeks of the fall semester.
-            Financial aid is available, no questions asked, as an option in the
-            interest form. Dues can be paid on the club Touchnet store (coming
-            soon).
-          </p>
           <p style={styles.bodyText}>
             Finally, anyone who wishes to compete must agree to our team
             policies by signing our competitive team contract.
