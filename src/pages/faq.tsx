@@ -17,6 +17,8 @@ export default () => (
               Facebook
             </a>{" "}
             and be sure to join our email list by emailing run@brown.edu.
+            <br></br> If you start coming regularly, you must register as a team
+            member through the club sports website.
           </p>
         </Card>
         <Card title="When/where is practice?">
@@ -107,13 +109,6 @@ export default () => (
             the year, and are affiliated with NIRCA. Check the schedule to see
             this semester’s races. We’ll send out sign up forms for these meets
             in our weekly emails.
-            <br></br>
-            <br></br>
-            To compete on the competitive team, you must register through the
-            club sports website. If you plan to complete in at least one race
-            this semester, you must also pay our membership dues ($50/year or
-            $30/semester). Dues can be paid on the club Touchnet store (coming
-            soon).
           </p>
         </Card>
         <Card title="How do you keep track of your training?">
