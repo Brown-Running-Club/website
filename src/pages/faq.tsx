@@ -17,7 +17,9 @@ export default () => (
               Facebook
             </a>{" "}
             and be sure to join our email list by emailing run@brown.edu.
-            <br></br> If you start coming regularly, you must register as a team
+            <br></br>
+            <br></br>  
+            If you start coming regularly, you must register as a team
             member through the club sports website.
           </p>
         </Card>
@@ -50,7 +52,9 @@ export default () => (
             based on the paces and distances people want to run. We usually
             follow a run from our routes page, but sometimes we explore other
             areas of Providence.
-            <br></br>A typical week of practices usually consists of one or two
+            <br></br>
+            <br></br>
+            A typical week of practices usually consists of one or two
             workouts, three or four steady runs, and one long run (typically
             held on Sunday). The workouts are held on the indoor track, outdoor
             track, or the roads depending on the workout type and the weather,
