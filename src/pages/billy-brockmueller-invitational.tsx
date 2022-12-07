@@ -69,9 +69,7 @@ export default () => {
                 <li>$25/athlete for other participants (college varsity athletes, non-collegiate club teams, unattached athletes)</li>
                 <li>$300 max/gender team (applies to all teams and clubs)</li>
               </ul>
-              Race day registration will be available for $30 until the start of the meet or one hour before the desired event, whichever is earlier. 
-              <br />
-              We are unable to refund entry fees for any reason including inclement weather, meet cancellation, athlete conflict, scratches, or over-payment. 
+              Race day registration will be available for $30 until the start of the meet or one hour before the desired event, whichever is earlier. We are unable to refund entry fees for any reason including inclement weather, meet cancellation, athlete conflict, scratches, or over-payment. 
               <br />
               <br />
               <b>Payment:</b> Invoices will be sent after registration closes.
@@ -129,7 +127,7 @@ export default () => {
               <b>Accessibility:</b> The facility is ADA accessible. Call or email ahead for ground-level entrance.
               <br />
               <br />
-              <b>Contact:</b> Max Heller, Meet Director: <a href="mailto:run@brown.edu">run@brown.edu</a> (preferred) or 518-364-7530
+              <b>Contact:</b> Sydney Roberts, Meet Director: <a href="mailto:run@brown.edu">run@brown.edu</a> (preferred) or 415-866-5446
             </p>
           </Card>
           <MediaQuery query="(max-width: 799px)">
