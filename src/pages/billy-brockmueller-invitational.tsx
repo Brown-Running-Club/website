@@ -57,10 +57,6 @@ export default () => {
               <b>Registration: </b>
               The preferred method for entries is on <a href="https://www.directathletics.com/meets/track/72457.html">DirectAthletics</a>.
               Otherwise, email <a href="mailto:run@brown.edu">run@brown.edu</a> to request an entry form.
-              <!-- <ul style={{ listStyleType: "none" }}>
-                 <li>Registration Opens: 12:00 am, Monday, February 13</li>
-                 <li>Registration Closes: 11:59 pm, Monday, February 27</li>
-              </ul> -->
               <br />
               <b>Entry Fees:</b>
               <ul style={{ listStyleType: "none" }}>
