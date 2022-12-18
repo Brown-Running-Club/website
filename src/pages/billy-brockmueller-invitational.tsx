@@ -49,7 +49,7 @@ export default () => {
         <WideContainer>
           <Card>
             <p>
-              <b>Date:</b> Saturday, March 12, 2022 <br />
+              <b>Date:</b> [tentative] Saturday, March 4, 2023 <br />
               <b>Time:</b> Events begin at noon. Teams may arrive <b>no earlier than 11am</b>.
               <br />
               <b>Location:</b> Olney-Margolies Athletic Center, 235 Hope Street, Providence, RI 02906 <br />
@@ -58,8 +58,8 @@ export default () => {
               The preferred method for entries is on <a href="https://www.directathletics.com/meets/track/72457.html">DirectAthletics</a>.
               Otherwise, email <a href="mailto:run@brown.edu">run@brown.edu</a> to request an entry form.
               <ul style={{ listStyleType: "none" }}>
-                <li>Registration Opens: 12:00 am, Monday, February 14</li>
-                <li>Registration Closes: 11:59 pm, Monday, March 7</li>
+                <!-- <li>Registration Opens: 12:00 am, Monday, February 13</li> -->
+                <!-- <li>Registration Closes: 11:59 pm, Monday, February 27</li> -->
               </ul>
               <br />
               <b>Entry Fees:</b>
