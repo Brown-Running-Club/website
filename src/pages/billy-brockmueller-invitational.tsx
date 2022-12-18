@@ -90,9 +90,6 @@ export default () => {
                   description
                 </li>
                 <li>
-                  <b>Cash:</b> Pay in cash when you check-in
-                </li>
-                <li>
                   <b>Check:</b> Make payable to {'"'}Brown Club Sports – Running
                   Club{'"'}, mail to {'"'}Brown Club Sports, 225 Hope St. Box
                   1933, Providence, RI 02912{'"'}
