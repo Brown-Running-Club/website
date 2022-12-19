@@ -50,7 +50,7 @@ export default () => {
           <Card>
             <p>
               <b>Date:</b> (penciled in for) Saturday, March 4, 2023 <br />
-              <b>Time:</b> Events begin at noon. Teams may arrive <b>no earlier than 11am</b>.
+              <b>Time:</b> Events begin at 11am. Teams may arrive <b>no earlier than 10am</b>.
               <br />
               <b>Location:</b> Olney-Margolies Athletic Center, 235 Hope Street, Providence, RI 02906 <br />
               <br />
@@ -93,10 +93,6 @@ export default () => {
               </ul>
               <br />
               <b>Spectator Admission:</b> Free <br />
-              <br />
-              <b>COVID-19 Policies:</b> All participants and spectators are required to adhere to Brown's visitor guidelines.
-              Namely, athletes are required to wear masks except while competing, and spectators are required to wear masks at all times.
-              For the most up-to-date information, see <a href="https://healthy.brown.edu/visitors-guests">Brown's website</a>.
               <br />
               <br />
               <b>Check-in:</b> You may check in with the clerk up to 60 minutes before your event.
