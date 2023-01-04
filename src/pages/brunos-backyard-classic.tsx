@@ -43,10 +43,11 @@ export default () => {
               <br />
               <b>Entry Fees:</b>
               <ul style={{ listStyleType: "none" }}>
-                <li>$10/athlete for middle schoolers (be sure to include class year in registration)</li>
-                <li>$15/athlete for college club athletes (NIRCA) and high schoolers (be sure to include class year in registration)</li>
-                <li>$20/athlete for other participants (college varsity athletes, non-collegiate club teams, unattached athletes)</li>
-                <li>$250 max/gender team (applies to all teams and clubs)</li>
+                <li>$12/athlete for middle schoolers (be sure to include class year in registration)</li>
+                <li>$17/athlete for college club athletes (NIRCA) and high schoolers</li>
+                <li>$25/athlete for other participants (college varsity athletes, non-collegiate club teams, unattached athletes)</li>
+                <li>$250 max/gender team for college clubs (NIRCA) and middle and high schools</li>
+                <li>$300 max/gender team for other teams and clubs</li>
               </ul>
               Race day registration will be available for $30 until the start of the meet or one hour before the desired event, whichever is earlier.
               <br />
