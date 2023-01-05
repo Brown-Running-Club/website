@@ -72,19 +72,10 @@ export default () => {
               <b>Payment:</b> Invoices will be sent after registration closes.
               <ul style={{ listStyleType: "none" }}>
                 <li>
-                  <b>
-                    <a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=89BERVN4EHAXQ">
-                      Credit Card/PayPal:
-                    </a>
-                  </b>{" "}
-                  follow link or send to run@brown.edu
+                  <b><a href="https://payment.brown.edu/C20460_ustores/web/product_detail.jsp?PRODUCTID=3987&SINGLESTORE=true">TouchNet</a> Invoice:</b> Pay invoice online before arrival
                 </li>
                 <li>
-                  <b>
-                    <a href="https://venmo.com/brownrunningclub">Venmo:</a>
-                  </b>{" "}
-                  follow link or send to @BrownRunningClub. Include full name in
-                  description
+                  <b>Cash:</b> Pay in cash when you check-in
                 </li>
                 <li>
                   <b>Check:</b> Make payable to {'"'}Brown Club Sports – Running
