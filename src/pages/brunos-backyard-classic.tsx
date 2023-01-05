@@ -46,6 +46,7 @@ export default () => {
                 <li>$12/athlete for middle schoolers (be sure to include class year in registration)</li>
                 <li>$17/athlete for college club athletes (NIRCA) and high schoolers</li>
                 <li>$25/athlete for other participants (college varsity athletes, non-collegiate club teams, unattached athletes)</li>
+                <li>$150 max/gender team for middle school teams</li>
                 <li>$250 max/gender team for college clubs (NIRCA) and middle and high schools</li>
                 <li>$300 max/gender team for other teams and clubs</li>
               </ul>
