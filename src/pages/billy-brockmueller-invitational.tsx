@@ -58,6 +58,8 @@ export default () => {
               The preferred method for entries is on <a href="https://www.directathletics.com/meets/track/72457.html">DirectAthletics</a>.
               Otherwise, email <a href="mailto:run@brown.edu">run@brown.edu</a> to request an entry form.
               <br />
+                <li>Registration Opens: 12:00 am, Monday, February 6</li>
+                <li>Registration Closes: 11:59 pm, Monday, February 27</li>
               <b>Entry Fees:</b>
               <ul style={{ listStyleType: "none" }}>
                 <li>$12/athlete for middle schoolers (be sure to include class year in registration)</li>
@@ -74,9 +76,6 @@ export default () => {
               <ul style={{ listStyleType: "none" }}>
                 <li>
                   <b><a href="https://payment.brown.edu/C20460_ustores/web/product_detail.jsp?PRODUCTID=3987&SINGLESTORE=true">TouchNet</a> Invoice:</b> Pay invoice online before arrival
-                </li>
-                <li>
-                  <b>Cash:</b> Pay in cash when you check-in
                 </li>
                 <li>
                   <b>Check:</b> Make payable to {'"'}Brown Club Sports – Running
