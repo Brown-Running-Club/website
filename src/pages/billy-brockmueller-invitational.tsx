@@ -58,8 +58,10 @@ export default () => {
               The preferred method for entries is on <a href="https://www.directathletics.com/meets/track/72457.html">DirectAthletics</a>.
               Otherwise, email <a href="mailto:run@brown.edu">run@brown.edu</a> to request an entry form.
               <br />
+              <ul style={{ listStyleType: "none" }}>
                 <li>Registration Opens: 12:00 am, Monday, February 6</li>
                 <li>Registration Closes: 11:59 pm, Monday, February 27</li>
+              </ul>
               <b>Entry Fees:</b>
               <ul style={{ listStyleType: "none" }}>
                 <li>$12/athlete for middle schoolers (be sure to include class year in registration)</li>
