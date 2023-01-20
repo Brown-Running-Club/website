@@ -49,7 +49,7 @@ export default () => {
         <WideContainer>
           <Card>
             <p>
-              <b>Date:</b> (penciled in for) Saturday, March 4, 2023 <br />
+              <b>Date:</b> Saturday, March 4, 2023 <br />
               <b>Time:</b> Events begin at 11am. Teams may arrive <b>no earlier than 10am</b>.
               <br />
               <b>Location:</b> Olney-Margolies Athletic Center, 235 Hope Street, Providence, RI 02906 <br />
