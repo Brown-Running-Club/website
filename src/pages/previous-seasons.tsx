@@ -15,6 +15,7 @@ export default () => (
     </TitleImage>
     <PageBody>
       <WideContainer>
+        <Season season="Fall 2022" />
         <Season season="Spring 2022" />
         <Season season="Fall 2021" />
         <Card title="Spring 2021" centeredTitle>
