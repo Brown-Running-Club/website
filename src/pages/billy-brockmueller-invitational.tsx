@@ -71,7 +71,8 @@ export default () => {
                 <li>$250 max/gender team for college clubs (NIRCA) and high school teams</li>
                 <li>$300 max/gender team for other teams and clubs</li>
               </ul>
-              Race day registration will be available for $30 until the start of the meet or one hour before the desired event, whichever is earlier. We are unable to refund entry fees for any reason including inclement weather, meet cancellation, athlete conflict, scratches, or over-payment. 
+              <br />
+              <b> Race Day Registration:</b> Available for $30 until the start of the meet or one hour before the desired event, whichever is earlier. We are unable to refund entry fees for any reason including inclement weather, meet cancellation, athlete conflict, scratches, or over-payment. 
               <br />
               <br />
               <b>Payment:</b> Invoices will be sent after registration closes.
@@ -89,7 +90,7 @@ export default () => {
               <b>Spectator Admission:</b> Free <br />
               <br />
               <br />
-              <b>Check-in:</b> You may check in with the clerk up to 60 minutes before your event.
+              <b>Check-in:</b> You may check in with the clerk up to 45 minutes before your event.
               Please check in no later than 20 minutes before your scheduled event time,
               or you will be scratched. We will run up to 5 minutes ahead of the listed schedule.
               <br />
