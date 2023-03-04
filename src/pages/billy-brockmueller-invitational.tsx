@@ -95,8 +95,8 @@ export default () => {
               or you will be scratched. We will run up to 5 minutes ahead of the listed schedule.
               <br />
               <br />
-              <b>Heat Sheets and Results:</b> Heat sheets will be posted in the facility and on the meet homepage.
-              Final results will be available there and emailed to participants.
+              <b>Heat Sheets and Results:</b> Heat sheets will be posted in the facility.
+              Final results will be available on meet homepage and emailed to participants.
               Meet updates and results will be posted online via DirectAthletics and in the facility as the day progresses.
               Live results will be available <a href="http://www.milesplit.live/meets/526353">here</a>.
               <br />
