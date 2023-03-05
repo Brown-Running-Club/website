@@ -50,10 +50,21 @@ export default () => {
                 <li>$250 max/gender team for college clubs (NIRCA) and middle and high schools</li>
                 <li>$300 max/gender team for other teams and clubs</li>
               </ul>
-              Race day registration will be available for $30 until the start of the meet or one hour before the desired event, whichever is earlier.
+              Race day registration will be available for $30 until the start of the meet or one hour before the desired event, whichever is earlier. 
+              We are unable to refund entry fees for any reason including inclement weather, meet cancellation, athlete conflict, scratches, or over-payment.
               <br />
               <br />
-              <b>Payment:</b> Invoices will be sent after registration closes.
+              <b>Payment:</b> Payment is required upon registration. Invoices will be sent to participants who have not paid after registration closes.
+              <ul style={{ listStyleType: "none" }}>
+                <li>
+                  <b><a href="https://payment.brown.edu/C20460_ustores/web/product_detail.jsp?PRODUCTID=3987&SINGLESTORE=true">TouchNet</a>:</b> Pay online with registration
+                </li>
+                <li>
+                  <b>Check:</b> Make payable to {'"'}Brown Club Sports – Running
+                  Club{'"'}, mail to {'"'}Brown Club Sports, 225 Hope St. Box
+                  1933, Providence, RI 02912{'"'}
+                </li>
+              </ul>
               <br />
               <br />
               <b>Spectator Admission:</b> Free
