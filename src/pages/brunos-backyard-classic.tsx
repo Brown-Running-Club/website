@@ -38,7 +38,7 @@ export default () => {
               <b>Location:</b> Brown Stadium, 400 Elmgrove Ave, Providence, RI 02906 <br />
               <br />
               <b>Registration: </b>
-              Registration will be done through DirectAthletics (link coming soon).</a>.
+              Registration will be done through DirectAthletics (link coming soon).
               <br />
               <b>Entry Fees:</b>
               <ul style={{ listStyleType: "none" }}>
