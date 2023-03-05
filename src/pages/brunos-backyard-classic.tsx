@@ -39,11 +39,11 @@ export default () => {
               <b>Location:</b> Brown Stadium, 400 Elmgrove Ave, Providence, RI 02906 <br />
               <br />
               <b>Registration: </b>
-              Registration will be done through <a href="https://www.directathletics.com/meets/track/73516.html">DirectAthletics</a>.
+              Registration will be done through /*<a href="https://www.directathletics.com/meets/track/73516.html">*/DirectAthletics (link coming soon).</a>.
               <br />
               <b>Entry Fees:</b>
               <ul style={{ listStyleType: "none" }}>
-                <li>$12/athlete for middle schoolers (be sure to include class year in registration)</li>
+                <li>$10/athlete for middle schoolers (be sure to include class year in registration)</li>
                 <li>$17/athlete for college club athletes (NIRCA) and high schoolers</li>
                 <li>$25/athlete for other participants (college varsity athletes, non-collegiate club teams, unattached athletes)</li>
                 <li>$150 max/gender team for middle school teams</li>
@@ -64,8 +64,8 @@ export default () => {
               or you will be scratched. We will run up to 5 minutes ahead of the listed schedule.
               <br />
               <br />
-              <b>Heat Sheets and Results:</b> Heat sheets will be posted at the facility and on the meet homepage.
-              Final results will be available there and emailed to participants.
+              <b>Heat Sheets and Results:</b> Heat sheets will be posted at the facility.
+              Final results will be available on the meet homepage and emailed to participants.
               Meet updates and results will communicated via email and in the facility as the day progresses.
               <br />
               <br />
