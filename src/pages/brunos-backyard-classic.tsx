@@ -19,7 +19,6 @@ export default () => {
     <Card title="Schedule">
       <Schedule />
       <br />
-
       Women will run before men and heats will run fast to slow.
       <br />
       Long jump will be an open pit from 11:15-12:45 PM.
