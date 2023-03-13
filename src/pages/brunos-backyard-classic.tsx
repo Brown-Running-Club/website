@@ -38,7 +38,11 @@ export default () => {
               <b>Location:</b> Brown Stadium, 400 Elmgrove Ave, Providence, RI 02906 <br />
               <br />
               <b>Registration: </b>
-              Registration will be done through DirectAthletics (link coming soon).
+              Registration will be done through <a href="https://www.directathletics.com/meets/track/78395.html">DirectAthletics</a>. 
+              <ul style={{ listStyleType: "none" }}>
+                <li>Registration Opens: 12:00 am, Monday, March 27</li>
+                <li>Registration Closes: 11:59 pm, Monday, April 17</li>
+              </ul>
               <br />
               <b>Entry Fees:</b>
               <ul style={{ listStyleType: "none" }}>
@@ -46,7 +50,7 @@ export default () => {
                 <li>$17/athlete for college club athletes (NIRCA) and high schoolers</li>
                 <li>$25/athlete for other participants (college varsity athletes, non-collegiate club teams, unattached athletes)</li>
                 <li>$150 max/gender team for middle school teams</li>
-                <li>$250 max/gender team for college clubs (NIRCA) and middle and high schools</li>
+                <li>$250 max/gender team for college clubs (NIRCA) and high schools</li>
                 <li>$300 max/gender team for other teams and clubs</li>
               </ul>
               Race day registration will be available for $30 until the start of the meet or one hour before the desired event, whichever is earlier. 
