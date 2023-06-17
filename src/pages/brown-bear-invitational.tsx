@@ -54,7 +54,7 @@ export default () => {
                 <li>11:00 am: Women’s 6K</li>
                 <li>12:00 pm: Men’s 8K</li>
               </ul>
-              <b>Check-in:</b> Teams may arrive no earlier than 11:00 am
+              <b>Check-in:</b> Teams may arrive no earlier than 10:00 am
               <br />
               <br />
               <b>Awards:</b> Medals awarded to top five finishers and first in
