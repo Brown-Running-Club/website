@@ -39,11 +39,16 @@ export default () => {
                 <li>NIRCA: <a href="https://clubrunning.org/races/race_info.php?race=1108">clubrunning.org</a></li>
                 <li>All other entries: <a href="https://www.directathletics.com/meets/xc/21393.html">DirectAthletics</a></li>
               </ul>
-              <b>Entry Fee:</b> $17/athlete for NIRCA clubs, max $250/gender for NIRCA/high school
-              teams. $25/open athletes. Max $300/gender for all other teams. $35/day of. <br />
+              <b>Entry Fee:</b> 
+              <ul style={{ listStyleType: "none" }}>
+                <li>$12/athlete for middle school and youth teams, max $150/gender per team</li>
+                <li>$17/athlete for NIRCA clubs and high school teams, max $250/gender per team</li>
+                <li>$25/athlete for open athletes, max $300/gender per team</li>
+                <li>$35/athlete for day-of registration</li>
+              </ul>
               <b>Refunds:</b> We are unable to offer refunds for any reason. 
               <br />
-              <b>Race Day Registration:</b> Available for $30 until the start of the meet or one hour before the desired 
+              <b>Race Day Registration:</b> Available for $35 until the start of the meet or one hour before the desired 
               event, whichever is earlier. We are unable to refund entry fees for any reason including inclement weather, 
               meet cancellation, athlete conflict, scratches, or over-payment.
               <br />
