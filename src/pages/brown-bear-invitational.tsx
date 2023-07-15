@@ -41,7 +41,7 @@ export default () => {
               </ul>
               <b>Entry Fee:</b> 
               <ul style={{ listStyleType: "none" }}>
-                <li>$12/athlete for youth teams, max $150/gender per team</li>
+                <li>$10/athlete for youth teams, max $150/gender per team</li>
                 <li>$17/athlete for NIRCA clubs and high school teams, max $250/gender</li>
                 <li>$25/athlete for open athletes, max $300/gender</li>
                 <li>$35/athlete for day-of registration</li>
