@@ -41,9 +41,9 @@ export default () => {
               </ul>
               <b>Entry Fee:</b> 
               <ul style={{ listStyleType: "none" }}>
-                <li>$10/athlete for youth teams, max $150/gender per team</li>
-                <li>$17/athlete for NIRCA clubs and high school teams, max $250/gender</li>
-                <li>$25/athlete for open athletes, max $300/gender</li>
+                <li>$10/athlete for youth teams, capped at $150/gender for teams of 15 or more athletes in one race</li>
+                <li>$17/athlete for NIRCA clubs and high school teams, capped at $250/gender for teams of 15 or more athletes in one race</li>
+                <li>$25/athlete for open athletes, capped at $300/gender for teams of 15 or more athletes in one race</li>
                 <li>$35/athlete for day-of registration</li>
               </ul>
               <b>Refunds:</b> We are unable to offer refunds for any reason. 
@@ -85,8 +85,7 @@ export default () => {
               <br />
               <br />
               <b>Contact:</b> Sydney Roberts, Meet Director:{" "}
-              <a href="mailto:run@brown.edu">run@brown.edu</a> (preferred) or
-              415-866-5446
+              <a href="mailto:run@brown.edu">run@brown.edu</a>
             </p>
           </Card>
           <MediaQuery query="(max-width: 799px)">
