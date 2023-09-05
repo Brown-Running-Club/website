@@ -61,4 +61,4 @@ const Season = ({ season, info }: { season: string, info?: string }) => {
 }
 export default Season
 
-export const CurrentSeason = () => <Season season="Spring 2023" />;
+export const CurrentSeason = () => <Season season="Fall 2023" />;
