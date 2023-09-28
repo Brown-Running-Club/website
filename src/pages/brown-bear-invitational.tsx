@@ -48,8 +48,7 @@ export default () => {
               </ul>
               <b>Refunds:</b> We are unable to offer refunds for any reason. 
               <br />
-              <b>Race Day Registration:</b> Available for $35 until the start of the meet or one hour before the desired 
-              event, whichever is earlier. We are unable to refund entry fees for any reason including inclement weather, 
+              <b>Race Day Registration:</b> Available for $35 until 10:30am. We are unable to refund entry fees for any reason including inclement weather, 
               meet cancellation, athlete conflict, scratches, or over-payment.
               <br />
               <b>Spectator Admission:</b> Free <br />
