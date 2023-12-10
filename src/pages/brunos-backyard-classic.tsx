@@ -86,7 +86,7 @@ export default () => {
               <b>Awards:</b> Medals will be awarded to top three finishers in each event and plaques to the top men's and women's NIRCA teams.
               <br />
               <br />
-              <b>Contact:</b> Sydney Roberts, Meet Director: <a href="mailto:run@brown.edu">run@brown.edu</a> (preferred) or 415-866-5446
+              <b>Contact:</b> Sydney Roberts, Meet Director: <a href="mailto:run@brown.edu">run@brown.edu</a>
             </p>
           </Card>
           <MediaQuery query="(max-width: 799px)">
