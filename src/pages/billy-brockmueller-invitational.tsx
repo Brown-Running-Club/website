@@ -111,7 +111,7 @@ export default () => {
               <b>Accessibility:</b> The facility is ADA accessible. Call or email ahead for ground-level entrance.
               <br />
               <br />
-              <b>Contact:</b> Sydney Roberts, Meet Director: <a href="mailto:run@brown.edu">run@brown.edu</a> (preferred) or 415-866-5446
+              <b>Contact:</b> Sydney Roberts, Meet Director: <a href="mailto:run@brown.edu">run@brown.edu</a>
             </p>
           </Card>
           <MediaQuery query="(max-width: 799px)">
