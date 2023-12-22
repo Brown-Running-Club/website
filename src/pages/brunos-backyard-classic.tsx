@@ -40,8 +40,8 @@ export default () => {
               <b>Registration: </b>
               Registration will be done through <a href="https://www.directathletics.com/meets/track/78395.html">DirectAthletics</a>. 
               <ul style={{ listStyleType: "none" }}>
-                <li>Registration Opens: 12:00 am, Monday, March 27</li>
-                <li>Registration Closes: 11:59 pm, Monday, April 17</li>
+                <li>Registration Opens: 12:00 am, Monday, March 25</li>
+                <li>Registration Closes: 11:59 pm, Monday, April 15</li>
               </ul>
               <br />
               <b>Entry Fees:</b>
