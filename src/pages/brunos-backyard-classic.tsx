@@ -32,7 +32,7 @@ export default () => {
         <WideContainer>
           <Card>
             <p>
-              <b>Date:</b> Saturday, April 22, 2023 <br />
+              <b>Date:</b> Saturday, April 20, 2024 <br />
               <b>Time:</b> Events begin at 11am. Teams may arrive <b>no earlier than 10am</b>.
               <br />
               <b>Location:</b> Brown Stadium, 400 Elmgrove Ave, Providence, RI 02906 <br />
@@ -86,7 +86,7 @@ export default () => {
               <b>Awards:</b> Medals will be awarded to top three finishers in each event and plaques to the top men's and women's NIRCA teams.
               <br />
               <br />
-              <b>Contact:</b> Sydney Roberts, Meet Director: <a href="mailto:run@brown.edu">run@brown.edu</a>
+              <b>Contact:</b> Annabel Roth, Meet Director: <a href="mailto:run@brown.edu">run@brown.edu</a>
             </p>
           </Card>
           <MediaQuery query="(max-width: 799px)">
