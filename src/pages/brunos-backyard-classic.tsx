@@ -38,7 +38,7 @@ export default () => {
               <b>Location:</b> Brown Stadium, 400 Elmgrove Ave, Providence, RI 02906 <br />
               <br />
               <b>Registration: </b>
-              Registration will be done through <a href="https://www.directathletics.com/meets/track/78395.html">DirectAthletics</a>. 
+              Registration will be done through <a href="https://www.directathletics.com/meets/track/82729.html">DirectAthletics</a>. 
               <ul style={{ listStyleType: "none" }}>
                 <li>Registration Opens: 12:00 am, Monday, March 25</li>
                 <li>Registration Closes: 11:59 pm, Monday, April 15</li>
