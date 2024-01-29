@@ -55,7 +55,7 @@ export default () => {
               <b>Location:</b> Olney-Margolies Athletic Center, 235 Hope Street, Providence, RI 02906 <br />
               <br />
               <b>Registration: </b>
-              The preferred method for entries is on <a href="https://www.directathletics.com/meets/track/76936.html">DirectAthletics</a>.
+              The preferred method for entries is on <a href="https://www.directathletics.com/meets/track/82728.html">DirectAthletics</a>.
               Otherwise, email <a href="mailto:run@brown.edu">run@brown.edu</a> to request an entry form.
               <br />
               <ul style={{ listStyleType: "none" }}>
