@@ -33,7 +33,11 @@ export default () => {
             We usually practice Monday-Friday and alternate between track
             workouts in the OMAC and strength workouts in the Nelson. To keep
             up with sprinting practice times, locations, and events, please
-            join our GroupMe!
+            join our{" "}
+        <a href="https://groupme.com/join_group/96294949/heikSQeK">
+          GroupMe
+        </a>{" "}
+            !
           </p>
         </Card>
       </WideContainer>
