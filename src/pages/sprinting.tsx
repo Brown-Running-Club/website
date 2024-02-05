@@ -10,6 +10,13 @@ import CharacterCard from "../components/character-card"
 import { getSheetData } from "../api-calls"
 
 export default () => (
+  const [bios, setBios] = useState<Bio[] | undefined>(undefined);
+
+ useEffect(() => {
+    if (bios === undefined) getBios().then(setBios)
+  })
+
+  const cards = bios?.map(makeCaptainCard);
   <Layout title="Sprinting" image={CompetitiveImage}>
     <PageBody>
       <WideContainer>
@@ -70,24 +77,6 @@ function makeCaptainCard(bio: Bio): JSX.Element {
   >
     <p style={styles.summaryText}>{bio.bio}</p>
   </CharacterCard>
-}
-
-export default () => {
-  const [bios, setBios] = useState<Bio[] | undefined>(undefined);
-
- useEffect(() => {
-    if (bios === undefined) getBios().then(setBios)
-  })
-
-  const cards = bios?.map(makeCaptainCard);
-
-  return <Layout title="Leadership" image={leadership}>
-    <PageBody>
-      <WiderContainer>
-        {cards}
-      </WiderContainer>
-    </PageBody>
-  </Layout>
 }
 
 const styles = {
