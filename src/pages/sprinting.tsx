@@ -26,3 +26,7 @@ export default () => (
             join our GroupMe!
           </p>
         </Card>
+      </WideContainer>
+    </PageBody>
+  </Layout>
+)
