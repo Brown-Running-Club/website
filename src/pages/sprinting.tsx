@@ -49,7 +49,7 @@ export default () => {
   </Layout>
 }
 
-const SPRINTLEADERS_BIO_SHEET_ID = "1BwuMiYUPxoBmRQ3ScxsvXCx8gijp7xcgw6KnOaO781c/edit#gid=0";
+const SPRINTLEADERS_BIO_SHEET_ID = "1BwuMiYUPxoBmRQ3ScxsvXCx8gijp7xcgw6KnOaO781c";
 
 type Bio = {
   name: string,
