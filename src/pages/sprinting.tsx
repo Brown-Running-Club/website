@@ -17,7 +17,8 @@ export default () => (
   })
 
   const cards = bios?.map(makeCaptainCard);
-  <Layout title="Sprinting" image={CompetitiveImage}>
+
+  return <Layout title="Sprinting" image={CompetitiveImage}>
     <PageBody>
       <WideContainer>
         <Card>
