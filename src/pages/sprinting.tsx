@@ -2,7 +2,6 @@ import React, { useEffect, useState } from "react"
 import CompetitiveImage from "../images/competitive.jpg"
 import theme from "../config/theme"
 import PageBody from "../components/page-body"
-import WideContainer from "../components/wide-container"
 import WiderContainer from "../components/wider-container"
 import Card from "../components/card"
 import Button from "../components/button"
@@ -21,7 +20,7 @@ export default () => {
 
   return <Layout title="Sprinting" image={CompetitiveImage}>
     <PageBody>
-      <WideContainer>
+      <WiderContainer>
         <Card>
           <p style={styles.infoText}>
             The Brown Running Club offers sprint practices during the fall and
@@ -41,8 +40,6 @@ export default () => {
             !
           </p>
         </Card>
-      </WideContainer>
-      <WiderContainer>
         {cards}
       </WiderContainer>
     </PageBody>
