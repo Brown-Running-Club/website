@@ -36,6 +36,9 @@ export default () => (
           </p>
         </Card>
       </WideContainer>
+      <WiderContainer>
+        {cards}
+      </WiderContainer>
     </PageBody>
   </Layout>
 )
