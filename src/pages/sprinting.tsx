@@ -6,6 +6,8 @@ import WideContainer from "../components/wide-container"
 import Card from "../components/card"
 import Button from "../components/button"
 import Layout from "../components/layout"
+import CharacterCard from "../components/character-card"
+import { getSheetData } from "../api-calls"
 
 export default () => (
   <Layout title="Sprinting" image={CompetitiveImage}>
@@ -31,6 +33,63 @@ export default () => (
   </Layout>
 )
 
+const SPRINTLEADERS_BIO_SHEET_ID = "1BwuMiYUPxoBmRQ3ScxsvXCx8gijp7xcgw6KnOaO781c/edit#gid=0";
+
+type Bio = {
+  name: string,
+  class: string,
+  concentration: string,
+  hometown: string,
+  image_link: string,
+  bio: string,
+}
+
+async function getBios(): Promise<Bio[]> {
+  const data = await getSheetData(SPRINTLEADERS_BIO_SHEET_ID, "Bios!A2:Z");
+  return data.map(row => ({
+    name: row[0],
+    class: row[1],
+    concentration: row[2],
+    hometown: row[3],
+    image_link: row[5],
+    bio: row[6],
+  }));
+}
+
+function makeCaptainCard(bio: Bio): JSX.Element {
+  return <CharacterCard
+    title={bio.name}
+    image={bio.image_link}
+    renderDetails={() => (
+      <p style={styles.summaryText}>
+        <b>Class:</b> {bio.class}<br></br>
+        <b>Concentration:</b> {bio.concentration}<br></br>
+        <b>Hometown:</b> {bio.hometown}<br></br>
+      </p>
+    )}
+  >
+    <p style={styles.summaryText}>{bio.bio}</p>
+  </CharacterCard>
+}
+
+export default () => {
+  const [bios, setBios] = useState<Bio[] | undefined>(undefined);
+
+ useEffect(() => {
+    if (bios === undefined) getBios().then(setBios)
+  })
+
+  const cards = bios?.map(makeCaptainCard);
+
+  return <Layout title="Leadership" image={leadership}>
+    <PageBody>
+      <WiderContainer>
+        {cards}
+      </WiderContainer>
+    </PageBody>
+  </Layout>
+}
+
 const styles = {
   infoText: {
     ...(theme.typography.h4 as any),
@@ -49,5 +108,10 @@ const styles = {
     ...(theme.typography.body as any),
     margin: 0,
     marginBottom: theme.spacing.unit * 2,
+  },
+  summaryText: {
+    ...(theme.typography.h4 as any),
+    margin: 0,
+    textAlign: "left" as "left",
   },
 }
