@@ -31,6 +31,7 @@ const menus: Array<Menu> = [
       { name: "routes", link: "/routes" },
       { name: "summer training", link: "https://docs.google.com/spreadsheets/d/12zRFlWZLA3wkGQuaXHhuv0Kt96b07UneCm6HkKiXOdc/edit?usp=sharing" },
       { name: "health", link: "/health" },
+      { name: "sprinting", link: "/sprinting" },
     ],
   },
   {
