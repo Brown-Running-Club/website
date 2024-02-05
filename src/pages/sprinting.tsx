@@ -26,3 +26,28 @@ export default () => (
             join our GroupMe!
           </p>
         </Card>
+      </WideContainer>
+    </PageBody>
+  </Layout>
+)
+
+const styles = {
+  infoText: {
+    ...(theme.typography.h4 as any),
+    margin: 0,
+  },
+  link: {
+    color: theme.palette.red,
+    textDecoration: "none" as "none",
+    display: "inline",
+  },
+  bodyText: {
+    ...(theme.typography.body as any),
+    margin: 0,
+  },
+  bodyTextNoButton: {
+    ...(theme.typography.body as any),
+    margin: 0,
+    marginBottom: theme.spacing.unit * 2,
+  },
+}
