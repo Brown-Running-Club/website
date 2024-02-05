@@ -37,7 +37,7 @@ export default () => {
             join our{" "}
         <a href="https://groupme.com/join_group/96294949/heikSQeK">
           GroupMe
-        </a>{" "}
+        </a>{""}
             !
           </p>
         </Card>
