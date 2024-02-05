@@ -9,7 +9,7 @@ import Layout from "../components/layout"
 import CharacterCard from "../components/character-card"
 import { getSheetData } from "../api-calls"
 
-export default () => (
+export default () => {
   const [bios, setBios] = useState<Bio[] | undefined>(undefined);
 
  useEffect(() => {
@@ -42,7 +42,7 @@ export default () => (
       </WiderContainer>
     </PageBody>
   </Layout>
-)
+}
 
 const SPRINTLEADERS_BIO_SHEET_ID = "1BwuMiYUPxoBmRQ3ScxsvXCx8gijp7xcgw6KnOaO781c/edit#gid=0";
 
