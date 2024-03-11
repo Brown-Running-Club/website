@@ -46,11 +46,11 @@ export default () => {
               <br />
               <b>Entry Fees:</b>
               <ul style={{ listStyleType: "none" }}>
-                <li>$10/athlete for middle schoolers (be sure to include class year in registration)</li>
-                <li>$17/athlete for college club athletes (NIRCA) and high schoolers</li>
+                <li>$15/athlete for middle schoolers (be sure to include class year in registration)</li>
+                <li>$20/athlete for college club athletes (NIRCA) and high schoolers</li>
                 <li>$25/athlete for other participants (college varsity athletes, non-collegiate club teams, unattached athletes)</li>
                 <li>$150 max/gender team for middle school teams</li>
-                <li>$250 max/gender team for college clubs (NIRCA) and high schools</li>
+                <li>$300 max/gender team for college clubs (NIRCA) and high schools</li>
                 <li>$300 max/gender team for other teams and clubs</li>
               </ul>
               Race day registration will be available for $30 until 10:30 for the 5K and 11:00 for all other events. There will be no race day registration for relays
