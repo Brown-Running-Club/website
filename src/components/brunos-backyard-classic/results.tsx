@@ -5,4 +5,5 @@ export default () =>
         <li><a href="/brunos-backyard-classic/records">Meet Records</a></li>
         <li><a href="/brunos-backyard-classic/results/2022.html">2022</a></li>
         <li><a href="https://ri.milesplit.com/meets/545463-brunos-backyard-classic-2023/results/911214?type=raw#.ZE8KwOzML9E">2023</a></li>
+        <li><a href="/brunos-backyard-classic/results/2024.pdf">2024</a></li>
     </ul>
