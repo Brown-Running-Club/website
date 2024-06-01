@@ -25,13 +25,13 @@ export default () => {
         <WideContainer>
           <Card>
             <p style={styles.welcomeText}>
-              <b>Date:</b> Saturday, September 30, 2023 <br />
+              <b>Date:</b> Saturday, September 28, 2023 <br />
               <br />
               <b>Location:</b> Highland Park, 104 Mechanic Street, Attleboro, MA
               02703 <br />
               <br />
-              <b>Registration Opens:</b> 12:00 am, Tuesday, August 1 <br />
-              <b>Registration Closes:</b> 11:59 pm, Wednesday, September 27 <br />
+              <b>Registration Opens:</b> 12:00 am, Tuesday, July 30 <br />
+              <b>Registration Closes:</b> 11:59 pm, Wednesday, September 25 <br />
               <br />
               <br />
               <b>Registration:</b>
@@ -42,7 +42,7 @@ export default () => {
               <b>Entry Fee:</b> 
               <ul style={{ listStyleType: "none" }}>
                 <li>$10/athlete for youth teams, capped at $150/gender for teams of 15 or more athletes in one race</li>
-                <li>$17/athlete for NIRCA clubs and high school teams, capped at $250/gender for teams of 15 or more athletes in one race</li>
+                <li>$20/athlete for NIRCA clubs and high school teams, capped at $300/gender for teams of 15 or more athletes in one race</li>
                 <li>$25/athlete for open athletes, capped at $300/gender for teams of 15 or more athletes in one race</li>
                 <li>$35/athlete for day-of registration</li>
               </ul>
@@ -83,7 +83,7 @@ export default () => {
               </ul>
               <br />
               <br />
-              <b>Contact:</b> Sydney Roberts, Meet Director:{" "}
+              <b>Contact:</b> Adam Juma, Meet Director:{" "}
               <a href="mailto:run@brown.edu">run@brown.edu</a>
             </p>
           </Card>
