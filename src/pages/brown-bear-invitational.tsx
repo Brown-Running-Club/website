@@ -25,7 +25,7 @@ export default () => {
         <WideContainer>
           <Card>
             <p style={styles.welcomeText}>
-              <b>Date:</b> Saturday, September 28, 2023 <br />
+              <b>Date:</b> Saturday, September 28, 2024 <br />
               <br />
               <b>Location:</b> Highland Park, 104 Mechanic Street, Attleboro, MA
               02703 <br />
