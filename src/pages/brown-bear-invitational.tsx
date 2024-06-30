@@ -36,8 +36,8 @@ export default () => {
               <br />
               <b>Registration:</b>
               <ul style={{ listStyleType: "none" }}>
-                <li>NIRCA: <a href="https://clubrunning.org/races/race_info.php?race=1108">clubrunning.org</a></li>
-                <li>All other entries: <a href="https://www.directathletics.com/meets/xc/21393.html">DirectAthletics</a></li>
+                <li>NIRCA: <a href="https://clubrunning.org/races/race_info.php?race=1259">clubrunning.org</a></li>
+                <li>All other entries: <a href="https://www.directathletics.com/meets/xc/23750.html">DirectAthletics</a></li>
               </ul>
               <b>Entry Fee:</b> 
               <ul style={{ listStyleType: "none" }}>
