@@ -15,7 +15,8 @@ export default () => (
     </TitleImage>
     <PageBody>
       <WideContainer>
-         <Season season="Fall 2023" />
+        <Season season="Spring 2024" />
+        <Season season="Fall 2023" />
         <Season season="Spring 2023" />
         <Season season="Fall 2022" />
         <Season season="Spring 2022" />
