@@ -13,10 +13,14 @@ export default () => (
         <Card title="How do I join?">
           <p style={styles.infoText}>
             Come to a practice and introduce yourself! Find us on{" "}
+            <a href="https://www.instagram.com/brownrunningclub/">
+              Instagram
+            </a>
+            , 
             <a href="https://www.facebook.com/groups/260972757349158/">
               Facebook
-            </a>{" "}
-            and be sure to join our email list by emailing run@brown.edu.
+            </a>
+            , and be sure to join our email list by emailing run@brown.edu.
             <br></br>
             <br></br>  
             If you start coming regularly, you must register as a team
@@ -69,7 +73,7 @@ export default () => (
             practice! That being said, members who come to practice frequently
             by definition run often, so our usual pace groups for regular runs
             will be between 7 and 9 minute/mile pace. As you’re getting into
-            shape, we recommend coming on days labelled as regular or recovery
+            shape, we recommend coming on days labeled as regular or recovery
             runs (generally Monday and Friday, but check the current week’s
             schedule on our calendar) rather than workouts or long runs so that
             you’ll have more people to run with. We don’t require any prior
@@ -97,7 +101,7 @@ export default () => (
             We often have informal team dinners and movie nights and sometimes
             have larger events, like our end of year formal. We also have
             “destination runs” for donuts or coffee and themed runs on special
-            occasions like Halloween, Daylight Saving’s Day, and Pi Day. We’ll
+            occasions like Halloween, Daylight Savings Day, and Pi Day. We’ll
             announce these in emails, our calendar, and on Facebook.
           </p>
         </Card>
@@ -126,7 +130,7 @@ export default () => (
         <Card title="Where are the local running stores?">
           <p style={styles.infoText}>
             The closest specialty running store is Rhode Runner, 657 North Main
-            St, (401) 831-6346
+            St., (401) 831-6346
           </p>
         </Card>
       </WideContainer>
