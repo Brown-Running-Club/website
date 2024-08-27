@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react"
-import CompetitiveImage from "../images/competitive.jpg"
+import CompetitiveImage from "../images/sprints.jpg"
 import theme from "../config/theme"
 import PageBody from "../components/page-body"
 import WiderContainer from "../components/wider-container"
