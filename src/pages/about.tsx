@@ -20,11 +20,15 @@ export default () => {
         competitively, we compete in cross country races, indoor and outdoor
         track meets, and road races. If you want to check us out, stop by
         for a run! Additionally, you can find out more by looking around
-        here, joining our{" "}
+        here, following our{" "}
+        <a href="https://www.instagram.com/brownrunningclub/">
+          Instagram
+        </a>{" "}
+        , joining our{" "}
         <a href="https://www.facebook.com/groups/260972757349158/">
           Facebook group
         </a>{" "}
-        or shooting us an email at run@brown.edu.
+        , or shooting us an email at run@brown.edu.
       </p>
       <p style={styles.infoTextBottom}>
         We meet up at the bear statue outside the Nelson Fitness Center
