@@ -16,7 +16,7 @@ export default () => (
             <a href="https://www.instagram.com/brownrunningclub/">
               Instagram
             </a>
-            , 
+            ,{" "}
             <a href="https://www.facebook.com/groups/260972757349158/">
               Facebook
             </a>
