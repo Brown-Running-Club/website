@@ -30,7 +30,7 @@ export default () => (
           </p>
           <Button
             text="Fill out the interest form ➞"
-            link="https://forms.gle/u8tzyDkFDcRKzHeXA"
+            link="https://forms.gle/AonXFhEZHPn8M2EW9"
           ></Button>
           <p style={styles.bodyText}>
             Next, in order to race with us, you’ll need to be on our roster with
@@ -47,7 +47,7 @@ export default () => (
           </p>
           <Button
             text="Sign the contract ➞"
-            link="https://forms.gle/Z8oSvroakaNWiWtZ7"
+            link="https://forms.gle/K2NqY38L86DT9i7Y9"
           ></Button>
         </Card>
       </WideContainer>
