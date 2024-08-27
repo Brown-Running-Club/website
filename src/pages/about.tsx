@@ -23,11 +23,11 @@ export default () => {
         here, following our{" "}
         <a href="https://www.instagram.com/brownrunningclub/">
           Instagram
-        </a>{" "}
+        </a>
         , joining our{" "}
         <a href="https://www.facebook.com/groups/260972757349158/">
           Facebook group
-        </a>{" "}
+        </a>
         , or shooting us an email at run@brown.edu.
       </p>
       <p style={styles.infoTextBottom}>
