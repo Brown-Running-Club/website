@@ -1,5 +1,5 @@
 import React from "react"
-import CompetitiveImage from "../images/competitive.jpg"
+import CompetitiveImage from "../images/kickoff2.jpg"
 import theme from "../config/theme"
 import PageBody from "../components/page-body"
 import WideContainer from "../components/wide-container"
