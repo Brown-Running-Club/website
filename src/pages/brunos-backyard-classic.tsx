@@ -1,5 +1,5 @@
 import React from "react"
-import BrownStadium from "../images/brown-stadium.jpg"
+import BrownStadium from "../images/bbclassic.jpg"
 import Card from "../components/card"
 import PageBody from "../components/page-body"
 import WideContainer from "../components/wide-container"
