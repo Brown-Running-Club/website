@@ -1,5 +1,5 @@
 import React from "react"
-import FAQsImage from "../images/faqsimage.jpg"
+import FAQsImage from "../images/faq.jpg"
 import theme from "../config/theme"
 import PageBody from "../components/page-body"
 import WideContainer from "../components/wide-container"
