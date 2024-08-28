@@ -1,5 +1,5 @@
 import React from "react"
-import Omac from "../images/omac.jpg"
+import Omac from "../images/stick.jpg"
 import Card from "../components/card"
 import PageBody from "../components/page-body"
 import Button from "../components/button"
