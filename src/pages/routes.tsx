@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react"
-import RoutesImage from "../images/schedule.jpg"
+import RoutesImage from "../images/routes.jpg"
 import theme from "../config/theme"
 import PageBody from "../components/page-body"
 import WideContainer from "../components/wide-container"
