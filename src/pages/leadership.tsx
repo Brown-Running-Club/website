@@ -3,7 +3,7 @@ import theme from "../config/theme"
 import PageBody from "../components/page-body"
 import WiderContainer from "../components/wider-container"
 import CharacterCard from "../components/character-card"
-import leadership from "../images/leadership.jpg"
+import leadership from "../images/leadership.png"
 import Layout from "../components/layout"
 import { getSheetData } from "../api-calls"
 
