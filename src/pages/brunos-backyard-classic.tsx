@@ -32,7 +32,7 @@ export default () => {
         <WideContainer>
           <Card>
             <p>
-              <b>Date:</b> Saturday, April 20, 2024 <br />
+              <b>Date:</b> Sunday, April 20, 2025 <br />
               <b>Time:</b> Events begin at 11am. Teams may arrive <b>no earlier than 10am</b>.
               <br />
               <b>Location:</b> Brown Stadium, 400 Elmgrove Ave, Providence, RI 02906 <br />
@@ -40,8 +40,8 @@ export default () => {
               <b>Registration: </b>
               Registration will be done through <a href="https://www.directathletics.com/meets/track/82729.html">DirectAthletics</a>. 
               <ul style={{ listStyleType: "none" }}>
-                <li>Registration Opens: 12:00 am, Monday, March 25</li>
-                <li>Registration Closes: 11:59 pm, Monday, April 15</li>
+                <li>Registration Opens: 12:00 am, Monday, March 24</li>
+                <li>Registration Closes: 11:59 pm, Tuesday, April 15</li>
               </ul>
               <br />
               <b>Entry Fees:</b>
@@ -86,7 +86,7 @@ export default () => {
               <b>Awards:</b> Medals will be awarded to top three finishers in each event and plaques to the top men's and women's NIRCA teams.
               <br />
               <br />
-              <b>Contact:</b> Annabel Roth, Meet Director: <a href="mailto:run@brown.edu">run@brown.edu</a>
+              <b>Contact:</b> Adam Juma, Meet Director: <a href="mailto:run@brown.edu">run@brown.edu</a>
             </p>
           </Card>
           <MediaQuery query="(max-width: 799px)">
