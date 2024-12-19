@@ -49,7 +49,7 @@ export default () => {
         <WideContainer>
           <Card>
             <p>
-              <b>Date:</b> Sunday, February 25, 2024 <br />
+              <b>Date:</b> Sunday, March 2, 2025 <br />
               <b>Time:</b> Events begin at 11am. Teams may arrive <b>no earlier than 10am</b>.
               <br />
               <b>Location:</b> Olney-Margolies Athletic Center, 235 Hope Street, Providence, RI 02906 <br />
@@ -65,10 +65,10 @@ export default () => {
               <b>Entry Fees:</b>
               <ul style={{ listStyleType: "none" }}>
                 <li>$10/athlete for middle schoolers (be sure to include class year in registration)</li>
-                <li>$17/athlete for college club athletes (NIRCA) and high schoolers</li>
+                <li>$20/athlete for college club athletes (NIRCA) and high schoolers</li>
                 <li>$25/athlete for other participants (college varsity athletes, non-collegiate club teams, unattached athletes)</li>
                 <li>$150 max/gender team for middle school teams</li>
-                <li>$250 max/gender team for college clubs (NIRCA) and high school teams</li>
+                <li>$300 max/gender team for college clubs (NIRCA) and high school teams</li>
                 <li>$300 max/gender team for other teams and clubs</li>
               </ul>
               <br />
