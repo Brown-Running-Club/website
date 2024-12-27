@@ -55,7 +55,7 @@ export default () => {
               <b>Location:</b> Olney-Margolies Athletic Center, 235 Hope Street, Providence, RI 02906 <br />
               <br />
               <b>Registration: </b>
-              The preferred method for entries is on <a href="https://www.directathletics.com/meets/track/82728.html">DirectAthletics</a>.
+              The preferred method for entries is on <a href="https://www.directathletics.com/meets/track/88378.html">DirectAthletics</a>.
               Otherwise, email <a href="mailto:run@brown.edu">run@brown.edu</a> to request an entry form.
               <br />
               <ul style={{ listStyleType: "none" }}>
@@ -105,7 +105,7 @@ export default () => {
               Those not racing within the next hour should use the restrooms in the Nelson Fitness Center lobby next door.
               <br />
               <br />
-              <b>Awards:</b> At clerk table: medal awarded to top three finishers in each event. Plaques to top men and women NIRCA teams.
+              <b>Awards:</b> At clerk table: medals awarded to top three finishers in each individual event and the top team for each relay. Plaques to top men and women NIRCA teams.
               <br />
               <br />
               <b>Accessibility:</b> The facility is ADA accessible. Call or email ahead for ground-level entrance.
