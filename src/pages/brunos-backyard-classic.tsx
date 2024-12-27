@@ -38,7 +38,7 @@ export default () => {
               <b>Location:</b> Brown Stadium, 400 Elmgrove Ave, Providence, RI 02906 <br />
               <br />
               <b>Registration: </b>
-              Registration will be done through <a href="https://www.directathletics.com/meets/track/82729.html">DirectAthletics</a>. 
+              Registration will be done through <a href="https://www.directathletics.com/meets/track/88381.html">DirectAthletics</a>. 
               <ul style={{ listStyleType: "none" }}>
                 <li>Registration Opens: 12:00 am, Monday, March 24</li>
                 <li>Registration Closes: 11:59 pm, Tuesday, April 15</li>
@@ -83,7 +83,7 @@ export default () => {
               Meet updates and results will communicated via email and in the facility as the day progresses.
               <br />
               <br />
-              <b>Awards:</b> Medals will be awarded to top three finishers in each event and plaques to the top men's and women's NIRCA teams.
+              <b>Awards:</b> At clerk table: medals awarded to top three finishers in each individual event and the top team for each relay. Plaques to top men and women NIRCA teams.
               <br />
               <br />
               <b>Contact:</b> Adam Juma, Meet Director: <a href="mailto:run@brown.edu">run@brown.edu</a>
