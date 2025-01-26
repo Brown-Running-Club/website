@@ -59,7 +59,7 @@ export default () => {
               Otherwise, email <a href="mailto:run@brown.edu">run@brown.edu</a> to request an entry form.
               <br />
               <ul style={{ listStyleType: "none" }}>
-                <li>Registration Opens: 12:00 am, Monday, January 30</li>
+                <li>Registration Opens: 12:00 am, Thursday, January 30</li>
                 <li>Registration Closes: 11:59 pm, Tuesday, February 25</li>
               </ul>
               <b>Entry Fees:</b>
