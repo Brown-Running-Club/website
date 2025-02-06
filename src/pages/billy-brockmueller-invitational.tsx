@@ -71,7 +71,7 @@ export default () => {
                 <li>$300 max/gender team for other teams and clubs</li>
               </ul>
               <br />
-              <b> Race Day Registration:</b> Available for $30. Late entry for the 5k, long jump, and high jump will close at 10:30, and late entry for all other events will be available until the start of the meet at 11. No late entry is allowed for the 4x800 or 4x200 relay. We are unable to refund entry fees for any reason including inclement weather, meet cancellation, athlete conflict, scratches, or over-payment. 
+              <b> Race Day Registration:</b> Available for $35. Late entry for the 5k, long jump, and high jump will close at 10:30, and late entry for all other events will be available until the start of the meet at 11. No late entry is allowed for the 4x800 or 4x200 relay. We are unable to refund entry fees for any reason including inclement weather, meet cancellation, athlete conflict, scratches, or over-payment. 
               <br />
               <br />
               <b>Payment:</b> Invoices will be sent after registration closes.
