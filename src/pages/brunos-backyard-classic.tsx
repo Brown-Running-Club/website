@@ -32,7 +32,7 @@ export default () => {
         <WideContainer>
           <Card>
             <p>
-              <b>Date:</b> Sunday, April 20, 2025 <br />
+              <b>Date:</b> Saturday, April 19, 2025 <br />
               <b>Time:</b> Events begin at 11am. Teams may arrive <b>no earlier than 10am</b>.
               <br />
               <b>Location:</b> Brown Stadium, 400 Elmgrove Ave, Providence, RI 02906 <br />
