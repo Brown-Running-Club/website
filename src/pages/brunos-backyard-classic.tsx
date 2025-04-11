@@ -38,7 +38,7 @@ export default () => {
               <b>Location:</b> Brown Stadium, 400 Elmgrove Ave, Providence, RI 02906 <br />
               <br />
               <b>Registration: </b>
-              Registration will be done through <a href="https://www.directathletics.com/meets/track/88381.html">DirectAthletics</a>. 
+              Registration will be done through <a href="https://www.directathletics.com/meets/track/88381.html">DirectAthletics</a>. Mixed 4x400m team will declare day-of between 1:00pm and 3:00pm. 
               <ul style={{ listStyleType: "none" }}>
                 <li>Registration Opens: 12:00 am, Monday, March 24</li>
                 <li>Registration Closes: 11:59 pm, Tuesday, April 15</li>
