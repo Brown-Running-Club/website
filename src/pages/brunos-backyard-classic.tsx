@@ -66,7 +66,7 @@ export default () => {
                   1933, Providence, RI 02912{'"'}
                 </li>
               </ul>
-               <br />
+              <br />
               <br />
               <b>Waiver:</b> Please fill out <a href="https://drive.google.com/file/d/1OgKJY6ARFaj8IkSQymA_D72BYECqfDWS/view?usp=sharing">this waiver</a> and email it to run@brown.edu prior to arriving at the event.
               <br />
