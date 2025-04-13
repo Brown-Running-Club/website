@@ -67,8 +67,7 @@ export default () => {
                 </li>
               </ul>
               <br />
-              <br />
-              <b>Waiver:</b> Please fill out <a href="https://drive.google.com/file/d/1OgKJY6ARFaj8IkSQymA_D72BYECqfDWS/view?usp=sharing">this waiver</a> and email it to run@brown.edu prior to arriving at the event.
+              <b>Waiver:</b> Fill out <a href="https://drive.google.com/file/d/1OgKJY6ARFaj8IkSQymA_D72BYECqfDWS/view?usp=sharing">this waiver</a> and email it to run@brown.edu prior to arriving at the event.
               <br />
               <br />
               <b>Spectator Admission:</b> Free
