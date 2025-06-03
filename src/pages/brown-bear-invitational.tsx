@@ -25,13 +25,13 @@ export default () => {
         <WideContainer>
           <Card>
             <p style={styles.welcomeText}>
-              <b>Date:</b> Saturday, September 28, 2024 <br />
+              <b>Date:</b> Saturday, September 27, 2024 <br />
               <br />
               <b>Location:</b> Highland Park, 104 Mechanic Street, Attleboro, MA
               02703 <br />
               <br />
-              <b>Registration Opens:</b> 12:00 am, Tuesday, July 30 <br />
-              <b>Registration Closes:</b> 11:59 pm, Wednesday, September 25 <br />
+              <b>Registration Opens:</b> 12:00 am, Tuesday, July 29 <br />
+              <b>Registration Closes:</b> 11:59 pm, Wednesday, September 24 <br />
               <br />
               <br />
               <b>Registration:</b>
@@ -41,9 +41,7 @@ export default () => {
               </ul>
               <b>Entry Fee:</b> 
               <ul style={{ listStyleType: "none" }}>
-                <li>$15/athlete for youth teams, capped at $150/gender for teams of 10 or more athletes in one race</li>
-                <li>$20/athlete for NIRCA clubs and high school teams, capped at $300/gender for teams of 15 or more athletes in one race</li>
-                <li>$25/athlete for open athletes, capped at $300/gender for teams of 12 or more athletes in one race</li>
+                <li>$25/athlete, capped at $300/gender for teams of 12 or more athletes in one race</li>
                 <li>$35/athlete for day-of registration</li>
               </ul>
               <b>Refunds:</b> We are unable to offer refunds for any reason. 
