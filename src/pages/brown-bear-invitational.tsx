@@ -60,7 +60,7 @@ export default () => {
               <br />
               <br />
               <b>Awards:</b> Medals awarded to top five finishers and first in
-              each age group and plaques to top three men and women NIRCA teams. The awards ceremony will begin
+              each age group and plaques to the top men's and women's NIRCA and USATF teams. The awards ceremony will begin
               at 1:00 pm.
               <br />
               <br />
