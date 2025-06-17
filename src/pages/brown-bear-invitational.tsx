@@ -33,21 +33,21 @@ export default () => {
               <b>Registration Opens:</b> 12:00 am, Tuesday, July 29 <br />
               <b>Registration Closes:</b> 11:59 pm, Wednesday, September 24 <br />
               <br />
-              <br />
               <b>Registration:</b>
               <ul style={{ listStyleType: "none" }}>
-                <li>NIRCA: <a href="https://clubrunning.org/races/race_info.php?race=1259">clubrunning.org</a></li>
-                <li>All other entries: <a href="https://www.directathletics.com/meets/xc/23750.html">DirectAthletics</a></li>
+                <li>NIRCA: <a href="https://clubrunning.org/races/race_info.php?race=1408">clubrunning.org</a></li>
+                <li>All other entries: <a href="https://www.directathletics.com/meets/xc/25717.html">DirectAthletics</a></li>
               </ul>
               <b>Entry Fee:</b> 
               <ul style={{ listStyleType: "none" }}>
                 <li>$25/athlete, capped at $300/gender for teams of 12 or more athletes in one race</li>
                 <li>$35/athlete for day-of registration</li>
               </ul>
-              <b>Refunds:</b> We are unable to offer refunds for any reason. 
+              <b>Refunds:</b> We are unable to refund entry fees for any reason including inclement weather, meet cancellation, athlete conflict, scratches, or over-payment.
               <br />
-              <b>Race Day Registration:</b> Available for $35 until 10:30am. We are unable to refund entry fees for any reason including inclement weather, 
-              meet cancellation, athlete conflict, scratches, or over-payment.
+              <b>Waiver:</b> Fill out <a href="https://drive.google.com/file/d/1kiCw2XfBTYLmUrtQGD4VC2a9EFHH-hNo/view?usp=sharing">this waiver</a> and email it to run@brown.edu prior to arriving at the event.
+              <br />
+              <b>Race Day Registration:</b> Available for $35 until 10:30am.
               <br />
               <b>Spectator Admission:</b> Free <br />
               <br />
