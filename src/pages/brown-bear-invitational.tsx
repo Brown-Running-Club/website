@@ -59,11 +59,6 @@ export default () => {
               <b>Check-in:</b> Teams may arrive no earlier than 10:00 am
               <br />
               <br />
-              <b>Awards:</b> Medals awarded to top five finishers and first in
-              each age group and plaques to the top men's and women's NIRCA and USATF teams. The awards ceremony will begin
-              at 1:00 pm.
-              <br />
-              <br />
               <b>Live Results:</b> Available on <a href="https://ma.milesplit.com/meets/640151-brown-bear-invitational-2024/results">MileSplit</a> and clubrunning.org on race day.
               <br />
               <br />
