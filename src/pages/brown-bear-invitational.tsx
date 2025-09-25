@@ -45,7 +45,7 @@ export default () => {
               </ul>
               <b>Refunds:</b> We are unable to refund entry fees for any reason including inclement weather, meet cancellation, athlete conflict, scratches, or over-payment.
               <br />
-              <b>Waiver:</b> Fill out <a href="https://drive.google.com/file/d/1kiCw2XfBTYLmUrtQGD4VC2a9EFHH-hNo/view?usp=sharing">this waiver</a> and email it to run@brown.edu prior to arriving at the event.
+              <b>Waiver:</b> Fill out <a href="https://drive.google.com/file/d/1nsOB8CKdIxDEbVK6X1SZx5p-XymwlAGp/view?usp=sharing">this waiver</a> and email it to run@brown.edu prior to arriving at the event.
               <br />
               <b>Race Day Registration:</b> Available for $35 until 10:30am.
               <br />
