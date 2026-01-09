@@ -49,26 +49,23 @@ export default () => {
         <WideContainer>
           <Card>
             <p>
-              <b>Date:</b> Sunday, March 2, 2025 <br />
+              <b>Date:</b> Saturday, February 28th, 2025 <br />
               <b>Time:</b> Events begin at 11am. Teams may arrive <b>no earlier than 10am</b>.
               <br />
               <b>Location:</b> Olney-Margolies Athletic Center, 235 Hope Street, Providence, RI 02906 <br />
               <br />
               <b>Registration: </b>
-              The preferred method for entries is on <a href="https://www.directathletics.com/meets/track/88378.html">DirectAthletics</a>.
+              The preferred method for entries is on <a href="https://www.directathletics.com/meets/track/94514.html">DirectAthletics</a>.
               <br />
               <ul style={{ listStyleType: "none" }}>
                 <li>Registration Opens: 12:00 am, Thursday, January 30</li>
-                <li>Registration Closes: 11:59 pm, Tuesday, February 25</li>
+                <li>Registration Closes: 11:59 pm, Monday, February 23</li>
               </ul>
               <b>Entry Fees:</b>
               <ul style={{ listStyleType: "none" }}>
-                <li>$10/athlete for middle schoolers (be sure to include class year in registration)</li>
                 <li>$20/athlete for college club athletes (NIRCA) and high schoolers</li>
                 <li>$25/athlete for other participants (college varsity athletes, non-collegiate club teams, unattached athletes)</li>
-                <li>$150 max/gender team for middle school teams</li>
-                <li>$300 max/gender team for college clubs (NIRCA) and high school teams</li>
-                <li>$300 max/gender team for other teams and clubs</li>
+                <li>$300 max/gender team </li>
               </ul>
               <br />
               <b> Race Day Registration:</b> Available for $35. Late entry for the 5k, long jump, and high jump will close at 10:30, and late entry for all other events will be available until the start of the meet at 11. No late entry is allowed for the 4x800 or 4x200 relay. We are unable to refund entry fees for any reason including inclement weather, meet cancellation, athlete conflict, scratches, or over-payment. 
