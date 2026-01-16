@@ -49,7 +49,7 @@ export default () => {
         <WideContainer>
           <Card>
             <p>
-              <b>Date:</b> Saturday, February 28th, 2026 <br />
+              <b>Date:</b> Sunday, March 1st, 2026 <br />
               <b>Time:</b> Events begin at 11am. Teams may arrive <b>no earlier than 10am</b>.
               <br />
               <b>Location:</b> Olney-Margolies Athletic Center, 235 Hope Street, Providence, RI 02906 <br />
@@ -59,7 +59,7 @@ export default () => {
               <br />
               <ul style={{ listStyleType: "none" }}>
                 <li>Registration Opens: 12:00 am, Thursday, January 30</li>
-                <li>Registration Closes: 11:59 pm, Monday, February 23</li>
+                <li>Registration Closes: 11:59 pm, Tuesday, February 24</li>
               </ul>
               <b>Entry Fees:</b>
               <ul style={{ listStyleType: "none" }}>
