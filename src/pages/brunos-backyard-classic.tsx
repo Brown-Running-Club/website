@@ -32,16 +32,16 @@ export default () => {
         <WideContainer>
           <Card>
             <p>
-              <b>Date:</b> Saturday, April 19, 2025 <br />
+              <b>Date:</b> Saturday, April 18th, 2026 <br />
               <b>Time:</b> Events begin at 11am. Teams may arrive <b>no earlier than 10am</b>.
               <br />
               <b>Location:</b> Brown Stadium, 400 Elmgrove Ave, Providence, RI 02906 <br />
               <br />
               <b>Registration: </b>
-              Registration will be done through <a href="https://www.directathletics.com/meets/track/88381.html">DirectAthletics</a>. Mixed 4x400m teams will declare day-of. 
+              Registration will be done through <a href="https://www.directathletics.com/meets/track/94832.html">DirectAthletics</a>. Mixed 4x400m teams will declare day-of. 
               <ul style={{ listStyleType: "none" }}>
-                <li>Registration Opens: 12:00 am, Monday, March 24</li>
-                <li>Registration Closes: 11:59 pm, Tuesday, April 15</li>
+                <li>Registration Opens: 12:00 am, Monday, March 9</li>
+                <li>Registration Closes: 11:59 pm, Monday, April 13</li>
               </ul>
               <br />
               <b>Entry Fees:</b>
