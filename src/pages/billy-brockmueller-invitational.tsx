@@ -85,8 +85,8 @@ export default () => {
               <br />
               <b>Waiver:</b> Please fill out <a href="https://drive.google.com/file/d/1OgKJY6ARFaj8IkSQymA_D72BYECqfDWS/view?usp=sharing">these waivers</a> and email them to run@brown.edu prior to arriving at the event.
               <br />
-              <b>Spectator Admission:</b> Free <br />
               <br />
+              <b>Spectator Admission:</b> Free <br />
               <br />
               <b>Check-in:</b> You may check in with the clerk up to 45 minutes before your event.
               Please check in no later than 20 minutes before your scheduled event time,
@@ -96,7 +96,7 @@ export default () => {
               <b>Heat Sheets and Results:</b> Heat sheets will be posted in the facility.
               Final results will be available on meet homepage and emailed to participants.
               Meet updates and results will be posted online via DirectAthletics and in the facility as the day progresses.
-              Live results will be available <a href="https://www.sstresults.com/2025Results/bbinvite32/">here</a>.
+              Live results will be available <a href="https://live.sstresults.com/meets/62351">here</a>.
               <br />
               <br />
               <b>Restrooms/Locker Rooms:</b> There are limited restrooms and changing facilities available in the OMAC.
