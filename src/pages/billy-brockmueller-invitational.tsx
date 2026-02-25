@@ -68,7 +68,7 @@ export default () => {
                 <li>$300 max/gender team </li>
               </ul>
               <br />
-              <b> Race Day Registration:</b> Available for $35. Late entry for the 5k, long jump, and high jump will close at 10:30, and late entry for all other events will be available until the start of the meet at 11. No late entry is allowed for the 4x800 or 4x200 relay. We are unable to refund entry fees for any reason including inclement weather, meet cancellation, athlete conflict, scratches, or over-payment. 
+              <b> Race Day Registration:</b> Available for $35. Late entry for the women's 5k, long jump, and high jump will close at 10:30, and late entry for all other events will be available until the start of the meet at 11. No late entry is allowed for the 4x800 or 4x200 relay or for the men's 5k. We are unable to refund entry fees for any reason including inclement weather, meet cancellation, athlete conflict, scratches, or over-payment. 
               <br />
               <br />
               <b>Payment:</b> Invoices will be sent after registration closes.
@@ -83,7 +83,7 @@ export default () => {
                 </li>
               </ul>
               <br />
-              <b>Waiver:</b> Please fill out <a href="https://drive.google.com/file/d/1OgKJY6ARFaj8IkSQymA_D72BYECqfDWS/view?usp=sharing">these waivers</a> and email it to run@brown.edu prior to arriving at the event.
+              <b>Waiver:</b> Please fill out <a href="https://drive.google.com/file/d/1OgKJY6ARFaj8IkSQymA_D72BYECqfDWS/view?usp=sharing">this waiver</a> and email it to run@brown.edu prior to arriving at the event.
               <br />
               <br />
               <b>Spectator Admission:</b> Free <br />
