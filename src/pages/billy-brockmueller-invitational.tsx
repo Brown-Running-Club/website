@@ -96,7 +96,7 @@ export default () => {
               <b>Heat Sheets and Results:</b> Heat sheets will be posted in the facility.
               Final results will be available on meet homepage and emailed to participants.
               Meet updates and results will be posted online via DirectAthletics and in the facility as the day progresses.
-              Live results will be available <a href="https://live.sstresults.com/meets/62351">here</a>.
+              Live results will be available <a href="https://www.sstresults.com/2026Results/brownrc3_1/">here</a>.
               <br />
               <br />
               <b>Restrooms/Locker Rooms:</b> There are limited restrooms and changing facilities available in the OMAC.
