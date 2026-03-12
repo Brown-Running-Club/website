@@ -41,7 +41,7 @@ export default () => {
               Registration will be done through <a href="https://www.directathletics.com/meets/track/94832.html">DirectAthletics</a>. Mixed 4x400m teams will declare day-of. 
               <ul style={{ listStyleType: "none" }}>
                 <li>Registration Opens: 12:00 am, Monday, March 2</li>
-                <li>Registration Closes: 11:59 pm, Monday, March 30</li>
+                <li>Registration Closes: 11:59 pm, Wednesday, April 1st</li>
               </ul>
               <br />
               <b>Entry Fees:</b>
