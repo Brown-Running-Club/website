@@ -41,7 +41,7 @@ export default () => {
               Registration will be done through <a href="https://www.directathletics.com/meets/track/94832.html">DirectAthletics</a>. Mixed 4x400m teams will declare day-of. 
               <ul style={{ listStyleType: "none" }}>
                 <li>Registration Opens: 12:00 am, Monday, March 2</li>
-                <li>Registration Closes: 11:59 pm, Wednesday, April 1st</li>
+                <li>Registration Closes: 11:59 pm, Monday, March 30</li>
               </ul>
               <br />
               <b>Entry Fees:</b>
@@ -54,6 +54,7 @@ export default () => {
               Race day registration will be available for $35 until 10:30 for the 5K, DMR, and 4x100m and 11:00 for all other events. There will be no race day registration for relays
               We are unable to refund entry fees for any reason including inclement weather, meet cancellation, athlete conflict, scratches, or over-payment.
               <br />
+              
               <br />
               <b>Payment:</b> Payment is required upon registration. Invoices will be sent to participants who have not paid after registration closes.
               <ul style={{ listStyleType: "none" }}>
@@ -67,7 +68,7 @@ export default () => {
                 </li>
               </ul>
               <br />
-              <b>Waiver:</b> Please fill out <a href="https://drive.google.com/file/d/1OgKJY6ARFaj8IkSQymA_D72BYECqfDWS/view?usp=sharing">these waivers</a> and email them to run@brown.edu prior to arriving at the event.
+              <b>Waiver:</b> Please fill out <a href="https://drive.google.com/file/d/1OgKJY6ARFaj8IkSQymA_D72BYECqfDWS/view?usp=sharing">this waiver</a> and email them to run@brown.edu prior to arriving at the event.
               <br />
               <br />
               <b>Spectator Admission:</b> Free
