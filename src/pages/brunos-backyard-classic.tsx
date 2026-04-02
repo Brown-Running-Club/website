@@ -21,7 +21,7 @@ export default () => {
       <br />
       Women will run before men and heats will run fast to slow.
       <br />
-      Long jump and high jump will start at 11:15 am and go women then men.
+      High jump will start at 11:15 AM and go women then men. Long jump wil be open pit from 11:15 AM to 12:45 AM. Jumpers may not do runthroughs once the event has started.
     </Card>;
 
   return (
@@ -49,7 +49,7 @@ export default () => {
                 <li>$300 max/gender team for college clubs (NIRCA) and high schools</li>
                 <li>$300 max/gender team for other teams and clubs</li>
               </ul>
-              Race day registration will be available for $35 until 10:30 for the 5K and 4x100m and 11:00 for all other events.
+              Race day registration will be available for $35 until 10:30 am for the 5K and 4x100m and 11:00 am for all other events.
               We are unable to refund entry fees for any reason including inclement weather, meet cancellation, athlete conflict, scratches, or over-payment.
               <br />
               
