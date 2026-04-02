@@ -21,9 +21,7 @@ export default () => {
       <br />
       Women will run before men and heats will run fast to slow.
       <br />
-      Long jump will be an open pit from 11:15-12:45 PM.
-      High jump will start at 11:15 AM.
-      Jumpers may not do runthroughs once the event has started.
+      Long jump and high jump will start at 11:15 am and go women then men.
     </Card>;
 
   return (
@@ -33,7 +31,7 @@ export default () => {
           <Card>
             <p>
               <b>Date:</b> Saturday, April 4th, 2026 <br />
-              <b>Time:</b> Events begin at 11am. Teams may arrive <b>no earlier than 10am</b>.
+              <b>Time:</b> Events begin at 11 am. Teams may arrive <b>no earlier than 10 am</b>.
               <br />
               <b>Location:</b> Brown Stadium, 400 Elmgrove Ave, Providence, RI 02906 <br />
               <br />
@@ -51,7 +49,7 @@ export default () => {
                 <li>$300 max/gender team for college clubs (NIRCA) and high schools</li>
                 <li>$300 max/gender team for other teams and clubs</li>
               </ul>
-              Race day registration will be available for $35 until 10:30 for the 5K, DMR, and 4x100m and 11:00 for all other events. There will be no race day registration for relays
+              Race day registration will be available for $35 until 10:30 for the 5K and 4x100m and 11:00 for all other events.
               We are unable to refund entry fees for any reason including inclement weather, meet cancellation, athlete conflict, scratches, or over-payment.
               <br />
               
@@ -68,20 +66,16 @@ export default () => {
                 </li>
               </ul>
               <br />
-              <b>Waiver:</b> Please fill out <a href="https://drive.google.com/file/d/1OgKJY6ARFaj8IkSQymA_D72BYECqfDWS/view?usp=sharing">this waiver</a> and email them to run@brown.edu prior to arriving at the event.
+              <b>Waiver:</b> Please fill out <a href="https://drive.google.com/file/d/1OgKJY6ARFaj8IkSQymA_D72BYECqfDWS/view?usp=sharing">this waiver</a> and email it to run@brown.edu prior to arriving at the event.
               <br />
               <br />
               <b>Spectator Admission:</b> Free
               <br />
               <br />
-              <b>Event Check-In:</b> You may check in with the clerk up to 45 minutes before your event.
-              Please check in no later than 20 minutes before your scheduled event time,
-              or you will be scratched. We will run up to 5 minutes ahead of the listed schedule.
+              <b>Event Check-In:</b> You may check in with the clerk up to 45 minutes before your event. Please check in no later than 20 minutes before your scheduled event time, or you will be scratched. We will run up to 5 minutes ahead of the listed schedule.
               <br />
               <br />
-              <b>Heat Sheets and Results:</b> Heat sheets will be posted at the facility.
-              Final results will be available on the meet homepage and emailed to participants.
-              Meet updates and results will communicated via email and in the facility as the day progresses.
+              <b>Results:</b> Live results are available <a href="https://milesplit.live/meets/737020">here</a> and final results will be emailed to participants after the meet. Meet updates and results will communicated via email and in the facility as the day progresses.
               <br />
               <br />
               <b>Awards:</b> At clerk table: medals awarded to top three finishers in each individual event and the top team for each relay. Plaques to top men and women NIRCA teams.
