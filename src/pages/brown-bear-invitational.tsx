@@ -25,18 +25,18 @@ export default () => {
         <WideContainer>
           <Card>
             <p style={styles.welcomeText}>
-              <b>Date:</b> Saturday, September 27, 2025 <br />
+              <b>Date:</b> Saturday, September 26, 2026 <br />
               <br />
               <b>Location:</b> Highland Park, 104 Mechanic Street, Attleboro, MA
               02703 <br />
               <br />
-              <b>Registration Opens:</b> 12:00 am, Tuesday, July 29 <br />
-              <b>Registration Closes:</b> 11:59 pm, Wednesday, September 24 <br />
+              <b>Registration Opens:</b> 12:00 am, Tuesday, July 28 <br />
+              <b>Registration Closes:</b> 11:59 pm, Wednesday, September 23 <br />
               <br />
               <b>Registration:</b>
               <ul style={{ listStyleType: "none" }}>
                 <li>NIRCA: <a href="https://clubrunning.org/races/race_info.php?race=1408">clubrunning.org</a></li>
-                <li>All other entries: <a href="https://www.directathletics.com/meets/xc/25717.html">DirectAthletics</a></li>
+                <li>All other entries: <a href="https://www.directathletics.com/meets/xc/27593.html">DirectAthletics</a></li>
               </ul>
               <b>Entry Fee:</b> 
               <ul style={{ listStyleType: "none" }}>
