@@ -75,7 +75,7 @@ export default () => {
               </ul>
               <br />
               <br />
-              <b>Contact:</b> Adam Juma, Meet Director:{" "}
+              <b>Contact:</b> Joshua Maynard, Meet Director:{" "}
               <a href="mailto:run@brown.edu">run@brown.edu</a>
             </p>
           </Card>
