@@ -47,16 +47,16 @@ export default () => {
               <br />
               <b>Waiver:</b> Fill out <a href="https://drive.google.com/file/d/1nsOB8CKdIxDEbVK6X1SZx5p-XymwlAGp/view?usp=sharing">this waiver</a> and email it to run@brown.edu prior to arriving at the event.
               <br />
-              <b>Race Day Registration:</b> Available for $35 until 10:30am.
+              <b>Race Day Registration:</b> Available for $35 until 9:30am.
               <br />
               <b>Spectator Admission:</b> Free <br />
               <br />
               <b>Race Start Times:</b>
               <ul style={{ listStyleType: "none" }}>
-                <li>11:00 am: Women’s 6K</li>
-                <li>12:00 pm: Men’s 8K</li>
+                <li>10:00 am: Women’s 6K</li>
+                <li>11:00 am: Men’s 8K</li>
               </ul>
-              <b>Check-in:</b> Teams may arrive no earlier than 10:00 am
+              <b>Check-in:</b> Teams may arrive no earlier than 9:00 am
               <br />
               <br />
               <b>Live Results:</b> Available on <a href="https://milesplit.live/meets/711273">MileSplit</a> and clubrunning.org on race day.
