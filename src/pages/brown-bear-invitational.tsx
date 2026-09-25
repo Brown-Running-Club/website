@@ -25,7 +25,7 @@ export default () => {
         <WideContainer>
           <Card>
             <p style={styles.welcomeText}>
-              <b>Date:</b> Saturday, September 26, 2026 <br />
+              <b>Date:</b> MEET POSTPONED: Due to forecasted nor'easter the 2026 Brown Bear Invitational will not run as scheduled. <br />
               <br />
               <b>Location:</b> Highland Park, 104 Mechanic Street, Attleboro, MA
               02703 <br />
