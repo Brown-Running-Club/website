@@ -31,7 +31,7 @@ export default () => {
               02703 <br />
               <br />
               <b>Registration Opens:</b> 12:00 am, Tuesday, July 28 <br />
-              <b>Registration Closes:</b> 11:59 pm, Wednesday, September 23 <br />
+              <b>Registration Closes:</b> 11:59 pm, Wednesday, September 30 <br />
               <br />
               <b>Registration:</b>
               <ul style={{ listStyleType: "none" }}>
