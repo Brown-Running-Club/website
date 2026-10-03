@@ -59,7 +59,7 @@ export default () => {
               <b>Check-in:</b> Teams may arrive no earlier than 9:00 am
               <br />
               <br />
-              <b>Live Results:</b> Available on <a href="https://milesplit.live/meets/711273">MileSplit</a> and clubrunning.org on race day.
+              <b>Live Results:</b> Available on <a href="https://live.sstresults.com/meets/78032">MileSplit</a> and clubrunning.org on race day.
               <br />
               <br />
               <b>Payment Options:</b>
