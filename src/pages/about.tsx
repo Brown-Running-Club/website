@@ -33,7 +33,7 @@ export default () => {
       <p style={styles.infoTextBottom}>
         We meet up at the bear statue outside the Nelson Fitness Center
         every day of the week during the academic year, at 4:15pm on
-        weekdays and 10:00am on weekends. On Mondays and Wednesdays, we'll
+        weekdays and on weekend mornings. On Mondays and Wednesdays, we'll
         wait until 4:30pm to start running to accommodate 3-4:20pm classes.
       </p>
     </Card>
