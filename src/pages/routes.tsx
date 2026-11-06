@@ -45,7 +45,7 @@ const Routes = ({ routeType }: { routeType: string }) => {
 
   useEffect(() => {
     if (routes === undefined) getRoutes(routeType).then(setRoutes)
-  })
+  }, [routeType])
 
   return createRouteTable(routes ?? []);
 }

@@ -96,7 +96,7 @@ const Schedule = () => {
   const [week, setWeek] = useState<Week | undefined>(undefined);
   useEffect(() => {
     if (week === undefined) getWeek().then(setWeek)
-  })
+  }, [])
   let days: JSX.Element[] = []
   if (week) {
     Object.entries(week).forEach(([day, events]) =>

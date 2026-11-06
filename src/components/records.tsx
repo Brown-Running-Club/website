@@ -84,7 +84,7 @@ const Records = ({ raceType }: { raceType: string }) => {
 
   useEffect(() => {
     if (records === undefined) getRecords(raceType).then(setRecords)
-  })
+  }, [raceType])
 
   return (
     <Card title={raceType}>
