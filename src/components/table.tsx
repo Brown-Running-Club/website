@@ -9,7 +9,7 @@ import TableRow from "@material-ui/core/TableRow"
 import Paper from "@material-ui/core/Paper"
 import theme from "../config/theme"
 import { getSheetData } from "../api-calls"
-import { useMediaQuery } from "react-responsive"
+import { useMediaQuery } from "./media-query"
 
 export type Headers = string[]
 export type Row = JSX.Element[]

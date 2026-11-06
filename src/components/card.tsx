@@ -1,5 +1,5 @@
 import React from "react"
-import MediaQuery from "react-responsive"
+import MediaQuery from "./media-query"
 import theme from "../config/theme"
 
 type Props = {

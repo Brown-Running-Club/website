@@ -1,7 +1,7 @@
 import React from "react"
 import PageBody from "../components/page-body"
 import Layout from "../components/layout"
-import MediaQuery from "react-responsive"
+import MediaQuery from "../components/media-query"
 
 export default () => (
   <Layout title="Contact">
