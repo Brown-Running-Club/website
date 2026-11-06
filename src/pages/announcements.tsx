@@ -3,6 +3,7 @@ import { StaticQuery, graphql } from "gatsby"
 import { MarkdownFrontmatter } from "../pages/{MarkdownRemark.frontmatter__slug}"
 import { Announcement } from "../components/announcements"
 import Layout from "../components/layout"
+import Seo from "../components/seo"
 import PageBody from "../components/page-body"
 
 type Data = {
@@ -51,3 +52,5 @@ const Announcements = () => (
 )
 
 export default Announcements
+
+export const Head = () => <Seo title="Announcements" />

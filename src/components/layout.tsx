@@ -3,7 +3,6 @@ import React from "react"
 import Header from "./header"
 import Footer from "./footer"
 import "./layout.css"
-import Seo from "./seo"
 import theme from "../config/theme"
 import TitleImage from "../components/title-image"
 
@@ -14,7 +13,6 @@ const Layout = ({ children, title, image }: Props) => (
     <Header />
     <div>
       <main>
-        <Seo title={title} />
         { image ? (
           <TitleImage image={image}>
             <p style={styles.titleText}>{title?.toUpperCase()}</p>

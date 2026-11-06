@@ -4,7 +4,6 @@ module.exports = {
     description: `Brown University Running Club`,
   },
   plugins: [
-    `gatsby-plugin-react-helmet`,
     `gatsby-plugin-image`,
     {
       resolve: `gatsby-source-filesystem`,
@@ -33,14 +32,6 @@ module.exports = {
         theme_color: `#663399`,
         display: `minimal-ui`,
         icon: `src/images/ivyblogo.png`, // This path is relative to the root of the site.
-      },
-    },
-    {
-      resolve: "gatsby-plugin-web-font-loader",
-      options: {
-        google: {
-          families: ["Graduate", "Open Sans", "Open Sans:Bold"],
-        },
       },
     },
   ],

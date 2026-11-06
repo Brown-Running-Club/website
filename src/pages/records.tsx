@@ -5,6 +5,7 @@ import PageBody from "../components/page-body"
 import Card from "../components/card"
 import WiderContainer from "../components/wider-container"
 import Layout from "../components/layout"
+import Seo from "../components/seo"
 import Records from "../components/records"
 
 export default () => (
@@ -54,3 +55,5 @@ const styles = {
     marginBottom: theme.spacing.unit * 2,
   },
 }
+
+export const Head = () => <Seo title="Records" />

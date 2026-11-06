@@ -6,6 +6,7 @@ import PageBody from "../components/page-body"
 import WideContainer from "../components/wide-container"
 import Card from "../components/card"
 import Layout from "../components/layout"
+import Seo from "../components/seo"
 import Season from "../components/season"
 
 export default () => (
@@ -59,3 +60,5 @@ const styles = {
     margin: 0,
   },
 }
+
+export const Head = () => <Seo title="Previous Schedules and Results" />

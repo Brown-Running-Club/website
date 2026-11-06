@@ -5,6 +5,7 @@ import Card from "../../components/card"
 import PageBody from "../../components/page-body"
 import WideContainer from "../../components/wide-container"
 import Layout from "../../components/layout"
+import Seo from "../../components/seo"
 import { GSheetsTable } from "../../components/table"
 
 const SHEET_ID = "1n0Juq4mnMg3nU94fI3OPxBRd3fhXLD0Z_AlshD5hm0Q";
@@ -46,3 +47,5 @@ const styles = {
     textAlign: "left" as "left",
   },
 }
+
+export const Head = () => <Seo title="Billy Brockmueller Invitational Records" />

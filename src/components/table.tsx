@@ -1,15 +1,6 @@
 import React, { useEffect, useState } from "react"
-import { withStyles, makeStyles } from "@material-ui/core/styles"
-import Table from "@material-ui/core/Table"
-import TableBody from "@material-ui/core/TableBody"
-import TableCell from "@material-ui/core/TableCell"
-import TableContainer from "@material-ui/core/TableContainer"
-import TableHead from "@material-ui/core/TableHead"
-import TableRow from "@material-ui/core/TableRow"
-import Paper from "@material-ui/core/Paper"
 import theme from "../config/theme"
 import { getSheetData } from "../api-calls"
-import { useMediaQuery } from "./media-query"
 
 export type Headers = string[]
 export type Row = JSX.Element[]
@@ -21,65 +12,29 @@ interface TableProps {
   padding: number,
 }
 
-const useStyles = makeStyles({
-  header: {
-    ...(theme.typography.h4 as any),
-    backgroundColor: theme.palette.brown,
-    color: theme.palette.white,
-    margin: 0,
-    marginBottom: theme.spacing.unit * 2,
-  },
-  row: {
-    ...(theme.typography.h4 as any),
-    color: theme.palette.black,
-  },
-})
-
-const useStylesMobile = makeStyles({
-  header: {
-    ...(theme.typography.h4 as any),
-    backgroundColor: theme.palette.brown,
-    color: theme.palette.white,
-    margin: 0,
-    marginBottom: theme.spacing.unit * 2,
-  },
-  row: {
-    ...(theme.typography.h4 as any),
-    color: theme.palette.black,
-  },
-})
-
-export default function BasicTable(
-  props: React.PropsWithChildren<TableProps>
-) {
-  const isBigScreen = useMediaQuery({ query: '(min-width: 600px)' })
-  const classes = isBigScreen ? useStyles() : useStylesMobile();
-  const styles = { fontSize: props.fontsize, padding: props.padding };
+export default function BasicTable({ header, body, fontsize, padding }: TableProps) {
+  const cell = { ...cellBase, fontSize: fontsize, padding }
   return (
-    <TableContainer component={Paper}>
-      <Table aria-label="simple table">
-        <TableHead>
-          <TableRow>
-            {props.header.map(cell => (
-              <TableCell className={classes.header} align="left" style={styles}>
-                {cell}
-              </TableCell>
+    <div style={styles.container}>
+      <table style={styles.table}>
+        <thead>
+          <tr>
+            {header.map((text, i) => (
+              <th key={i} style={{ ...cell, ...styles.header }}>{text}</th>
             ))}
-          </TableRow>
-        </TableHead>
-        <TableBody>
-          {props.body.map(row => (
-            <TableRow>
-              {row.map(cell =>
-                <TableCell className={classes.row} align="left" style={styles}>
-                  {cell}
-                </TableCell>
-              )}
-            </TableRow>
+          </tr>
+        </thead>
+        <tbody>
+          {body.map((row, i) => (
+            <tr key={i}>
+              {row.map((content, j) => (
+                <td key={j} style={{ ...cell, ...styles.row }}>{content}</td>
+              ))}
+            </tr>
           ))}
-        </TableBody>
-      </Table>
-    </TableContainer >
+        </tbody>
+      </table>
+    </div>
   )
 }
 export { BasicTable as Table }
@@ -95,7 +50,39 @@ export function GSheetsTable({ sheetId, range, fontsize, padding }: { sheetId: s
   const empty: [Headers, Row[]] = [[], []];
   const [data, setData] = useState(empty);
   useEffect(() => {
-    if (data === empty) loadSheetData(sheetId, range).then(setData)
-  })
+    loadSheetData(sheetId, range).then(setData)
+  }, [sheetId, range])
   return BasicTable({ header: data[0], body: data[1], fontsize, padding });
+}
+
+// Matches the look of the Material-UI table this replaced.
+const cellBase = {
+  fontFamily: theme.typography.body.fontFamily,
+  textAlign: "left" as const,
+  verticalAlign: "middle" as const,
+  lineHeight: 1.43,
+  borderBottom: "1px solid rgb(224, 224, 224)",
+}
+
+const styles = {
+  container: {
+    width: "100%",
+    overflowX: "auto" as const,
+    backgroundColor: "#fff",
+    borderRadius: 4,
+    boxShadow:
+      "0px 2px 1px -1px rgba(0,0,0,0.2), 0px 1px 1px 0px rgba(0,0,0,0.14), 0px 1px 3px 0px rgba(0,0,0,0.12)",
+  },
+  table: {
+    width: "100%",
+    borderCollapse: "collapse" as const,
+  },
+  header: {
+    backgroundColor: theme.palette.brown,
+    color: theme.palette.white,
+    fontWeight: "normal" as const,
+  },
+  row: {
+    color: theme.palette.black,
+  },
 }

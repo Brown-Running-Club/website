@@ -4,6 +4,7 @@ import theme from "../../config/theme"
 import PageBody from "../../components/page-body"
 import WideContainer from "../../components/wide-container"
 import Layout from "../../components/layout"
+import Seo from "../../components/seo"
 import Results from "../../components/brown-bear-invitational/results"
 
 export default () => (
@@ -63,3 +64,5 @@ const styles = {
     height: 'auto'
   }
 }
+
+export const Head = () => <Seo title="Brown Bear Invitational Results" />

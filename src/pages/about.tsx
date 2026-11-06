@@ -7,6 +7,7 @@ import Card from "../components/card"
 import NarrowContainer from "../components/narrow-container"
 import Button from "../components/button"
 import Layout from "../components/layout"
+import Seo from "../components/seo"
 import MediaQuery from "../components/media-query"
 
 export default () => {
@@ -88,3 +89,5 @@ const styles = {
     margin: 0,
   },
 }
+
+export const Head = () => <Seo title="About" />

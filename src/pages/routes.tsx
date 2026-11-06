@@ -5,6 +5,7 @@ import PageBody from "../components/page-body"
 import WideContainer from "../components/wide-container"
 import Card from "../components/card"
 import Layout from "../components/layout"
+import Seo from "../components/seo"
 import { getSheetData } from "../api-calls"
 import Table from "../components/table"
 
@@ -90,3 +91,5 @@ const styles = {
     margin: 0,
   },
 }
+
+export const Head = () => <Seo title="Routes" />

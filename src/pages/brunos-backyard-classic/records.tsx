@@ -5,6 +5,7 @@ import Card from "../../components/card"
 import PageBody from "../../components/page-body"
 import WideContainer from "../../components/wide-container"
 import Layout from "../../components/layout"
+import Seo from "../../components/seo"
 import { GSheetsTable } from "../../components/table"
 
 const SHEET_ID = "1axEmDGc8Mb82oSlPZXs7Wb60ZSgCFChLE8VonnmICOc";
@@ -46,3 +47,5 @@ const styles = {
     textAlign: "left" as "left",
   },
 }
+
+export const Head = () => <Seo title="Bruno's Backyard Classic Records" />

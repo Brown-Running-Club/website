@@ -12,6 +12,7 @@ import Photo3 from "../images/brown-bear-invitational/course-photo-3.jpg"
 import Map6k from "../images/brown-bear-invitational/6k.jpg"
 import Map8k from "../images/brown-bear-invitational/8k.jpg"
 import Layout from "../components/layout"
+import Seo from "../components/seo"
 import Results from "../components/brown-bear-invitational/results"
 
 export default () => {
@@ -162,3 +163,5 @@ const styles = {
     height: 'auto'
   }
 }
+
+export const Head = () => <Seo title="Brown Bear Invitational" />

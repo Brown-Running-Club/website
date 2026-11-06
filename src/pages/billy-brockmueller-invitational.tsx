@@ -7,6 +7,7 @@ import WideContainer from "../components/wide-container"
 import NarrowContainer from "../components/narrow-container"
 import MediaQuery from "../components/media-query"
 import Layout from "../components/layout"
+import Seo from "../components/seo"
 import Results from "../components/billy-brockmueller-invitational/results"
 import OrderOfEvents from "../components/billy-brockmueller-invitational/order-of-events"
 
@@ -129,3 +130,5 @@ export default () => {
     </Layout>
   )
 }
+
+export const Head = () => <Seo title="Billy Brockmueller Invitational" />

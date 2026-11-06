@@ -1,6 +1,7 @@
 import React from "react"
 import PageBody from "../components/page-body"
 import Layout from "../components/layout"
+import Seo from "../components/seo"
 import MediaQuery from "../components/media-query"
 
 export default () => (
@@ -50,3 +51,5 @@ export default () => (
     </PageBody>
   </Layout>
 )
+
+export const Head = () => <Seo title="Contact" />

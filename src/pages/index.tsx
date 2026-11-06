@@ -9,6 +9,7 @@ import PageBody from "../components/page-body"
 import WideContainer from "../components/wide-container"
 import NarrowContainer from "../components/narrow-container"
 import Layout from "../components/layout"
+import Seo from "../components/seo"
 import MeetHosting from "../components/meet-hosting"
 import Schedule from "../components/schedule"
 import MediaQuery from "../components/media-query"
@@ -106,3 +107,5 @@ const styles = {
     margin: 0,
   },
 }
+
+export const Head = () => <Seo title={null} />

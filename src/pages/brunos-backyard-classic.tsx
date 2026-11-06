@@ -6,6 +6,7 @@ import WideContainer from "../components/wide-container"
 import NarrowContainer from "../components/narrow-container"
 import MediaQuery from "../components/media-query"
 import Layout from "../components/layout"
+import Seo from "../components/seo"
 import Schedule from "../components/brunos-backyard-classic/order-of-events"
 import Results from "../components/brunos-backyard-classic/results"
 
@@ -99,3 +100,5 @@ export default () => {
     </Layout>
   )
 }
+
+export const Head = () => <Seo title="Bruno's Backyard Classic" />

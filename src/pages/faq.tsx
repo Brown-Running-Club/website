@@ -5,6 +5,7 @@ import PageBody from "../components/page-body"
 import WideContainer from "../components/wide-container"
 import Card from "../components/card"
 import Layout from "../components/layout"
+import Seo from "../components/seo"
 
 export default () => (
   <Layout title="FAQ" image={FAQsImage}>
@@ -149,3 +150,5 @@ const styles = {
     textAlign: "center" as "center",
   },
 }
+
+export const Head = () => <Seo title="FAQ" />

@@ -7,6 +7,7 @@ import WideContainer from "../../components/wide-container"
 import NarrowContainer from "../../components/narrow-container"
 import MediaQuery from "../../components/media-query"
 import Layout from "../../components/layout"
+import Seo from "../../components/seo"
 
 export default () => {
   const billyPic = <img style={styles.image} src={Billy} alt="Billy Brockmueller"></img>
@@ -59,3 +60,5 @@ const styles = {
     height: 'auto'
   }
 }
+
+export const Head = () => <Seo title="Remembering Billy" />

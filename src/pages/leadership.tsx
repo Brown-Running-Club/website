@@ -5,6 +5,7 @@ import WiderContainer from "../components/wider-container"
 import CharacterCard from "../components/character-card"
 import leadership from "../images/captains.jpeg"
 import Layout from "../components/layout"
+import Seo from "../components/seo"
 import { getSheetData } from "../api-calls"
 
 const LEADERSHIP_BIO_SHEET_ID = "1_BMe2MuP4Of2hg7GQnDBmRjfObFpzgH96SceWpu1Lnw";
@@ -78,3 +79,5 @@ const styles = {
     textAlign: "left" as "left",
   },
 }
+
+export const Head = () => <Seo title="Leadership" />

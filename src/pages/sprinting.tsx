@@ -6,6 +6,7 @@ import WiderContainer from "../components/wider-container"
 import Card from "../components/card"
 import Button from "../components/button"
 import Layout from "../components/layout"
+import Seo from "../components/seo"
 import CharacterCard from "../components/character-card"
 import { getSheetData } from "../api-calls"
 
@@ -110,3 +111,5 @@ const styles = {
     textAlign: "left" as "left",
   },
 }
+
+export const Head = () => <Seo title="Sprinting" />

@@ -1,6 +1,7 @@
 import React from "react"
 import { graphql } from "gatsby"
 import Layout from "../components/layout"
+import Seo from "../components/seo"
 import TitleImage from "../components/title-image"
 import Kickoff from "../images/kickoff.jpg"
 import theme from "../config/theme"
@@ -58,3 +59,7 @@ const styles = {
     textShadow: "0 0 15px #000000, 0 0 10px #000000",
   },
 }
+
+export const Head = ({ data }: { data: MarkdownData }) => (
+  <Seo title={data.markdownRemark.frontmatter.title} />
+)

@@ -6,6 +6,7 @@ import WideContainer from "../components/wide-container"
 import Card from "../components/card"
 import Button from "../components/button"
 import Layout from "../components/layout"
+import Seo from "../components/seo"
 
 export default () => (
   <Layout title="Competitive Team" image={CompetitiveImage}>
@@ -75,3 +76,5 @@ const styles = {
     marginBottom: theme.spacing.unit * 2,
   },
 }
+
+export const Head = () => <Seo title="Competitive Team" />

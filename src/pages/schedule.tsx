@@ -8,6 +8,7 @@ import Card from "../components/card"
 import NarrowContainer from "../components/narrow-container"
 import Button from "../components/button"
 import Layout from "../components/layout"
+import Seo from "../components/seo"
 import {CurrentSeason} from "../components/season"
 import Schedule from "../components/schedule"
 import MediaQuery from "../components/media-query"
@@ -96,3 +97,5 @@ const styles = {
     margin: 0,
   },
 }
+
+export const Head = () => <Seo title="Schedule" />

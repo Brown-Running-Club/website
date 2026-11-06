@@ -22,7 +22,7 @@ const links: Array<MenuItem> = [
   },
 ]
 
-function renderItem({name, link}) {
+function renderItem({ name, link }: { name: string; link: string }) {
   return (
     <div
       style={styles.navigationMenu}>

@@ -3,6 +3,7 @@ import Omac from "../../images/omac.jpg"
 import PageBody from "../../components/page-body"
 import WideContainer from "../../components/wide-container"
 import Layout from "../../components/layout"
+import Seo from "../../components/seo"
 import Results from "../../components/billy-brockmueller-invitational/results"
 
 export default () => (
@@ -14,3 +15,5 @@ export default () => (
     </PageBody>
   </Layout>
 )
+
+export const Head = () => <Seo title="Billy Brockmueller Invitational Results" />
