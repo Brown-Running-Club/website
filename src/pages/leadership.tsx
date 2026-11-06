@@ -54,7 +54,7 @@ export default () => {
 
   useEffect(() => {
     if (bios === undefined) getBios().then(setBios)
-  })
+  }, [])
 
   const cards = bios?.map(makeCaptainCard);
 

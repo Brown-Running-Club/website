@@ -11,7 +11,7 @@ import NarrowContainer from "../components/narrow-container"
 import Layout from "../components/layout"
 import MeetHosting from "../components/meet-hosting"
 import Schedule from "../components/schedule"
-import MediaQuery from "react-responsive"
+import MediaQuery from "../components/media-query"
 import { CurrentSeason } from "../components/season"
 
 export default () => {

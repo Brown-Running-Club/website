@@ -7,7 +7,7 @@ import Card from "../components/card"
 import NarrowContainer from "../components/narrow-container"
 import Button from "../components/button"
 import Layout from "../components/layout"
-import MediaQuery from "react-responsive"
+import MediaQuery from "../components/media-query"
 
 export default () => {
   const donateCard = (

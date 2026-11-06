@@ -3,7 +3,7 @@ import theme from "../config/theme"
 import { getSheetData } from "../api-calls"
 import Table from "../components/table"
 import Card from "../components/card"
-import { useMediaQuery } from "react-responsive"
+import { useMediaQuery } from "./media-query"
 
 const SHEET_ID = "1-0FhSZemh9iVF5bEOnqRGIH3ZFAHb9-ktbw5I2Zz9eE"
 
@@ -84,7 +84,7 @@ const Records = ({ raceType }: { raceType: string }) => {
 
   useEffect(() => {
     if (records === undefined) getRecords(raceType).then(setRecords)
-  })
+  }, [raceType])
 
   return (
     <Card title={raceType}>

@@ -18,7 +18,7 @@ const Announcements = () => {
       query={graphql`
         query {
           allMarkdownRemark(
-            sort: { fields: [frontmatter___date], order: DESC }
+            sort: { frontmatter: { date: DESC } }
             filter: { frontmatter: { slug: { glob: "/announcements/*" } } }
             limit: 5
             skip: 0

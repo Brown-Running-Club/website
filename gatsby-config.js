@@ -35,7 +35,6 @@ module.exports = {
         icon: `src/images/ivyblogo.png`, // This path is relative to the root of the site.
       },
     },
-    `gatsby-plugin-gatsby-cloud`,
     {
       resolve: "gatsby-plugin-web-font-loader",
       options: {

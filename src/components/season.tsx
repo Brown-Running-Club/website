@@ -50,7 +50,7 @@ const Season = ({ season, info }: { season: string, info?: string }) => {
   const [schedule, setSchedule] = useState<Schedule | undefined>(undefined);
   useEffect(() => {
     if (schedule === undefined) getSeason(season).then(setSchedule)
-  })
+  }, [season])
   return (
     <Card title={season} centeredTitle>
       {createMeetTable(schedule ?? [])}

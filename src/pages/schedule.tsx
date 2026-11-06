@@ -10,7 +10,7 @@ import Button from "../components/button"
 import Layout from "../components/layout"
 import {CurrentSeason} from "../components/season"
 import Schedule from "../components/schedule"
-import MediaQuery from "react-responsive"
+import MediaQuery from "../components/media-query"
 
 export default () => {
   const narrowContent = (

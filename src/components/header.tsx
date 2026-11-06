@@ -1,6 +1,6 @@
 import * as React from "react"
 import { Link } from "gatsby"
-import MediaQuery from "react-responsive"
+import MediaQuery from "./media-query"
 import { slide as BurgerMenu } from "react-burger-menu"
 import theme from "../config/theme"
 import BrownIvyB from "../images/ivyblogo.png"

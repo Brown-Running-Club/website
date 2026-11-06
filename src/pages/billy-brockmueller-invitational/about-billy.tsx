@@ -5,7 +5,7 @@ import Card from "../../components/card"
 import PageBody from "../../components/page-body"
 import WideContainer from "../../components/wide-container"
 import NarrowContainer from "../../components/narrow-container"
-import MediaQuery from "react-responsive"
+import MediaQuery from "../../components/media-query"
 import Layout from "../../components/layout"
 
 export default () => {
