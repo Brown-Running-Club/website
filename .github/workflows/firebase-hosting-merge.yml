@@ -22,3 +22,8 @@ jobs:
           firebaseServiceAccount: "${{ secrets.FIREBASE_SERVICE_ACCOUNT_BROWN_RUNNING_CLUB }}"
           channelId: live
           projectId: brown-running-club
+          # Pinned: firebase-tools 15.34.1+ checks the Service Usage API before
+          # deploying, which the deploy service account lacks permission for
+          # (serviceusage.services.get). Unpin after granting it the
+          # "Service Usage Consumer" role in Google Cloud IAM.
+          firebaseToolsVersion: 15.34.0
